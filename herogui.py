@@ -1,36 +1,29 @@
 import sys
-from PyQt6.QtWidgets import QApplication, QWidget, QLineEdit, QPushButton, QTextEdit, QVBoxLayout
-from PyQt6.QtGui import QIcon    #importing the library
+from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton #application (settings initializing and event loop) main window (add widgets), Qlable allow to show text/img for our widgets
+from PyQt6.QtGui import QIcon, QPixmap   #importing the library
+from PyQt6.QtGui import QIcon  #import icons
+from PyQt6.QtCore import Qt  #for widget location
 
-class MyApp(QWidget):
-    def __init__(self):
-        super().__init
-        self.setWindowTitle('hello app')  #app name
-        self.setWindowIcon(QIcon('map.ico'))  #icon for the app
-        self.resize(500, 350) #width , height
+app = QApplication([]) 
 
-        layout = QVBoxLayout()
-        self.setLayout(layout)
+window = QMainWindow()
+#setting up window
+window.setMinimumSize(400, 500) #set minimum size and let user resize if needed
+ #can do individually also window.setMinimumHeight #window.setFixedSize #dont allow user to resize
+window.setWindowTitle("a new application")
+window.setWindowIcon(QIcon('mlbb.jpg'))
 
+#adding widgets
+#label = QLabel("Text goes here", alignment=Qt.AlignmentFlag.AlignHCenter)
+#font.setPointSize(17)
+#font.setBold(True)
+#label.setFont(font)
 
-#widgets
-        self.inputField = QLineEdit()
-        self.button = QPushButton()
-        self.output = QTextEdit()
+button = QPushButton("Click Me")
+button.setFixedSize(50,50)
+window.setCentralWidget(button)
 
-
-        layout.addWidget(self.inputField)
-        layout.addWidget(self.button)
-        layout.addWidget(self.output)
-        
-
-
-
-
-app = QApplication(sys.argv)
-
-window = MyApp()
-window.show()   #display the app
-
-
-sys.exit(app.exec_())
+#display a img
+#label = QLabel()
+#label.setPixmap(QPixmap("mlbb.jpg").scaled(250,250))
+#window.setCentralWidget(label)

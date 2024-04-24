@@ -8,17 +8,8 @@ app = QApplication([])
 window = QMainWindow()
 #setting up window
 window.setMinimumSize(400, 500) #set minimum size and let user resize if needed
- #can do individually also window.setMinimumHeight #window.setFixedSize #dont allow user to resize
-window.setWindowTitle("a new application")
-window.setWindowIcon(QIcon('mlbb.jpg'))
 
 layout = QVBoxLayout
-
-#adding widgets
-#label = QLabel("Text goes here", alignment=Qt.AlignmentFlag.AlignHCenter)
-#font.setPointSize(17)
-#font.setBold(True)
-#label.setFont(font)
 
 button1 = QPushButton("Click Me")
 button2 = QPushButton("button2")
@@ -27,23 +18,9 @@ layout.addWidget(button1)
 layout.addWidget(button2)
 
 centerwidget= QWidget()
-centerwidget.setLayout(centerwidget)
+centerwidget.setLayout(layout)
 
-
-
-
-#display a img
-#label = QLabel()
-#label.setPixmap(QPixmap("mlbb.jpg").scaled(250,250))
-#window.setCentralWidget(label)
-
-
-
-
-
-
-
-
+window.setCentralWidget(centerwidget)
 
 
 window.show()  #draw window
