@@ -15,8 +15,8 @@ class Window(QMainWindow):
 
         self.button1 = QPushButton("Heroes")
         self.button2 = QPushButton("Skins")
-        self.button3 = QPushButton("Line ups")
-        self.button4 = QPushButton("Button 4")
+        self.button3 = QPushButton("Events and recharge")
+        self.button4 = QPushButton("Rank system and line ups")
 
         buttonLayout.addWidget(self.button1)
         buttonLayout.addSpacing(50)
@@ -26,7 +26,7 @@ class Window(QMainWindow):
         buttonLayout.addSpacing(50)
         buttonLayout.addWidget(self.button4)
 
-        self.label = QLabel("Newlabel", alignment=Qt.AlignmentFlag.AlignCenter)
+        self.label = QLabel("Welcome to the best guides app for Mobile Legends Bang Bang", alignment=Qt.AlignmentFlag.AlignCenter)
         font = self.font()
         font.setPointSize(24)
         font.setBold(True)
