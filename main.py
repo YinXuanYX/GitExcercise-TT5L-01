@@ -2,44 +2,47 @@ from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QGri
 from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt
 
+class Window(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        self.setMinimumSize(720,1280)
+        self.setWindowTitle("Mobile Legends Ultimate Guide")
+        self.setWindowIcon(QIcon("Logo_Mobile_Legends-_Bang_Bang.jpg"))
+
+        parentLayout = QVBoxLayout()
+        buttonLayout = QHBoxLayout()
+
+        self.button1 = QPushButton("Heroes")
+        self.button2 = QPushButton("Skins")
+        self.button3 = QPushButton("Line ups")
+        self.button4 = QPushButton("Button 4")
+
+        buttonLayout.addWidget(self.button1)
+        buttonLayout.addSpacing(50)
+        buttonLayout.addWidget(self.button2)
+        buttonLayout.addSpacing(50)
+        buttonLayout.addWidget(self.button3)
+        buttonLayout.addSpacing(50)
+        buttonLayout.addWidget(self.button4)
+
+        self.label = QLabel("Newlabel", alignment=Qt.AlignmentFlag.AlignCenter)
+        font = self.font()
+        font.setPointSize(24)
+        font.setBold(True)
+        self.label.setFont(font)
+        parentLayout.addLayout(buttonLayout)
+
+        parentLayout.addWidget(self.label)
+
+        centerWidget= QWidget()
+        centerWidget.setLayout(parentLayout)
+        self.setCentralWidget(centerWidget)
+
 app = QApplication([])
 
-window = QMainWindow()
-#Setting up window
-window.setMinimumSize(720,1280)
-window.setWindowTitle("Mobile Legends Ultimate Guide")
-window.setWindowIcon(QIcon("Logo_Mobile_Legends-_Bang_Bang.jpg"))
+window = Window()
 
-#Adding widgets
-parentLayout = QVBoxLayout()
-buttonLayout = QHBoxLayout()
-
-button1 = QPushButton("Heroes")
-button2 = QPushButton("Skins")
-button3 = QPushButton("Line ups")
-button4 = QPushButton("Button 4")
-
-buttonLayout.addWidget(button1)
-buttonLayout.addSpacing(50)
-buttonLayout.addWidget(button2)
-buttonLayout.addSpacing(50)
-buttonLayout.addWidget(button3)
-buttonLayout.addSpacing(50)
-buttonLayout.addWidget(button4)
-
-label = QLabel("Newlabel", alignment=Qt.AlignmentFlag.AlignCenter)
-font = window.font()
-font.setPointSize(24)
-font.setBold(True)
-label.setFont(font)
-parentLayout.addLayout(buttonLayout)
-
-parentLayout.addWidget(label)
-
-centerWidget= QWidget()
-centerWidget.setLayout(parentLayout)
-
-window.setCentralWidget(centerWidget)
 
 window.show()
 app.exec()
