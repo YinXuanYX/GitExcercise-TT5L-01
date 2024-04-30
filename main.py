@@ -13,6 +13,18 @@ class Window(QMainWindow):
         parentLayout = QVBoxLayout()
         buttonLayout = QHBoxLayout()
 
+        self.setStyleSheet('''
+            QMainWindow{
+                background-color: QLinearGradient(x0: 0, y0: 0, x1: 1, y1: 1, stop: 0 #5DE3E2, stop: 1 #FC00FF)           
+            }
+            QLabel{
+                color: #FFE53B;           
+            }
+            QPushButton{
+                background-color: QLinearGradient(x0: 0, y0: 0, x1: 0, y1: 1, stop: 0 #4158D0, stop: 1 #FFCC70)        
+            }
+        ''')
+
         self.button1 = QPushButton("Heroes")
         self.button2 = QPushButton("Skins")
         self.button3 = QPushButton("Events and recharge")
