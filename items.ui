@@ -6,15 +6,736 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>894</width>
+    <height>690</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(219, 239, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QWidget" name="icon_only_widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+background-color: rgb(177, 177, 177);
+}
+
+QPushButton{
+ color:white;
+ height:30px;
+ border:none;
+ border-radius:10px;
+}
+
+QPushButton:checked{
+ background-color: #F5FAFE;
+ color: #1F95EF;
+ font-weight:bold;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/images/mlbb.jpg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>30</number>
+         </property>
+         <property name="topMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="physicalicon">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/images/melific.jpg</normaloff>:/images/melific.jpg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="magicicon">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/images/glowing_wand.jpg</normaloff>:/images/glowing_wand.jpg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="defenseicon">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/images/blade_armour.jpg</normaloff>:/images/blade_armour.jpg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="bootsicon">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/images/movement.jpg</normaloff>:/images/movement.jpg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>336</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="exiticon">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/images/log_out.png</normaloff>:/images/log_out.png</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QWidget" name="icon_name_widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+background-color: rgb(177, 177, 177);
+color:white;
+}
+
+QPushButton{
+ color:white;
+ text-align:left;
+ height:30px;
+ border:none;
+ padding-left:10px;
+ border-top-left-radius:10px;
+ border-bottom-left-radius:10px;
+}
+
+QPushButton:checked{
+ background-color: #F5FAFE;
+ color: #1F95EF;
+ font-weight:bold;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="rightMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/images/mlbb.jpg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>ITEMS</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>30</number>
+         </property>
+         <property name="topMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="physicalname">
+           <property name="text">
+            <string>PHYSICAL</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/images/melific.jpg</normaloff>:/images/melific.jpg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="magicname">
+           <property name="text">
+            <string>MAGIC</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/images/glowing_wand.jpg</normaloff>:/images/glowing_wand.jpg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="defensename">
+           <property name="text">
+            <string>DEFENSE</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/images/blade_armour.jpg</normaloff>:/images/blade_armour.jpg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="bootsname">
+           <property name="text">
+            <string>MOVEMENT</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/images/movement.jpg</normaloff>:/images/movement.jpg</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>341</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="exitname">
+         <property name="text">
+          <string>CLOSE</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/images/log_out.png</normaloff>:/images/log_out.png</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QWidget" name="main_menu" native="true">
+      <property name="font">
+       <font>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="menu">
+            <property name="styleSheet">
+             <string notr="true">border:none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="resources.qrc">
+              <normaloff>:/images/menu.png</normaloff>:/images/menu.png</iconset>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>292</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLineEdit" name="lineEdit"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="search">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="resources.qrc">
+                <normaloff>:/images/search.png</normaloff>:/images/search.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <widget class="QWidget" name="physical_page">
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>160</y>
+             <width>331</width>
+             <height>91</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>PHYSICAL ITEMS PAGE</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="magic_page">
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>160</y>
+             <width>311</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>MAGIC ITEMS PAGE</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="defense_page">
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>200</y>
+             <width>311</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>DEFENSE ITEMS PAGE</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="movement_page">
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>180</y>
+             <width>331</width>
+             <height>171</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>MOVEMENT ITEMS PAGE</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
  </widget>
- <resources/>
- <connections/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_only_widget</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>45</x>
+     <y>402</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_name_widget</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>265</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bootsicon</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>bootsname</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>119</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>defenseicon</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>defensename</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>42</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>129</x>
+     <y>215</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>magicicon</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>magicname</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>30</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>135</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>physicalicon</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>physicalname</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>36</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>128</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>physicalname</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>physicalicon</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>152</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>40</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>magicname</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>magicicon</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>118</x>
+     <y>154</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>43</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>defensename</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>defenseicon</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>38</x>
+     <y>210</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bootsname</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>bootsicon</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>43</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exiticon</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>26</x>
+     <y>668</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>29</x>
+     <y>735</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exitname</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>665</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>135</x>
+     <y>770</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
