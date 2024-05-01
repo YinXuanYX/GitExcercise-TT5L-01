@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QGridLayout, QVBoxLayout, QHBoxLayout, QWidget
+from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QGridLayout, QVBoxLayout, QHBoxLayout, QWidget, QStackedWidget
 from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt
 
@@ -12,6 +12,8 @@ class Window(QMainWindow):
 
         parentLayout = QVBoxLayout()
         buttonLayout = QHBoxLayout()
+
+        self.stackWidget = QStackedWidget()
 
         self.setStyleSheet('''
             QMainWindow{
