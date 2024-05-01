@@ -1,0 +1,11 @@
+<RCC>
+  <qresource>
+    <file>images/blade_armour.png</file>
+    <file>images/Blade_of_Despair.png</file>
+    <file>images/glowing_wand.png</file>
+    <file>images/mlbb.jpg</file>
+    <file>images/movement.png</file>
+    <file>images/retri.png</file>
+    <file>images/roam.png</file>
+  </qresource>
+</RCC>
