@@ -18,6 +18,10 @@ class Window(QMainWindow):
         self.button3 = QPushButton("Defence Items")
         self.button4 = QPushButton("Roaming / Jungling boots")
 
+        self.button1.setGeometry(20, 30, 20, 40)
+
+       
+
         buttonLayout.addWidget(self.button1)
         buttonLayout.addSpacing(50)
         buttonLayout.addWidget(self.button2)
