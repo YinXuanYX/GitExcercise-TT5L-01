@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QGridLayout, QVBoxLayout, QHBoxLayout, QWidget, QStackedWidget
+from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QGridLayout, QVBoxLayout, QHBoxLayout, QWidget, QDialog
 from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt
 
@@ -6,14 +6,13 @@ class Window(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setMinimumSize(720,1280)
+        self.setMinimumSize(1440,840)
         self.setWindowTitle("Mobile Legends Ultimate Guide")
         self.setWindowIcon(QIcon("Logo_Mobile_Legends-_Bang_Bang.jpg"))
 
         parentLayout = QVBoxLayout()
         buttonLayout = QHBoxLayout()
-
-        self.stackWidget = QStackedWidget()
+        
 
         self.setStyleSheet('''
             QMainWindow{
@@ -46,15 +45,15 @@ class Window(QMainWindow):
         font.setBold(True)
         self.label.setFont(font)
         parentLayout.addLayout(buttonLayout)
-
         parentLayout.addWidget(self.label)
 
         centerWidget= QWidget()
         centerWidget.setLayout(parentLayout)
         self.setCentralWidget(centerWidget)
 
-app = QApplication([])
 
+
+app = QApplication([])
 window = Window()
 
 

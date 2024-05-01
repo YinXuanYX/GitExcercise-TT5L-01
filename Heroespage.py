@@ -1,72 +1,46 @@
 import sys
-from PyQt6.QtWidgets import QApplication, QWidget, QPushButton,QRadioButton,QStackedWidget,QVBoxLayout,QHBoxLayout,QLineEdit
+from PyQt6.QtWidgets import QApplication, QWidget, QPushButton,QMainWindow,QStackedWidget,QVBoxLayout,QHBoxLayout,QLineEdit,QLabel, QComboBox
 from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QIcon
 
 
-class WidgetButtons(QWidget):
+class Window(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        layout = QVBoxLayout()
+        self.setMinimumSize(1440,840)
+        self.setWindowTitle("Mobile Legends Ultimate Guide")
+        self.setWindowIcon(QIcon("Logo_Mobile_Legends-_Bang_Bang.jpg"))
 
-        for i in range(4):
-            layout.addWidget(QPushButton(f'Button #{i}'))
-        
-        self.setLayout(layout)
+        self.comboBox = QComboBox()
+        self.comboBox.addItem(QIcon("Assassin_Icon (1).webp"),'Assassin')
+        self.comboBox.addItem(QIcon("Tank_Icon.webp"),'Tank')
+        self.comboBox.addItem(QIcon("Fighter_Icon.webp"),'Fighter')
+        self.comboBox.addItem(QIcon("Marksman_Icon.webp"),'Marksman')
+        self.comboBox.addItem(QIcon("Mage_Icon.webp"),'Mage')
+        self.comboBox.addItem(QIcon("Support_Icon.webp"),'Support')
 
-class WidgetLineEdits(QWidget):
-    def __init__(self):
-        super().__init__()
-
-        layout = QVBoxLayout()
-
-        for i in range(4):
-            layout.addWidget(QLineEdit(f'LineEdit #{i}'))
-        self.setLayout(layout)
-
-class WidgetRadioButtons(QWidget):
-    def __init__(self):
-        super().__init__()
-
-        layout = QVBoxLayout()
-
-        for i in range(4):
-            layout.addWidget(QRadioButton(f'RadioButton #{i}'))
-        self.setLayout(layout)
-
-class Heroes(QWidget):
-    def __init__(self):
-        super().__init__()
-
-        mainLayout = QVBoxLayout()
-        self.stackedWidget = QStackedWidget()
-        self.stackedWidget.addWidget(WidgetButtons())
-        self.stackedWidget.addWidget(WidgetLineEdits())
-        self.stackedWidget.addWidget(WidgetRadioButtons())
-
-        buttonPrevious = QPushButton('Previous')
-        buttonPrevious.clicked.connect(self.previousWidget)
-        buttonNext = QPushButton('Next')
-        buttonNext.clicked.connect(self.nextWidget)
-        
-
-
+        parentLayout = QHBoxLayout()
         buttonLayout = QHBoxLayout()
-        buttonLayout.addWidget(buttonPrevious)
-        buttonLayout.addWidget(buttonNext)
-
-        mainLayout.addWidget(self.stackedWidget)
-        mainLayout.addLayout(buttonLayout)
-        self.setLayout(mainLayout)
-    
-    def nextWidget(self):
-        self.stackedWidget.setCurrentIndex((self.stackedWidget.currentIndex() + 1) % 3)
-    def previousWidget(self):
-        self.stackedWidget.setCurrentIndex((self.stackedWidget.currentIndex() - 1) % 3)    
 
 
+        self.label = QLabel("Heroes", alignment=Qt.AlignmentFlag.AlignTop)
+        font = self.font()
+        font.setPointSize(45)
+        font.setBold(True)
+        self.label.setFont(font)
+        parentLayout.addLayout(buttonLayout)
+        parentLayout.addWidget(self.label)
+        parentLayout.addWidget(self.comboBox)
 
-app = QApplication(sys.argv)
-demo = Heroes()
-demo.show()
-sys.exit(app.exec())
+        centerWidget= QWidget()
+        centerWidget.setLayout(parentLayout)
+        self.setCentralWidget(centerWidget)
+
+
+app = QApplication([])
+window = Window()
+
+
+window.show()
+app.exec()
