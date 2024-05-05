@@ -5,11 +5,11 @@ class Player:
 
     def get_win_rate(self):
         win_rate = (self.wins / self.games) * 100
-        return int(win_rate)
+        return float(win_rate)
 
 def main():
-    games = int(input("Enter the number of games played: "))
-    wins = int(input("Enter the number of wins: "))
+    games = float(input("Enter the number of games played: "))
+    wins = float(input("Enter the number of wins: "))
 
     player = Player(games, wins)
     win_rate = player.get_win_rate()

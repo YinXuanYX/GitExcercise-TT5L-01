@@ -41,7 +41,7 @@ class Window(QMainWindow):
 
         self.label = QLabel("Welcome to the best guides app for Mobile Legends Bang Bang", alignment=Qt.AlignmentFlag.AlignCenter)
         font = self.font()
-        font.setPointSize(24)
+        font.setPointSize(20)
         font.setBold(True)
         self.label.setFont(font)
         parentLayout.addLayout(buttonLayout)

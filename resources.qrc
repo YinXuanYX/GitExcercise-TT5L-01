@@ -1,0 +1,11 @@
+<RCC>
+  <qresource>
+    <file>Assassin_Icon.webp</file>
+    <file>Fighter_Icon.webp</file>
+    <file>Marksman_Icon.webp</file>
+    <file>Mage_Icon.webp</file>
+    <file>Support_Icon.webp</file>
+    <file>Tank_Icon.webp</file>
+    <file>mlbb.jpg</file>
+  </qresource>
+</RCC>
