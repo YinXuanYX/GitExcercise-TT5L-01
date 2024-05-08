@@ -16,6 +16,7 @@ class heroinfo(QMainWindow,Ui_MainWindow):
         self.fighter.clicked.connect(self.fightpg)
         self.mm.clicked.connect(self.marskmpg)
         self.sup.clicked.connect(self.suppg)
+        self.Saber.clicked.connect(self.saberpg)
     
 
     def assasinpg(self):
@@ -35,3 +36,6 @@ class heroinfo(QMainWindow,Ui_MainWindow):
 
     def suppg(self):
         self.stackedWidget.setCurrentIndex(5)
+
+    def saberpg(self):
+        self.stackedWidget.setCurrentIndex(6)

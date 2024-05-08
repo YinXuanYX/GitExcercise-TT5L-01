@@ -1,5 +1,10 @@
 <RCC>
   <qresource>
+    <file>Orbiting_Swords.png</file>
+    <file>Charge.png</file>
+    <file>Triple_Sweep.png</file>
+    <file>EnemyBane.png</file>
+    <file>Saber.png</file>
     <file>Assassin_Icon.webp</file>
     <file>Fighter_Icon.webp</file>
     <file>Marksman_Icon.webp</file>
