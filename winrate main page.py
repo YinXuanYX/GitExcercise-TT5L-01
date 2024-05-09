@@ -20,9 +20,15 @@ class Window(QMainWindow):
         self.button2 = QPushButton("All Matches played")
         self.button2.setFixedSize(400, 70)
         font = self.button2.font()
+<<<<<<< HEAD
         font.setPointSize(16)
         self.button2.setFont(font)
         self.button3 = QPushButton("Winning Rate")
+=======
+        font.setPointSize(17)
+        self.button2.setFont(font)
+        self.button3 = QPushButton("Ranked Mode")
+>>>>>>> 08a96e60b786ef5e3b65a987a305e3c610a6153c
         self.button3.setFixedSize(400, 70)
         font = self.button3.font()
         font.setPointSize(18)
@@ -35,7 +41,11 @@ class Window(QMainWindow):
         buttonLayout.addWidget(self.button3)
         buttonLayout.addSpacing(50)
 
+<<<<<<< HEAD
         self.label = QLabel("Here to be the next World Champion?!")
+=======
+        self.label = QLabel("Are you the next LEGEND?!")
+>>>>>>> 08a96e60b786ef5e3b65a987a305e3c610a6153c
         font = self.font()
         font.setPointSize(24)
         font.setBold(True)
@@ -53,5 +63,9 @@ app = QApplication([])
 
 window = Window()
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08a96e60b786ef5e3b65a987a305e3c610a6153c
 window.show()
 app.exec()
