@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>980</width>
+    <width>1138</width>
     <height>711</height>
    </rect>
   </property>
@@ -163,9 +163,9 @@ background-color: rgb(71, 142, 213);
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>0</y>
-      <width>821</width>
-      <height>711</height>
+      <y>-20</y>
+      <width>981</width>
+      <height>731</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -178,8 +178,8 @@ background-color: rgb(0, 0, 255);
       <rect>
        <x>30</x>
        <y>30</y>
-       <width>771</width>
-       <height>661</height>
+       <width>941</width>
+       <height>681</height>
       </rect>
      </property>
      <property name="focusPolicy">
@@ -482,12 +482,12 @@ background-color: rgb(0, 170, 255);</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>751</width>
-         <height>641</height>
+         <width>921</width>
+         <height>661</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(0, 0, 0);</string>
+        <string notr="true">background-color: rgb(149, 0, 149);</string>
        </property>
        <widget class="QLabel" name="label_9">
         <property name="geometry">
@@ -532,7 +532,7 @@ background-color: rgb(0, 170, 255);</string>
          <string>Enemy's bane</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_12">
+       <widget class="QLabel" name="Passivelabel">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -552,7 +552,7 @@ background-color: rgb(0, 170, 255);</string>
          <string notr="true">color: rgb(85, 255, 127);</string>
         </property>
         <property name="text">
-         <string>Passive</string>
+         <string>Gay</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_10">
