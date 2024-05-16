@@ -3,7 +3,6 @@ import sys
 from uisetup import heroinfo
 
 app = QApplication(sys.argv)
-
 window = heroinfo()
 
 window.show()

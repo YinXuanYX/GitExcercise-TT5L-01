@@ -1,7 +1,8 @@
 from PySide6.QtCore import Qt
 from newpage_ui import Ui_MainWindow
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QWidget
-
+from PySide6.QtSql import *
+from testingdb import *
 
 
 class heroinfo(QMainWindow,Ui_MainWindow):
@@ -9,7 +10,6 @@ class heroinfo(QMainWindow,Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
         self.setWindowTitle("MLBB HERO GUIDE")
-
         self.assa.clicked.connect(self.assasinpg)
         self.tank.clicked.connect(self.tenkpg)
         self.mage.clicked.connect(self.magpg)
@@ -17,8 +17,8 @@ class heroinfo(QMainWindow,Ui_MainWindow):
         self.mm.clicked.connect(self.marskmpg)
         self.sup.clicked.connect(self.suppg)
         self.Saber.clicked.connect(self.saberpg)
-    
 
+        
     def assasinpg(self):
         self.stackedWidget.setCurrentIndex(0)
 
@@ -39,3 +39,5 @@ class heroinfo(QMainWindow,Ui_MainWindow):
 
     def saberpg(self):
         self.stackedWidget.setCurrentIndex(6)
+        self.Passivelabel.setText(query.value(Passive))
+
