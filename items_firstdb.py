@@ -30,13 +30,13 @@ items_list = [
     ("Corrosion Scythe", "+30 Physical Attack +30% Attack Speed +5% Movement Speed", "Unique Passive - Corrosive: Each time a Basic Attack deals damage to enemies, gains additional 80 Physical Damage and reduces the target's Movement Speed by 8% (halved for ranged Basic Attacks) for 1.5 seconds. Stacking up to 5 times. Unique Passive - Impulse: When each Basic Attack deals damage to enemies, increase Attack Speed by 6%. Stacks up to 5 times. Lasts 3 seconds."),
     ("Demon Hunter Sword", "+35 Physical Attack +20% Attack Speed", "Unique Passive - Devour: Basic attacks will deal 8 percent of the target's current HP as additional physical damage (up to 60 against creeps and minions). Unique Passive - Devour: Each Basic Attack grants 3 percent Lifesteal for 3 seconds. Stack up to 5 times."),
     ("Flask of The Oasis", "+60 Magic Power +300 HP +10% Cooldown Reduction", "Unique Attribute: +12% Healing Effect Unique Passive - Blessing: When casting a healing or shielding skill, if the target's HP is below 35 percent or falls below 35% within 5 seconds, they will get a 100-1500 shield that lasts 3 seconds. When this effect triggers, it also reduces the cooldown of the caster's skills by 2 seconds. (This effect can only trigger once every 60 seconds on the same target, and will not trigger on self-onl healing and shielding skills.)")
-    
+    (""),
 ]  
 
 cursor.executemany("insert into items values (?, ?, ?)", items_list)
 
 
-#print database rows
+#print database rows to see
 for row in cursor.execute("select * from items"):
     print(row)
 
