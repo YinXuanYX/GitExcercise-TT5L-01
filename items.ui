@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>894</width>
-    <height>690</height>
+    <width>1102</width>
+    <height>827</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -446,7 +446,7 @@ QPushButton:checked{
           <string notr="true">background-color: rgb(255, 255, 255);</string>
          </property>
          <property name="currentIndex">
-          <number>1</number>
+          <number>4</number>
          </property>
          <widget class="QWidget" name="Landing_Page">
           <widget class="QLabel" name="welcome_text">
@@ -503,7 +503,7 @@ QPushButton:checked{
             <string>PHYSICAL ITEMS PAGE</string>
            </property>
           </widget>
-          <widget class="QWidget" name="">
+          <widget class="QWidget" name="layoutWidget">
            <property name="geometry">
             <rect>
              <x>80</x>
@@ -519,7 +519,7 @@ QPushButton:checked{
             <item>
              <widget class="QPushButton" name="Blade_of_Despair">
               <property name="text">
-               <string>PushButton</string>
+               <string>BOD</string>
               </property>
               <property name="checkable">
                <bool>true</bool>
@@ -532,7 +532,7 @@ QPushButton:checked{
             <item>
              <widget class="QPushButton" name="pushButton_2">
               <property name="text">
-               <string>PushButton</string>
+               <string>melefic</string>
               </property>
              </widget>
             </item>
@@ -618,8 +618,68 @@ QPushButton:checked{
             <string>MOVEMENT ITEMS PAGE</string>
            </property>
           </widget>
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>310</y>
+             <width>511</width>
+             <height>261</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>PushButton</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>湾岸ミッドナイトMAXIMUM TUNE 6RR 30_4_2024 4_54_59 PM.png</normaloff>湾岸ミッドナイトMAXIMUM TUNE 6RR 30_4_2024 4_54_59 PM.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>1000</width>
+             <height>1000</height>
+            </size>
+           </property>
+          </widget>
          </widget>
-         <widget class="QWidget" name="page"/>
+         <widget class="QWidget" name="page">
+          <widget class="QLabel" name="itemNAME">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>130</y>
+             <width>331</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>=bhihuogyuio</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>220</y>
+             <width>521</width>
+             <height>371</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Users/tanyi/Videos/Captures/湾岸ミッドナイトMAXIMUM TUNE 6RR 30_4_2024 4_54_59 PM.png</normaloff>../../Users/tanyi/Videos/Captures/湾岸ミッドナイトMAXIMUM TUNE 6RR 30_4_2024 4_54_59 PM.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>1000</width>
+             <height>1000</height>
+            </size>
+           </property>
+          </widget>
+         </widget>
         </widget>
        </item>
       </layout>
