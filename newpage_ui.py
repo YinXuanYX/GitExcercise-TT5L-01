@@ -15,16 +15,16 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QLabel, QMainWindow, QPushButton,
-    QSizePolicy, QSpacerItem, QStackedWidget, QVBoxLayout,
-    QWidget)
+from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QMainWindow,
+    QPushButton, QScrollArea, QSizePolicy, QSpacerItem,
+    QStackedWidget, QVBoxLayout, QWidget)
 import resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1138, 711)
+        MainWindow.resize(1259, 711)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.widget = QWidget(self.centralwidget)
@@ -37,18 +37,29 @@ class Ui_MainWindow(object):
 "background-color: rgb(71, 142, 213);\n"
 "	color: rgb(255, 255, 255);\n"
 "}")
-        self.verticalLayout_2 = QVBoxLayout(self.widget)
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.label = QLabel(self.widget)
+        self.cls = QPushButton(self.widget)
+        self.cls.setObjectName(u"cls")
+        self.cls.setGeometry(QRect(9, 679, 75, 23))
+        self.cls.setCheckable(True)
+        self.widget1 = QWidget(self.widget)
+        self.widget1.setObjectName(u"widget1")
+        self.widget1.setGeometry(QRect(9, 9, 150, 681))
+        self.verticalLayout = QVBoxLayout(self.widget1)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.label = QLabel(self.widget1)
         self.label.setObjectName(u"label")
         self.label.setPixmap(QPixmap(u":/mlbb.jpg"))
         self.label.setScaledContents(True)
 
-        self.verticalLayout_2.addWidget(self.label)
+        self.verticalLayout.addWidget(self.label)
 
-        self.verticalLayout = QVBoxLayout()
-        self.verticalLayout.setObjectName(u"verticalLayout")
-        self.assa = QPushButton(self.widget)
+        self.allhero = QPushButton(self.widget1)
+        self.allhero.setObjectName(u"allhero")
+
+        self.verticalLayout.addWidget(self.allhero)
+
+        self.assa = QPushButton(self.widget1)
         self.assa.setObjectName(u"assa")
         icon = QIcon()
         icon.addFile(u":/Assassin_Icon.webp", QSize(), QIcon.Normal, QIcon.Off)
@@ -57,7 +68,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.assa)
 
-        self.tank = QPushButton(self.widget)
+        self.tank = QPushButton(self.widget1)
         self.tank.setObjectName(u"tank")
         icon1 = QIcon()
         icon1.addFile(u":/Tank_Icon.webp", QSize(), QIcon.Normal, QIcon.Off)
@@ -66,7 +77,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.tank)
 
-        self.fighter = QPushButton(self.widget)
+        self.fighter = QPushButton(self.widget1)
         self.fighter.setObjectName(u"fighter")
         icon2 = QIcon()
         icon2.addFile(u":/Fighter_Icon.webp", QSize(), QIcon.Normal, QIcon.Off)
@@ -75,7 +86,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.fighter)
 
-        self.mage = QPushButton(self.widget)
+        self.mage = QPushButton(self.widget1)
         self.mage.setObjectName(u"mage")
         icon3 = QIcon()
         icon3.addFile(u":/Mage_Icon.webp", QSize(), QIcon.Normal, QIcon.Off)
@@ -84,7 +95,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.mage)
 
-        self.mm = QPushButton(self.widget)
+        self.mm = QPushButton(self.widget1)
         self.mm.setObjectName(u"mm")
         icon4 = QIcon()
         icon4.addFile(u":/Marksman_Icon.webp", QSize(), QIcon.Normal, QIcon.Off)
@@ -93,7 +104,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.mm)
 
-        self.sup = QPushButton(self.widget)
+        self.sup = QPushButton(self.widget1)
         self.sup.setObjectName(u"sup")
         icon5 = QIcon()
         icon5.addFile(u":/Support_Icon.webp", QSize(), QIcon.Normal, QIcon.Off)
@@ -102,22 +113,13 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.sup)
 
-
-        self.verticalLayout_2.addLayout(self.verticalLayout)
-
         self.verticalSpacer = QSpacerItem(20, 325, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
-        self.verticalLayout_2.addItem(self.verticalSpacer)
-
-        self.cls = QPushButton(self.widget)
-        self.cls.setObjectName(u"cls")
-        self.cls.setCheckable(True)
-
-        self.verticalLayout_2.addWidget(self.cls)
+        self.verticalLayout.addItem(self.verticalSpacer)
 
         self.widget_2 = QWidget(self.centralwidget)
         self.widget_2.setObjectName(u"widget_2")
-        self.widget_2.setGeometry(QRect(160, -20, 981, 731))
+        self.widget_2.setGeometry(QRect(160, -20, 1001, 731))
         self.widget_2.setStyleSheet(u"QWidget{\n"
 "background-color: rgb(0, 0, 255);\n"
 "}")
@@ -126,13 +128,52 @@ class Ui_MainWindow(object):
         self.stackedWidget.setGeometry(QRect(30, 30, 941, 681))
         self.stackedWidget.setFocusPolicy(Qt.StrongFocus)
         self.stackedWidget.setStyleSheet(u"\n"
-"background-color: rgb(255, 255, 255);\n"
-"")
+"background-color: rgb(255, 58, 24);")
+        self.page = QWidget()
+        self.page.setObjectName(u"page")
+        self.scrollArea = QScrollArea(self.page)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setGeometry(QRect(10, 20, 931, 661))
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 912, 1218))
+        self.scrollAreaWidgetContents.setStyleSheet(u"QScrollBar:vertical{\n"
+"border: none;\n"
+"background-color: rgb(59,59,90);\n"
+"width:14px;\n"
+"margin: 15 px 0 15px 0;\n"
+"border-radius: 0px;\n"
+"}")
+        self.verticalLayout_2 = QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.frame = QFrame(self.scrollAreaWidgetContents)
+        self.frame.setObjectName(u"frame")
+        self.frame.setMinimumSize(QSize(0, 1200))
+        self.frame.setStyleSheet(u"background-color: rgb(255, 0, 0);")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+        self.Saber_2 = QPushButton(self.frame)
+        self.Saber_2.setObjectName(u"Saber_2")
+        self.Saber_2.setGeometry(QRect(20, 60, 81, 23))
+        self.Saber_2.setStyleSheet(u"background-color: rgb(0, 170, 255);\n"
+"color: rgb(255, 255, 255);")
+        self.Saber_2.setCheckable(True)
+        self.label_9 = QLabel(self.frame)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setGeometry(QRect(20, 0, 81, 51))
+        self.label_9.setPixmap(QPixmap(u":/Saber.png"))
+        self.label_9.setScaledContents(True)
+
+        self.verticalLayout_2.addWidget(self.frame)
+
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+        self.stackedWidget.addWidget(self.page)
         self.assaspage = QWidget()
         self.assaspage.setObjectName(u"assaspage")
         self.label_3 = QLabel(self.assaspage)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(210, 10, 341, 41))
+        self.label_3.setGeometry(QRect(280, 10, 341, 41))
         font = QFont()
         font.setFamilies([u"Sitka Banner Semibold"])
         font.setPointSize(19)
@@ -144,7 +185,8 @@ class Ui_MainWindow(object):
         self.Saber = QPushButton(self.assaspage)
         self.Saber.setObjectName(u"Saber")
         self.Saber.setGeometry(QRect(40, 130, 75, 23))
-        self.Saber.setStyleSheet(u"color: rgb(0, 0, 0);")
+        self.Saber.setStyleSheet(u"background-color: rgb(0, 170, 255);\n"
+"color: rgb(255, 255, 255);")
         self.Saber.setCheckable(True)
         self.pushButton_2 = QPushButton(self.assaspage)
         self.pushButton_2.setObjectName(u"pushButton_2")
@@ -221,7 +263,7 @@ class Ui_MainWindow(object):
         self.saberpage.setObjectName(u"saberpage")
         self.widget_3 = QWidget(self.saberpage)
         self.widget_3.setObjectName(u"widget_3")
-        self.widget_3.setGeometry(QRect(10, 10, 921, 661))
+        self.widget_3.setGeometry(QRect(10, 20, 921, 651))
         self.widget_3.setStyleSheet(u"background-color: rgb(149, 0, 149);")
         self.heropic = QLabel(self.widget_3)
         self.heropic.setObjectName(u"heropic")
@@ -286,7 +328,7 @@ class Ui_MainWindow(object):
         self.skill1desc.setTextInteractionFlags(Qt.LinksAccessibleByKeyboard|Qt.LinksAccessibleByMouse|Qt.TextBrowserInteraction|Qt.TextEditable|Qt.TextEditorInteraction|Qt.TextSelectableByKeyboard|Qt.TextSelectableByMouse)
         self.skill2text = QLabel(self.widget_3)
         self.skill2text.setObjectName(u"skill2text")
-        self.skill2text.setGeometry(QRect(20, 390, 51, 16))
+        self.skill2text.setGeometry(QRect(20, 380, 61, 21))
         self.skill2text.setFont(font2)
         self.skill2text.setStyleSheet(u"color: rgb(85, 255, 127);")
         self.skill2text.setTextInteractionFlags(Qt.LinksAccessibleByKeyboard|Qt.LinksAccessibleByMouse|Qt.TextBrowserInteraction|Qt.TextEditable|Qt.TextEditorInteraction|Qt.TextSelectableByKeyboard|Qt.TextSelectableByMouse)
@@ -298,13 +340,13 @@ class Ui_MainWindow(object):
         self.skill2pic.setTextInteractionFlags(Qt.LinksAccessibleByKeyboard|Qt.LinksAccessibleByMouse|Qt.TextBrowserInteraction|Qt.TextEditable|Qt.TextEditorInteraction|Qt.TextSelectableByKeyboard|Qt.TextSelectableByMouse)
         self.skill2_name = QLabel(self.widget_3)
         self.skill2_name.setObjectName(u"skill2_name")
-        self.skill2_name.setGeometry(QRect(90, 400, 51, 16))
+        self.skill2_name.setGeometry(QRect(90, 390, 51, 16))
         self.skill2_name.setFont(font1)
         self.skill2_name.setStyleSheet(u"color: rgb(255, 255, 255);")
         self.skill2_name.setTextInteractionFlags(Qt.LinksAccessibleByKeyboard|Qt.LinksAccessibleByMouse|Qt.TextBrowserInteraction|Qt.TextEditable|Qt.TextEditorInteraction|Qt.TextSelectableByKeyboard|Qt.TextSelectableByMouse)
         self.skill2desc = QLabel(self.widget_3)
         self.skill2desc.setObjectName(u"skill2desc")
-        self.skill2desc.setGeometry(QRect(90, 420, 641, 51))
+        self.skill2desc.setGeometry(QRect(90, 410, 641, 51))
         self.skill2desc.setStyleSheet(u"color: rgb(255, 255, 255);")
         self.skill2desc.setWordWrap(True)
         self.skill2desc.setTextInteractionFlags(Qt.LinksAccessibleByKeyboard|Qt.LinksAccessibleByMouse|Qt.TextBrowserInteraction|Qt.TextEditable|Qt.TextEditorInteraction|Qt.TextSelectableByKeyboard|Qt.TextSelectableByMouse)
@@ -358,7 +400,6 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.cls.toggled.connect(MainWindow.close)
 
         self.stackedWidget.setCurrentIndex(0)
 
@@ -368,14 +409,17 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.cls.setText(QCoreApplication.translate("MainWindow", u"Close", None))
         self.label.setText("")
+        self.allhero.setText(QCoreApplication.translate("MainWindow", u"All ", None))
         self.assa.setText(QCoreApplication.translate("MainWindow", u"Assassins", None))
         self.tank.setText(QCoreApplication.translate("MainWindow", u"Tank", None))
         self.fighter.setText(QCoreApplication.translate("MainWindow", u"Fighter", None))
         self.mage.setText(QCoreApplication.translate("MainWindow", u"Mage", None))
         self.mm.setText(QCoreApplication.translate("MainWindow", u"Marksman", None))
         self.sup.setText(QCoreApplication.translate("MainWindow", u"Support", None))
-        self.cls.setText(QCoreApplication.translate("MainWindow", u"Close", None))
+        self.Saber_2.setText(QCoreApplication.translate("MainWindow", u"Saber", None))
+        self.label_9.setText("")
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Assassins", None))
         self.Saber.setText(QCoreApplication.translate("MainWindow", u"Saber", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
@@ -390,23 +434,22 @@ class Ui_MainWindow(object):
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Marksman", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Supports", None))
         self.heropic.setText("")
-        self.Passive_name_label.setText(QCoreApplication.translate("MainWindow", u"Lesbians", None))
+        self.Passive_name_label.setText(QCoreApplication.translate("MainWindow", u"-", None))
         self.Passivelabel.setText(QCoreApplication.translate("MainWindow", u"Passive", None))
         self.passivepic.setText("")
-        self.passivedesc.setText(QCoreApplication.translate("MainWindow", u"wtf", None))
+        self.passivedesc.setText(QCoreApplication.translate("MainWindow", u"-", None))
         self.skill1text.setText(QCoreApplication.translate("MainWindow", u"Skill 1", None))
         self.skill1pic.setText("")
-        self.skill1_name.setText(QCoreApplication.translate("MainWindow", u"Orbiting Swords", None))
-        self.skill1desc.setText(QCoreApplication.translate("MainWindow", u"Saber releases 5 swords that orbit around him and deal 80\u2013105 (+30% Extra Physical Attack) Physical Damage to nearby enemies on hit. The swords will retract back to him after a while.\n"
-"When the swords are present, Saber sends a sword toward his target on each attack, dealing 210\u2013260 (+60% Extra Physical Attack) Physical Damage to the target and 50% of the damage to other enemies it passes through (damage against minions is reduced to 50%). Each attack also reduces the cooldown of Charge by 1 second.", None))
+        self.skill1_name.setText(QCoreApplication.translate("MainWindow", u"-", None))
+        self.skill1desc.setText(QCoreApplication.translate("MainWindow", u"-", None))
         self.skill2text.setText(QCoreApplication.translate("MainWindow", u"Skill 2", None))
         self.skill2pic.setText("")
-        self.skill2_name.setText(QCoreApplication.translate("MainWindow", u"Charge", None))
-        self.skill2desc.setText(QCoreApplication.translate("MainWindow", u"Saber dashes in the target direction, dealing 75\u2013150 (+50% Extra Physical Attack) Physical Damage to enemies along the way while enhancing his next Basic Attack. The enhanced Basic Attack deals 75\u2013150 (+120% Total Physical Attack) Physical Damage and slows the target by 60% for 1 second.", None))
+        self.skill2_name.setText(QCoreApplication.translate("MainWindow", u"-", None))
+        self.skill2desc.setText(QCoreApplication.translate("MainWindow", u"-", None))
         self.ultimatetext.setText(QCoreApplication.translate("MainWindow", u"Ultimate", None))
         self.ultipic.setText("")
-        self.Ultimatename.setText(QCoreApplication.translate("MainWindow", u"Triple Sweep", None))
-        self.ultimatedesc.setText(QCoreApplication.translate("MainWindow", u"Saber charges at the target enemy hero, knocking them airborne for 1.2 seconds and striking them 3 times over the duration. The first two strikes deal 120\u2013180 (+100% Extra Physical Attack) Physical Damage each, while the third strike deals 240\u2013360 (+200% Extra Physical Attack) Physical Damage.", None))
+        self.Ultimatename.setText(QCoreApplication.translate("MainWindow", u"-", None))
+        self.ultimatedesc.setText(QCoreApplication.translate("MainWindow", u"-", None))
         self.specialskilltext.setText(QCoreApplication.translate("MainWindow", u"Special Skill", None))
         self.specialskilldesc.setText(QCoreApplication.translate("MainWindow", u"None", None))
         self.specialskillpic.setText(QCoreApplication.translate("MainWindow", u"None", None))

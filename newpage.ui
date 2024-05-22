@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1138</width>
+    <width>1259</width>
     <height>711</height>
    </rect>
   </property>
@@ -32,139 +32,158 @@ background-color: rgb(71, 142, 213);
 	color: rgb(255, 255, 255);
 }</string>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap resource="resources.qrc">:/mlbb.jpg</pixmap>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QPushButton" name="assa">
-         <property name="text">
-          <string>Assassins</string>
-         </property>
-         <property name="icon">
-          <iconset resource="resources.qrc">
-           <normaloff>:/Assassin_Icon.webp</normaloff>:/Assassin_Icon.webp</iconset>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="tank">
-         <property name="text">
-          <string>Tank</string>
-         </property>
-         <property name="icon">
-          <iconset resource="resources.qrc">
-           <normaloff>:/Tank_Icon.webp</normaloff>:/Tank_Icon.webp</iconset>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="fighter">
-         <property name="text">
-          <string>Fighter</string>
-         </property>
-         <property name="icon">
-          <iconset resource="resources.qrc">
-           <normaloff>:/Fighter_Icon.webp</normaloff>:/Fighter_Icon.webp</iconset>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="mage">
-         <property name="text">
-          <string>Mage</string>
-         </property>
-         <property name="icon">
-          <iconset resource="resources.qrc">
-           <normaloff>:/Mage_Icon.webp</normaloff>:/Mage_Icon.webp</iconset>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="mm">
-         <property name="text">
-          <string>Marksman</string>
-         </property>
-         <property name="icon">
-          <iconset resource="resources.qrc">
-           <normaloff>:/Marksman_Icon.webp</normaloff>:/Marksman_Icon.webp</iconset>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="sup">
-         <property name="text">
-          <string>Support</string>
-         </property>
-         <property name="icon">
-          <iconset resource="resources.qrc">
-           <normaloff>:/Support_Icon.webp</normaloff>:/Support_Icon.webp</iconset>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <spacer name="verticalSpacer">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>325</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QPushButton" name="cls">
-       <property name="text">
-        <string>Close</string>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    <widget class="QPushButton" name="cls">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>679</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>9</y>
+       <width>150</width>
+       <height>681</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resources.qrc">:/mlbb.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="allhero">
+        <property name="text">
+         <string>All </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="assa">
+        <property name="text">
+         <string>Assassins</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/Assassin_Icon.webp</normaloff>:/Assassin_Icon.webp</iconset>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="tank">
+        <property name="text">
+         <string>Tank</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/Tank_Icon.webp</normaloff>:/Tank_Icon.webp</iconset>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="fighter">
+        <property name="text">
+         <string>Fighter</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/Fighter_Icon.webp</normaloff>:/Fighter_Icon.webp</iconset>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="mage">
+        <property name="text">
+         <string>Mage</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/Mage_Icon.webp</normaloff>:/Mage_Icon.webp</iconset>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="mm">
+        <property name="text">
+         <string>Marksman</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/Marksman_Icon.webp</normaloff>:/Marksman_Icon.webp</iconset>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="sup">
+        <property name="text">
+         <string>Support</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/Support_Icon.webp</normaloff>:/Support_Icon.webp</iconset>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>325</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
    </widget>
    <widget class="QWidget" name="widget_2" native="true">
     <property name="geometry">
      <rect>
       <x>160</x>
       <y>-20</y>
-      <width>981</width>
+      <width>1001</width>
       <height>731</height>
      </rect>
     </property>
@@ -187,17 +206,110 @@ background-color: rgb(0, 0, 255);
      </property>
      <property name="styleSheet">
       <string notr="true">
-background-color: rgb(255, 255, 255);
-</string>
+background-color: rgb(255, 58, 24);</string>
      </property>
      <property name="currentIndex">
       <number>0</number>
      </property>
+     <widget class="QWidget" name="page">
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>931</width>
+         <height>661</height>
+        </rect>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>912</width>
+          <height>1218</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QScrollBar:vertical{
+border: none;
+background-color: rgb(59,59,90);
+width:14px;
+margin: 15 px 0 15px 0;
+border-radius: 0px;
+}</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1200</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 0, 0);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="Saber_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>60</y>
+              <width>81</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 170, 255);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Saber</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_9">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>0</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="resources.qrc">:/Saber.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
      <widget class="QWidget" name="assaspage">
       <widget class="QLabel" name="label_3">
        <property name="geometry">
         <rect>
-         <x>210</x>
+         <x>280</x>
          <y>10</y>
          <width>341</width>
          <height>41</height>
@@ -232,7 +344,8 @@ background-color: rgb(0, 170, 255);</string>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(0, 0, 0);</string>
+        <string notr="true">background-color: rgb(0, 170, 255);
+color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Saber</string>
@@ -481,9 +594,9 @@ background-color: rgb(0, 170, 255);</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>10</y>
+         <y>20</y>
          <width>921</width>
-         <height>661</height>
+         <height>651</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -532,7 +645,7 @@ background-color: rgb(0, 170, 255);</string>
          <string notr="true">color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Lesbians</string>
+         <string>-</string>
         </property>
         <property name="textInteractionFlags">
          <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextEditorInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -602,7 +715,7 @@ background-color: rgb(0, 170, 255);</string>
          <string notr="true">color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>wtf</string>
+         <string>-</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -677,7 +790,7 @@ background-color: rgb(0, 170, 255);</string>
          <string notr="true">color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Orbiting Swords</string>
+         <string>-</string>
         </property>
         <property name="textInteractionFlags">
          <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextEditorInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -696,8 +809,7 @@ background-color: rgb(0, 170, 255);</string>
          <string notr="true">color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Saber releases 5 swords that orbit around him and deal 80–105 (+30% Extra Physical Attack) Physical Damage to nearby enemies on hit. The swords will retract back to him after a while.
-When the swords are present, Saber sends a sword toward his target on each attack, dealing 210–260 (+60% Extra Physical Attack) Physical Damage to the target and 50% of the damage to other enemies it passes through (damage against minions is reduced to 50%). Each attack also reduces the cooldown of Charge by 1 second.</string>
+         <string>-</string>
         </property>
         <property name="wordWrap">
          <bool>true</bool>
@@ -710,9 +822,9 @@ When the swords are present, Saber sends a sword toward his target on each attac
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>390</y>
-          <width>51</width>
-          <height>16</height>
+          <y>380</y>
+          <width>61</width>
+          <height>21</height>
          </rect>
         </property>
         <property name="font">
@@ -758,7 +870,7 @@ When the swords are present, Saber sends a sword toward his target on each attac
         <property name="geometry">
          <rect>
           <x>90</x>
-          <y>400</y>
+          <y>390</y>
           <width>51</width>
           <height>16</height>
          </rect>
@@ -775,7 +887,7 @@ When the swords are present, Saber sends a sword toward his target on each attac
          <string notr="true">color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Charge</string>
+         <string>-</string>
         </property>
         <property name="textInteractionFlags">
          <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextEditorInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -785,7 +897,7 @@ When the swords are present, Saber sends a sword toward his target on each attac
         <property name="geometry">
          <rect>
           <x>90</x>
-          <y>420</y>
+          <y>410</y>
           <width>641</width>
           <height>51</height>
          </rect>
@@ -794,7 +906,7 @@ When the swords are present, Saber sends a sword toward his target on each attac
          <string notr="true">color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Saber dashes in the target direction, dealing 75–150 (+50% Extra Physical Attack) Physical Damage to enemies along the way while enhancing his next Basic Attack. The enhanced Basic Attack deals 75–150 (+120% Total Physical Attack) Physical Damage and slows the target by 60% for 1 second.</string>
+         <string>-</string>
         </property>
         <property name="wordWrap">
          <bool>true</bool>
@@ -872,7 +984,7 @@ When the swords are present, Saber sends a sword toward his target on each attac
          <string notr="true">color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Triple Sweep</string>
+         <string>-</string>
         </property>
         <property name="textInteractionFlags">
          <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextEditorInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -891,7 +1003,7 @@ When the swords are present, Saber sends a sword toward his target on each attac
          <string notr="true">color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Saber charges at the target enemy hero, knocking them airborne for 1.2 seconds and striking them 3 times over the duration. The first two strikes deal 120–180 (+100% Extra Physical Attack) Physical Damage each, while the third strike deals 240–360 (+200% Extra Physical Attack) Physical Damage.</string>
+         <string>-</string>
         </property>
         <property name="wordWrap">
          <bool>true</bool>
@@ -1000,22 +1112,5 @@ When the swords are present, Saber sends a sword toward his target on each attac
  <resources>
   <include location="resources.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>cls</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>MainWindow</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>86</x>
-     <y>695</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>90</x>
-     <y>734</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
