@@ -1,5 +1,5 @@
 from PySide6.QtCore import Qt
-from ui_items import Ui_MainWindow
+from items_ui import Ui_MainWindow
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QWidget
 from items_firstdb import *

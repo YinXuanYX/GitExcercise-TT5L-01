@@ -115,15 +115,17 @@ background-color: rgb(147, 172, 255);</string>
           <widget class="QLabel" name="WelcomeDescription">
            <property name="geometry">
             <rect>
-             <x>70</x>
-             <y>190</y>
-             <width>1091</width>
-             <height>211</height>
+             <x>40</x>
+             <y>150</y>
+             <width>1121</width>
+             <height>221</height>
             </rect>
            </property>
            <property name="font">
             <font>
-             <pointsize>14</pointsize>
+             <pointsize>19</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
             </font>
            </property>
            <property name="lineWidth">
@@ -132,11 +134,14 @@ background-color: rgb(147, 172, 255);</string>
            <property name="text">
             <string>Are you ready to elevate your Mobile Legends gameplay? Whether you're a seasoned veteran or just starting your journey in the Land of Dawn, mastering the right items can make all the difference between victory and defeat. Our comprehensive items guide is designed to provide you with detailed insights, strategies, and tips to optimize your hero builds and dominate the battlefield. </string>
            </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
            <property name="wordWrap">
             <bool>true</bool>
            </property>
           </widget>
-          <widget class="QWidget" name="">
+          <widget class="QWidget" name="layoutWidget">
            <property name="geometry">
             <rect>
              <x>70</x>
@@ -203,16 +208,16 @@ background-color: rgb(147, 172, 255);</string>
           <widget class="QSplitter" name="splitter">
            <property name="geometry">
             <rect>
-             <x>110</x>
-             <y>410</y>
-             <width>1011</width>
-             <height>300</height>
+             <x>90</x>
+             <y>379</y>
+             <width>1091</width>
+             <height>391</height>
             </rect>
            </property>
            <property name="orientation">
             <enum>Qt::Horizontal</enum>
            </property>
-           <widget class="QLabel" name="label_9">
+           <widget class="QLabel" name="bloodyretri_pic">
             <property name="minimumSize">
              <size>
               <width>40</width>
@@ -228,16 +233,22 @@ background-color: rgb(147, 172, 255);</string>
             <property name="scaledContents">
              <bool>false</bool>
             </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
            </widget>
-           <widget class="QLabel" name="label_10">
+           <widget class="QLabel" name="bladeofkibou_pic">
             <property name="text">
              <string/>
             </property>
             <property name="pixmap">
              <pixmap resource="resources.qrc">:/images/blade_of_kibou.jpeg</pixmap>
             </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
            </widget>
-           <widget class="QLabel" name="label_8">
+           <widget class="QLabel" name="geniuswand_pic">
             <property name="minimumSize">
              <size>
               <width>40</width>
@@ -250,11 +261,14 @@ background-color: rgb(147, 172, 255);</string>
             <property name="pixmap">
              <pixmap resource="resources.qrc">:/images/glowing_wand.jpg</pixmap>
             </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
            </widget>
           </widget>
          </widget>
          <widget class="QWidget" name="physical_page">
-          <widget class="QLabel" name="label_4">
+          <widget class="QLabel" name="Physical_pageIntro">
            <property name="geometry">
             <rect>
              <x>430</x>
@@ -274,7 +288,7 @@ background-color: rgb(147, 172, 255);</string>
             <string>PHYSICAL ITEMS PAGE</string>
            </property>
           </widget>
-          <widget class="QWidget" name="">
+          <widget class="QWidget" name="layoutWidget">
            <property name="geometry">
             <rect>
              <x>0</x>
@@ -853,7 +867,7 @@ background-color: rgb(147, 172, 255);</string>
             <set>Qt::AlignCenter</set>
            </property>
           </widget>
-          <widget class="QLabel" name="label_11">
+          <widget class="QLabel" name="ItemImage">
            <property name="geometry">
             <rect>
              <x>940</x>
@@ -866,7 +880,7 @@ background-color: rgb(147, 172, 255);</string>
             <string>ITEM IMAGE</string>
            </property>
           </widget>
-          <widget class="QWidget" name="">
+          <widget class="QWidget" name="layoutWidget">
            <property name="geometry">
             <rect>
              <x>20</x>
@@ -1032,6 +1046,35 @@ QPushButton:checked{
          <property name="topMargin">
           <number>20</number>
          </property>
+         <item>
+          <widget class="QPushButton" name="Homename">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>HOME</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/images/home_button.png</normaloff>:/images/home_button.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
          <item>
           <widget class="QPushButton" name="physicalname">
            <property name="text">
@@ -1214,6 +1257,29 @@ QPushButton:checked{
          <property name="topMargin">
           <number>20</number>
          </property>
+         <item>
+          <widget class="QPushButton" name="Homeicon">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/images/home_button.png</normaloff>:/images/home_button.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
          <item>
           <widget class="QPushButton" name="physicalicon">
            <property name="text">
