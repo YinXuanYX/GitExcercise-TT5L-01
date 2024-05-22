@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1439</width>
-    <height>865</height>
+    <width>1426</width>
+    <height>829</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -112,665 +112,644 @@ background-color: rgb(147, 172, 255);</string>
           <number>1</number>
          </property>
          <widget class="QWidget" name="Landing_Page">
-          <widget class="QLabel" name="WelcomeDescription">
-           <property name="geometry">
-            <rect>
-             <x>40</x>
-             <y>150</y>
-             <width>1121</width>
-             <height>221</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>19</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="lineWidth">
-            <number>1</number>
-           </property>
-           <property name="text">
-            <string>Are you ready to elevate your Mobile Legends gameplay? Whether you're a seasoned veteran or just starting your journey in the Land of Dawn, mastering the right items can make all the difference between victory and defeat. Our comprehensive items guide is designed to provide you with detailed insights, strategies, and tips to optimize your hero builds and dominate the battlefield. </string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="wordWrap">
-            <bool>true</bool>
-           </property>
-          </widget>
-          <widget class="QWidget" name="layoutWidget">
-           <property name="geometry">
-            <rect>
-             <x>70</x>
-             <y>20</y>
-             <width>1091</width>
-             <height>122</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_5">
-            <item>
-             <spacer name="horizontalSpacer">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>188</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <widget class="QLabel" name="welcome_text">
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>188</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="welcome_text">
+               <property name="minimumSize">
+                <size>
+                 <width>120</width>
+                 <height>120</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>1000</width>
+                 <height>1000</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>17</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>WELCOME TO THE ULTIMATE MLBB ITEMS GUIDE</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>188</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="WelcomeDescription">
+             <property name="font">
+              <font>
+               <pointsize>19</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="lineWidth">
+              <number>1</number>
+             </property>
+             <property name="text">
+              <string>Are you ready to elevate your Mobile Legends gameplay? Whether you're a seasoned veteran or just starting your journey in the Land of Dawn, mastering the right items can make all the difference between victory and defeat. Our comprehensive items guide is designed to provide you with detailed insights, strategies, and tips to optimize your hero builds and dominate the battlefield. </string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSplitter" name="splitter">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QLabel" name="bloodyretri_pic">
               <property name="minimumSize">
                <size>
-                <width>120</width>
-                <height>120</height>
+                <width>40</width>
+                <height>40</height>
                </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>1000</width>
-                <height>1000</height>
-               </size>
-              </property>
-              <property name="font">
-               <font>
-                <pointsize>15</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
               </property>
               <property name="text">
-               <string>WELCOME TO THE ULTIMATE MLBB ITEMS GUIDE</string>
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="resources.qrc">:/images/retri.jpg</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>false</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_3">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
+             <widget class="QLabel" name="bladeofkibou_pic">
+              <property name="text">
+               <string/>
               </property>
-              <property name="sizeHint" stdset="0">
+              <property name="pixmap">
+               <pixmap resource="resources.qrc">:/images/blade_of_kibou.jpeg</pixmap>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="geniuswand_pic">
+              <property name="minimumSize">
                <size>
-                <width>188</width>
-                <height>20</height>
+                <width>40</width>
+                <height>40</height>
                </size>
               </property>
-             </spacer>
-            </item>
-           </layout>
-          </widget>
-          <widget class="QSplitter" name="splitter">
-           <property name="geometry">
-            <rect>
-             <x>90</x>
-             <y>379</y>
-             <width>1091</width>
-             <height>391</height>
-            </rect>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <widget class="QLabel" name="bloodyretri_pic">
-            <property name="minimumSize">
-             <size>
-              <width>40</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="pixmap">
-             <pixmap resource="resources.qrc">:/images/retri.jpg</pixmap>
-            </property>
-            <property name="scaledContents">
-             <bool>false</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-           <widget class="QLabel" name="bladeofkibou_pic">
-            <property name="text">
-             <string/>
-            </property>
-            <property name="pixmap">
-             <pixmap resource="resources.qrc">:/images/blade_of_kibou.jpeg</pixmap>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-           <widget class="QLabel" name="geniuswand_pic">
-            <property name="minimumSize">
-             <size>
-              <width>40</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="pixmap">
-             <pixmap resource="resources.qrc">:/images/glowing_wand.jpg</pixmap>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </widget>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="resources.qrc">:/images/glowing_wand.jpg</pixmap>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
          </widget>
          <widget class="QWidget" name="physical_page">
-          <widget class="QLabel" name="Physical_pageIntro">
-           <property name="geometry">
-            <rect>
-             <x>430</x>
-             <y>10</y>
-             <width>331</width>
-             <height>51</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>15</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>PHYSICAL ITEMS PAGE</string>
-           </property>
-          </widget>
-          <widget class="QWidget" name="layoutWidget">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>70</y>
-             <width>1191</width>
-             <height>711</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_6">
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_6">
-              <property name="topMargin">
-               <number>0</number>
-              </property>
-              <item>
-               <widget class="QPushButton" name="BOD_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QLabel" name="Physical_pageIntro">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>120</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>PHYSICAL ITEMS PAGE</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="BOD_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Blade of Despair</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="melefic_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Blade of Despair</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="melefic_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Melefic Roar</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="GreatDragon_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Melefic Roar</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="GreatDragon_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Great Dragon Spear</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="SeaHalbert_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Great Dragon Spear</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="SeaHalbert_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Sea Halbert</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="RoseGold_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Sea Halbert</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="RoseGold_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Rose Gold Meteor</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="Bloodlust_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Rose Gold Meteor</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="Bloodlust_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Bloodlust Axe</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="Hunter_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Bloodlust Axe</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="Hunter_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Hunter Strike</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="Heptaseas_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Hunter Strike</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="Heptaseas_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Blade of Heptaseas</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="Windtalker_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <italic>false</italic>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Blade of Heptaseas</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="Windtalker_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <italic>false</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Windtalker</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_7">
-              <item>
-               <widget class="QPushButton" name="Endless_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Windtalker</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <widget class="QPushButton" name="Endless_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Endless Battle</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="Berserker_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Endless Battle</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="Berserker_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Berserker's Fury</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="Haas_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Berserker's Fury</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="Haas_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Hass's Claws</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="WarX_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Hass's Claws</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="WarX_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>War Axe</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="WON_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>War Axe</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="WON_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Wind of Nature</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="Golden_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Wind of Nature</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="Golden_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Golden Staff</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="Corrosion_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Golden Staff</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="Corrosion_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Corrosion Scythe</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="DHS_button">
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">QPushButton:checked{
+                 </property>
+                 <property name="text">
+                  <string>Corrosion Scythe</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="DHS_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
  background-color: rgb(255, 0, 17);
  color: #1F95EF;
  font-weight:bold;
 }</string>
-                </property>
-                <property name="text">
-                 <string>Demon Hunter Sword</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="autoExclusive">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </widget>
+                 </property>
+                 <property name="text">
+                  <string>Demon Hunter Sword</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
          </widget>
          <widget class="QWidget" name="magic_page">
           <widget class="QLabel" name="label_5">
@@ -839,124 +818,112 @@ background-color: rgb(147, 172, 255);</string>
           </widget>
          </widget>
          <widget class="QWidget" name="page">
-          <widget class="QLabel" name="ItemName">
-           <property name="geometry">
-            <rect>
-             <x>90</x>
-             <y>30</y>
-             <width>951</width>
-             <height>71</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>18</pointsize>
-             <weight>75</weight>
-             <italic>false</italic>
-             <bold>true</bold>
-             <underline>true</underline>
-            </font>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
-           </property>
-           <property name="text">
-            <string>SUPER_LONG_ITEM_NAME</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-          <widget class="QLabel" name="ItemImage">
-           <property name="geometry">
-            <rect>
-             <x>940</x>
-             <y>20</y>
-             <width>191</width>
-             <height>111</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>ITEM IMAGE</string>
-           </property>
-          </widget>
-          <widget class="QWidget" name="layoutWidget">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>150</y>
-             <width>1171</width>
-             <height>611</height>
-            </rect>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_8">
-            <item>
-             <widget class="QLabel" name="ItemName_2">
-              <property name="font">
-               <font>
-                <pointsize>14</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>Name</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="ItemType">
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>Type</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="ItemAttributes">
-              <property name="font">
-               <font>
-                <pointsize>12</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>Attributes</string>
-              </property>
-              <property name="wordWrap">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="ItemPassive">
-              <property name="font">
-               <font>
-                <pointsize>11</pointsize>
-                <weight>50</weight>
-                <bold>false</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string> Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passiveSuper_long_item_passiveSuper_long_item_passiveSuper_lon Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive g_item_passiveSuper_long_item_passive</string>
-              </property>
-              <property name="scaledContents">
-               <bool>false</bool>
-              </property>
-              <property name="wordWrap">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>ITEMIMAGE</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="ItemName">
+             <property name="font">
+              <font>
+               <pointsize>18</pointsize>
+               <weight>75</weight>
+               <italic>false</italic>
+               <bold>true</bold>
+               <underline>true</underline>
+              </font>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::LeftToRight</enum>
+             </property>
+             <property name="text">
+              <string>SUPER_LONG_ITEM_NAME</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="ItemName_2">
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="ItemAttributes">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Attributes</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="ItemType">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Type</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="ItemPassive">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string> Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passiveSuper_long_item_passiveSuper_long_item_passiveSuper_lon Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive g_item_passiveSuper_long_item_passive</string>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
         </widget>
        </item>
@@ -1191,6 +1158,12 @@ QPushButton:checked{
           <iconset resource="resources.qrc">
            <normaloff>:/images/log_out.png</normaloff>:/images/log_out.png</iconset>
          </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
          <property name="checkable">
           <bool>true</bool>
          </property>
@@ -1396,6 +1369,12 @@ QPushButton:checked{
           <iconset resource="resources.qrc">
            <normaloff>:/images/log_out.png</normaloff>:/images/log_out.png</iconset>
          </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
          <property name="checkable">
           <bool>true</bool>
          </property>
@@ -1411,38 +1390,6 @@ QPushButton:checked{
   <include location="resources.qrc"/>
  </resources>
  <connections>
-  <connection>
-   <sender>menu</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>icon_only_widget</receiver>
-   <slot>setHidden(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>252</x>
-     <y>41</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>45</x>
-     <y>402</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>menu</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>icon_name_widget</receiver>
-   <slot>setVisible(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>265</x>
-     <y>35</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>191</x>
-     <y>449</y>
-    </hint>
-   </hints>
-  </connection>
   <connection>
    <sender>bootsicon</sender>
    <signal>toggled(bool)</signal>
@@ -1600,6 +1547,38 @@ QPushButton:checked{
     <hint type="destinationlabel">
      <x>135</x>
      <y>770</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_only_widget</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>45</x>
+     <y>402</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>menu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>icon_name_widget</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>265</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>449</y>
     </hint>
    </hints>
   </connection>
