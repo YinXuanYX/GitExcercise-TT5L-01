@@ -85,7 +85,7 @@ class Ui_MainWindow(object):
         font1.setPointSize(15)
         font1.setBold(True)
         self.stackedWidget.setFont(font1)
-        self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 244, 202);\n"
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(221, 201, 255);\n"
 "\n"
 "")
         self.Landing_Page = QWidget()
@@ -161,6 +161,7 @@ class Ui_MainWindow(object):
         self.Physical_pageIntro.setObjectName(u"Physical_pageIntro")
         self.Physical_pageIntro.setMaximumSize(QSize(16777215, 120))
         self.Physical_pageIntro.setFont(font1)
+        self.Physical_pageIntro.setStyleSheet(u"background-color: rgb(204, 115, 255);")
         self.Physical_pageIntro.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_9.addWidget(self.Physical_pageIntro)
@@ -177,10 +178,20 @@ class Ui_MainWindow(object):
         font4.setBold(True)
         self.BOD_button.setFont(font4)
         self.BOD_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.BOD_button.setCheckable(True)
         self.BOD_button.setAutoExclusive(True)
 
@@ -190,10 +201,20 @@ class Ui_MainWindow(object):
         self.melefic_button.setObjectName(u"melefic_button")
         self.melefic_button.setFont(font4)
         self.melefic_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.melefic_button.setCheckable(True)
         self.melefic_button.setAutoExclusive(True)
 
@@ -203,10 +224,20 @@ class Ui_MainWindow(object):
         self.GreatDragon_button.setObjectName(u"GreatDragon_button")
         self.GreatDragon_button.setFont(font4)
         self.GreatDragon_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.GreatDragon_button.setCheckable(True)
         self.GreatDragon_button.setAutoExclusive(True)
 
@@ -216,10 +247,20 @@ class Ui_MainWindow(object):
         self.SeaHalbert_button.setObjectName(u"SeaHalbert_button")
         self.SeaHalbert_button.setFont(font4)
         self.SeaHalbert_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.SeaHalbert_button.setCheckable(True)
         self.SeaHalbert_button.setAutoExclusive(True)
 
@@ -229,10 +270,20 @@ class Ui_MainWindow(object):
         self.RoseGold_button.setObjectName(u"RoseGold_button")
         self.RoseGold_button.setFont(font4)
         self.RoseGold_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.RoseGold_button.setCheckable(True)
         self.RoseGold_button.setAutoExclusive(True)
 
@@ -242,10 +293,20 @@ class Ui_MainWindow(object):
         self.Bloodlust_button.setObjectName(u"Bloodlust_button")
         self.Bloodlust_button.setFont(font4)
         self.Bloodlust_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.Bloodlust_button.setCheckable(True)
         self.Bloodlust_button.setAutoExclusive(True)
 
@@ -255,10 +316,20 @@ class Ui_MainWindow(object):
         self.Hunter_button.setObjectName(u"Hunter_button")
         self.Hunter_button.setFont(font4)
         self.Hunter_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.Hunter_button.setCheckable(True)
         self.Hunter_button.setAutoExclusive(True)
 
@@ -268,10 +339,20 @@ class Ui_MainWindow(object):
         self.Heptaseas_button.setObjectName(u"Heptaseas_button")
         self.Heptaseas_button.setFont(font4)
         self.Heptaseas_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.Heptaseas_button.setCheckable(True)
         self.Heptaseas_button.setAutoExclusive(True)
 
@@ -285,10 +366,20 @@ class Ui_MainWindow(object):
         font5.setItalic(False)
         self.Windtalker_button.setFont(font5)
         self.Windtalker_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.Windtalker_button.setCheckable(True)
         self.Windtalker_button.setAutoExclusive(True)
 
@@ -303,10 +394,20 @@ class Ui_MainWindow(object):
         self.Endless_button.setObjectName(u"Endless_button")
         self.Endless_button.setFont(font4)
         self.Endless_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.Endless_button.setCheckable(True)
         self.Endless_button.setAutoExclusive(True)
 
@@ -316,10 +417,20 @@ class Ui_MainWindow(object):
         self.Berserker_button.setObjectName(u"Berserker_button")
         self.Berserker_button.setFont(font4)
         self.Berserker_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.Berserker_button.setCheckable(True)
         self.Berserker_button.setAutoExclusive(True)
 
@@ -329,10 +440,20 @@ class Ui_MainWindow(object):
         self.Haas_button.setObjectName(u"Haas_button")
         self.Haas_button.setFont(font4)
         self.Haas_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.Haas_button.setCheckable(True)
         self.Haas_button.setAutoExclusive(True)
 
@@ -342,10 +463,20 @@ class Ui_MainWindow(object):
         self.WarX_button.setObjectName(u"WarX_button")
         self.WarX_button.setFont(font4)
         self.WarX_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.WarX_button.setCheckable(True)
         self.WarX_button.setAutoExclusive(True)
 
@@ -355,10 +486,20 @@ class Ui_MainWindow(object):
         self.WON_button.setObjectName(u"WON_button")
         self.WON_button.setFont(font4)
         self.WON_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.WON_button.setCheckable(True)
         self.WON_button.setAutoExclusive(True)
 
@@ -368,10 +509,20 @@ class Ui_MainWindow(object):
         self.Golden_button.setObjectName(u"Golden_button")
         self.Golden_button.setFont(font4)
         self.Golden_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.Golden_button.setCheckable(True)
         self.Golden_button.setAutoExclusive(True)
 
@@ -381,10 +532,20 @@ class Ui_MainWindow(object):
         self.Corrosion_button.setObjectName(u"Corrosion_button")
         self.Corrosion_button.setFont(font4)
         self.Corrosion_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.Corrosion_button.setCheckable(True)
         self.Corrosion_button.setAutoExclusive(True)
 
@@ -394,10 +555,20 @@ class Ui_MainWindow(object):
         self.DHS_button.setObjectName(u"DHS_button")
         self.DHS_button.setFont(font4)
         self.DHS_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(255, 0, 17);\n"
+" background-color: rgb(146, 74, 255);\n"
 " color: #1F95EF;\n"
 " font-weight:bold;\n"
-"}")
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
         self.DHS_button.setCheckable(True)
         self.DHS_button.setAutoExclusive(True)
 

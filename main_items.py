@@ -1,10 +1,10 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QWidget
 import sys
-from items import MySideBar
+from items import ItemsGuide
 
 app = QApplication(sys.argv)
 
-window = MySideBar()
+window = ItemsGuide()
 
 window.show()
 app.exec()
