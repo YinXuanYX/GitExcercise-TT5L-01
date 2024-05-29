@@ -1,5 +1,12 @@
 <RCC>
   <qresource>
+    <file>Alucard.jpg</file>
+    <file>Pursuit.png</file>
+    <file>Dance_of_Death.png</file>
+    <file>Dance_of_Blades.png</file>
+    <file>Shadow_Assault.png</file>
+    <file>Shadow_Combo.png</file>
+    <file>Karina.jpg</file>
     <file>Orbiting_Swords.png</file>
     <file>Charge.png</file>
     <file>Triple_Sweep.png</file>
