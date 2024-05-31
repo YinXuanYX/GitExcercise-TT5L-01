@@ -4,6 +4,7 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QWidget
 from PySide6.QtSql import *
 from PySide6.QtGui import QPixmap, QIcon
 import sqlite3
+from functools import partial
 
 
 
@@ -19,11 +20,11 @@ class heroinfo(QMainWindow,Ui_MainWindow):
         self.fighter.clicked.connect(self.fightpg)
         self.mm.clicked.connect(self.marskmpg)
         self.sup.clicked.connect(self.suppg)
-        self.Saber.clicked.connect(self.saberpg)
-        self.saber.clicked.connect(self.saberpg)
-        self.Karina.clicked.connect(self.karinapg)
-        self.Alucard.clicked.connect(self.Alucardpg)
-        
+        self.Saber.clicked.connect(partial(self.saberpg, 1))
+        self.saber.clicked.connect(partial(self.saberpg, 1))
+        self.Karina.clicked.connect(partial(self.saberpg, 2))
+        self.Alucard.clicked.connect(partial(self.saberpg, 3))
+        self.Fanny.clicked.connect(partial(self.saberpg, 4))
       
     def allpg(self):
         self.stackedWidget.setCurrentIndex(0)
@@ -46,7 +47,7 @@ class heroinfo(QMainWindow,Ui_MainWindow):
     def suppg(self):
         self.stackedWidget.setCurrentIndex(6)
 
-    def saberpg(self):
+    def saberpg(self, item_id, *args):
         self.stackedWidget.setCurrentIndex(7)
         conn = sqlite3.connect('heroes.db')
         cursor = conn.cursor()
@@ -56,15 +57,17 @@ class heroinfo(QMainWindow,Ui_MainWindow):
         self.skill2pic.setPixmap(QPixmap(u":/Charge.png")) 
         self.ultipic.setPixmap(QPixmap(u":/Triple_Sweep.png"))
 
-        cursor.execute('SELECT Passive_name, Passive, Skill_1_name, Skill_1, Skill_2_name, Skill_2, Skill_3_name, Skill_3, Ultimate_name, Ultimate FROM heroes WHERE Id = 1')
+        cursor.execute('SELECT Passive_name, Passive, Skill_1_name, Skill_1, Skill_2_name, Skill_2, Skill_3_name, Skill_3, Ultimate_name, Ultimate, Heroimage, passive_image, skill1_image, skill2_image, ultimate_image FROM heroes WHERE Id = ?', (item_id,))
         result = cursor.fetchone()
 
         if result:
-            passive_name, passive, \
-            skill_1_name, skill_1, \
-            skill_2_name, skill_2, \
-            skill_3_name, skill_3, \
-            ultimate_name, ultimate = result
+            (passive_name, passive, 
+             skill_1_name, skill_1, 
+             skill_2_name, skill_2, 
+             skill_3_name, skill_3, 
+             ultimate_name, ultimate, 
+             Heroimage, passive_image, 
+             skill1_image, skill2_image, ultimate_image) = result
             
             self.Passive_name_label.setText(f"{passive_name}")
             self.passivedesc.setText(f" {passive}")
@@ -76,78 +79,14 @@ class heroinfo(QMainWindow,Ui_MainWindow):
             self.specialskilldesc.setText(f" {skill_3}")
             self.Ultimatename.setText(f" {ultimate_name}")
             self.ultimatedesc.setText(f" {ultimate}")
+            self.heropic.setPixmap(QPixmap(f":/{Heroimage}"))
+            self.passivepic.setPixmap(QPixmap(f":/{passive_image}"))
+            self.skill1pic.setPixmap(QPixmap(f":/{skill1_image}"))
+            self.skill2pic.setPixmap(QPixmap(f":/{skill2_image}"))
+            self.ultipic.setPixmap(QPixmap(f":/{ultimate_image}"))
         else:
             self.Passive_name_label.setText("No passive name found.")
 
         conn.close()
         
-    def karinapg(self):
-        self.stackedWidget.setCurrentIndex(7)
-        conn = sqlite3.connect('heroes.db')
-        cursor = conn.cursor()
-        self.heropic.setPixmap(QPixmap(u":/Karina.jpg"))
-        self.passivepic.setPixmap(QPixmap(u":/Shadow_Combo.png"))
-        self.skill1pic.setPixmap(QPixmap(u":/Dance_of_Blades.png"))
-        self.skill2pic.setPixmap(QPixmap(u":/Dance_of_Death.png")) 
-        self.ultipic.setPixmap(QPixmap(u":/Shadow_Assault.png")) 
-
-        cursor.execute('SELECT Passive_name, Passive, Skill_1_name, Skill_1, Skill_2_name, Skill_2, Skill_3_name, Skill_3, Ultimate_name, Ultimate FROM heroes WHERE Id = 2')
-        result = cursor.fetchone()
-
-        if result:
-            passive_name, passive, \
-            skill_1_name, skill_1, \
-            skill_2_name, skill_2, \
-            skill_3_name, skill_3, \
-            ultimate_name, ultimate = result
-            
-            self.Passive_name_label.setText(f"{passive_name}")
-            self.passivedesc.setText(f" {passive}")
-            self.skill1_name.setText(f" {skill_1_name}")
-            self.skill1desc.setText(f" {skill_1}")
-            self.skill2_name.setText(f" {skill_2_name}")
-            self.skill2desc.setText(f" {skill_2}")
-            self.Specialskillname.setText(f" {skill_3_name}")
-            self.specialskilldesc.setText(f" {skill_3}")
-            self.Ultimatename.setText(f" {ultimate_name}")
-            self.ultimatedesc.setText(f" {ultimate}")
-        else:
-            self.Passive_name_label.setText("No passive name found.")
-
-        conn.close()
-
-    def Alucardpg(self):
-        self.stackedWidget.setCurrentIndex(7)
-        conn = sqlite3.connect('heroes.db')
-        cursor = conn.cursor()
-        self.heropic.setPixmap(QPixmap(u":/Alucard.jpg"))
-        self.passivepic.setPixmap(QPixmap(u":/Pursuit.jpg"))
-        self.skill1pic.setPixmap(QPixmap(u":/Groundsplitter.jpg"))
-        self.skill2pic.setPixmap(QPixmap(u":/Whirling_Smash.jpg")) 
-        self.ultipic.setPixmap(QPixmap(u":/Fission_Wave.jpg")) 
-
-        cursor.execute('SELECT Passive_name, Passive, Skill_1_name, Skill_1, Skill_2_name, Skill_2, Skill_3_name, Skill_3, Ultimate_name, Ultimate FROM heroes WHERE Id = 3')
-        result = cursor.fetchone()
-
-        if result:
-            passive_name, passive, \
-            skill_1_name, skill_1, \
-            skill_2_name, skill_2, \
-            skill_3_name, skill_3, \
-            ultimate_name, ultimate = result
-            
-            self.Passive_name_label.setText(f"{passive_name}")
-            self.passivedesc.setText(f" {passive}")
-            self.skill1_name.setText(f" {skill_1_name}")
-            self.skill1desc.setText(f" {skill_1}")
-            self.skill2_name.setText(f" {skill_2_name}")
-            self.skill2desc.setText(f" {skill_2}")
-            self.Specialskillname.setText(f" {skill_3_name}")
-            self.specialskilldesc.setText(f" {skill_3}")
-            self.Ultimatename.setText(f" {ultimate_name}")
-            self.ultimatedesc.setText(f" {ultimate}")
-        else:
-            self.Passive_name_label.setText("No passive name found.")
-
-        conn.close()
-
+ 

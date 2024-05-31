@@ -1,5 +1,17 @@
 <RCC>
   <qresource>
+    <file>Ninjutsu_Phantom_Shuriken.png</file>
+    <file>Ninjutsu_Quad_Shadow.png</file>
+    <file>Ninjutsu_Trace_of_Shadow.png</file>
+    <file>Ougi_Shadow_Kill.png</file>
+    <file>Fission_Wave.png</file>
+    <file>Groundsplitter.png</file>
+    <file>Whirling_Smash.png</file>
+    <file>fanny.png</file>
+    <file>Air_Superiority.png</file>
+    <file>Tornado_Strike.png</file>
+    <file>Steel_Cable.png</file>
+    <file>Cut_Throat.png</file>
     <file>Alucard.jpg</file>
     <file>Pursuit.png</file>
     <file>Dance_of_Death.png</file>

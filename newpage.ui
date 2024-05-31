@@ -60,6 +60,12 @@ background-color: rgb(71, 142, 213);
         <property name="text">
          <string>All </string>
         </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -72,6 +78,9 @@ background-color: rgb(71, 142, 213);
           <normaloff>:/Assassin_Icon.webp</normaloff>:/Assassin_Icon.webp</iconset>
         </property>
         <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
          <bool>true</bool>
         </property>
        </widget>
@@ -88,6 +97,9 @@ background-color: rgb(71, 142, 213);
         <property name="checkable">
          <bool>true</bool>
         </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -100,6 +112,9 @@ background-color: rgb(71, 142, 213);
           <normaloff>:/Fighter_Icon.webp</normaloff>:/Fighter_Icon.webp</iconset>
         </property>
         <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
          <bool>true</bool>
         </property>
        </widget>
@@ -116,6 +131,9 @@ background-color: rgb(71, 142, 213);
         <property name="checkable">
          <bool>true</bool>
         </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -130,6 +148,9 @@ background-color: rgb(71, 142, 213);
         <property name="checkable">
          <bool>true</bool>
         </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
        </widget>
       </item>
       <item>
@@ -142,6 +163,9 @@ background-color: rgb(71, 142, 213);
           <normaloff>:/Support_Icon.webp</normaloff>:/Support_Icon.webp</iconset>
         </property>
         <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="autoExclusive">
          <bool>true</bool>
         </property>
        </widget>
@@ -274,7 +298,10 @@ color: rgb(255, 255, 255);</string>
              <string>Saber</string>
             </property>
             <property name="checkable">
-             <bool>false</bool>
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
             </property>
            </widget>
            <widget class="QLabel" name="label_9">
@@ -313,7 +340,10 @@ color: rgb(255, 255, 255);</string>
              <string>Karina</string>
             </property>
             <property name="checkable">
-             <bool>false</bool>
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
             </property>
            </widget>
            <widget class="QPushButton" name="Alucard">
@@ -335,11 +365,14 @@ color: rgb(255, 255, 255);</string>
             <property name="checkable">
              <bool>true</bool>
             </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
            </widget>
            <widget class="QPushButton" name="Hayabusa">
             <property name="geometry">
              <rect>
-              <x>340</x>
+              <x>440</x>
               <y>60</y>
               <width>81</width>
               <height>23</height>
@@ -355,11 +388,14 @@ color: rgb(255, 255, 255);</string>
             <property name="checkable">
              <bool>true</bool>
             </property>
+            <property name="autoExclusive">
+             <bool>true</bool>
+            </property>
            </widget>
            <widget class="QPushButton" name="Fanny">
             <property name="geometry">
              <rect>
-              <x>440</x>
+              <x>340</x>
               <y>60</y>
               <width>81</width>
               <height>23</height>
@@ -373,6 +409,9 @@ color: rgb(255, 255, 255);</string>
              <string>Fanny</string>
             </property>
             <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
              <bool>true</bool>
             </property>
            </widget>
@@ -393,7 +432,7 @@ color: rgb(255, 255, 255);</string>
              <string>Natalia</string>
             </property>
             <property name="checkable">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
            </widget>
            <widget class="QLabel" name="label_10">
@@ -429,6 +468,25 @@ color: rgb(255, 255, 255);</string>
             </property>
             <property name="pixmap">
              <pixmap resource="resources.qrc">:/Alucard.jpg</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_12">
+            <property name="geometry">
+             <rect>
+              <x>340</x>
+              <y>0</y>
+              <width>81</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="resources.qrc">:/fanny.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
