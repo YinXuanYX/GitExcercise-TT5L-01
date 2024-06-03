@@ -1,6 +1,6 @@
 from PySide6.QtCore import Qt
 from items_ui import Ui_MainWindow
-from PySide6.QtGui import QIcon
+from PySide6.QtGui import QIcon, QPixmap
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QWidget
 from PySide6.QtSql import *
 import sqlite3
@@ -72,46 +72,79 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
         self.Feather_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 31))
         self.Winter_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 32))
         self.Enchanted_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 33))
+
+        #defense buttons
+        self.radiant_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 34))
+        self.twilight_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 35))
+        self.bruteforce_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 36))
+        self.immo_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 37))
+        self.dominance_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 38))
+        self.athena_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 39))
+        self.Oracle_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 40))
+        self.antique_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 41))
+        self.Guardian_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 42))
+        self.cursehelmet_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 43))
+        self.thunder_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 44))
+        self.queenswings_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 45))
+        self.Bladearmor_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 46))
+        
+        #movement buttons
+        self.demonBoots_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 47))
+        self.RapidBoots_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 48))
+        self.swiftboots_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 49))
+        self.ArcaneBoots_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 50))
+        self.MagicBoots_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 51))
+        self.ToughBoots_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 52))
+        self.WarriorBoots_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 53))
+        self.FlameRetri_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 54))
+        self.IceRetri_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 55))
+        self.BloodyRetri_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 56))
+        self.Conceal_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 57))
+        self.Encourage_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 58))
+        self.Favour_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 59))
+        self.Dire_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 60))
         
 
 
     def switch_to_LandingPage(self):
         self.stackedWidget.setCurrentIndex(0)
     def switch_to_PhysicalPage(self):
-        self.stackedWidget.setCurrentIndex(1)
-
-    def switch_to_MagicPage(self):
         self.stackedWidget.setCurrentIndex(2)
 
-    def switch_to_DefensePage(self):
+    def switch_to_MagicPage(self):
         self.stackedWidget.setCurrentIndex(3)
+
+    def switch_to_DefensePage(self):
+        self.stackedWidget.setCurrentIndex(4)
     
     def switch_to_MovementPage(self):
-        self.stackedWidget.setCurrentIndex(4)
+        self.stackedWidget.setCurrentIndex(5)
 
 
     #*args allows the thing to accept any number of additional arguments, solve the issue of receiving more arguments than expected from the clicked signal. Basically for the double digit.
 
     def switch_to_ItemInfoPage(self, item_id, *args):
-        self.stackedWidget.setCurrentIndex(5)
+        self.stackedWidget.setCurrentIndex(6)
         conn = sqlite3.connect('ITEAMREAL.db')
         cursor = conn.cursor()
 
         # Ensure the item_id is passed as a tuple
-        cursor.execute('SELECT name, attributes, passive, type FROM items WHERE Id = ?', (item_id,))
+        cursor.execute('SELECT name, attributes, passive, type, picture FROM items WHERE Id = ?', (item_id,))
         result = cursor.fetchone()
 
         if result:
             name, \
             attributes, \
             passive, \
-            type = result
+            type, \
+            picture = result
             
             self.ItemName.setText(f"{name}")
             self.ItemName_2.setText(f" {name}")
             self.ItemAttributes.setText(f" {attributes}")
             self.ItemType.setText(f" {type}")
             self.ItemPassive.setText(f" {passive}")
+            self.ItemIMG.setPixmap(QPixmap(f":images/{picture}"))
         else:
             self.ItemName.setText("No Item Found")
 

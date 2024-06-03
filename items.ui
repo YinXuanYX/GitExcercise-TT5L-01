@@ -104,13 +104,12 @@ background-color: rgb(147, 172, 255);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(221, 201, 255);
-background-color: rgb(110, 188, 255);
+          <string notr="true">background-color: rgb(207, 207, 207);
 
 </string>
          </property>
          <property name="currentIndex">
-          <number>1</number>
+          <number>6</number>
          </property>
          <widget class="QWidget" name="Landing_Page">
           <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -198,18 +197,18 @@ background-color: rgb(110, 188, 255);
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
-             <widget class="QLabel" name="bloodyretri_pic">
+             <widget class="QLabel" name="label_4">
               <property name="minimumSize">
                <size>
-                <width>40</width>
-                <height>40</height>
+                <width>0</width>
+                <height>350</height>
                </size>
               </property>
               <property name="text">
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap resource="resources.qrc">:/images/retri.jpg</pixmap>
+               <pixmap resource="resources.qrc">:/images/images.jpeg</pixmap>
               </property>
               <property name="scaledContents">
                <bool>false</bool>
@@ -218,29 +217,12 @@ background-color: rgb(110, 188, 255);
                <set>Qt::AlignCenter</set>
               </property>
              </widget>
-             <widget class="QLabel" name="bladeofkibou_pic">
+             <widget class="QLabel" name="label_5">
               <property name="text">
                <string/>
               </property>
               <property name="pixmap">
                <pixmap resource="resources.qrc">:/images/blade_of_kibou.jpeg</pixmap>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-             <widget class="QLabel" name="geniuswand_pic">
-              <property name="minimumSize">
-               <size>
-                <width>40</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="pixmap">
-               <pixmap resource="resources.qrc">:/images/glowing_wand.jpg</pixmap>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -264,7 +246,7 @@ background-color: rgb(110, 188, 255);
               <property name="geometry">
                <rect>
                 <x>0</x>
-                <y>-26</y>
+                <y>0</y>
                 <width>1222</width>
                 <height>1222</height>
                </rect>
@@ -479,43 +461,6 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="RoseGold_button">
-                 <property name="font">
-                  <font>
-                   <pointsize>14</pointsize>
-                   <weight>75</weight>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton:checked{
- background-color: rgb(146, 74, 255);
- color: #1F95EF;
- font-weight:bold;
-}
-
-QPushButton:hover{
- background-color: rgb(206, 121, 255);
-}
-
-QPushButton{
- background-color: rgb(135, 88, 255);
- color:white;
-}
-</string>
-                 </property>
-                 <property name="text">
-                  <string>Rose Gold Meteor</string>
-                 </property>
-                 <property name="checkable">
-                  <bool>true</bool>
-                 </property>
-                 <property name="autoExclusive">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item>
                 <widget class="QPushButton" name="Bloodlust_button">
                  <property name="font">
                   <font>
@@ -580,6 +525,43 @@ QPushButton{
                  </property>
                  <property name="text">
                   <string>Hunter Strike</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="RoseGold_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Rose Gold Meteor</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1622,7 +1604,7 @@ QPushButton{
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(172, 119, 65);</string>
+              <string notr="true">background-color: rgb(158, 158, 158);</string>
              </property>
              <property name="text">
               <string>DEFENSE ITEMS PAGE</string>
@@ -2147,7 +2129,7 @@ QPushButton{
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true">background-color: rgb(206, 206, 0);</string>
+                <string notr="true">background-color: rgb(245, 229, 255);</string>
                </property>
                <property name="text">
                 <string>MOVEMENT ITEMS PAGE</string>
@@ -2703,7 +2685,7 @@ QPushButton{
               </font>
              </property>
              <property name="text">
-              <string>ITEMIMAGE</string>
+              <string>ITEM IMAGE</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
@@ -2736,10 +2718,13 @@ QPushButton{
             <widget class="QLabel" name="ItemName_2">
              <property name="font">
               <font>
-               <pointsize>14</pointsize>
+               <pointsize>18</pointsize>
                <weight>75</weight>
                <bold>true</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(210, 255, 206);</string>
              </property>
              <property name="text">
               <string>Name</string>
@@ -2750,10 +2735,13 @@ QPushButton{
             <widget class="QLabel" name="ItemAttributes">
              <property name="font">
               <font>
-               <pointsize>14</pointsize>
+               <pointsize>16</pointsize>
                <weight>75</weight>
                <bold>true</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 255, 255);</string>
              </property>
              <property name="text">
               <string>Attributes</string>
@@ -2767,10 +2755,13 @@ QPushButton{
             <widget class="QLabel" name="ItemType">
              <property name="font">
               <font>
-               <pointsize>14</pointsize>
+               <pointsize>18</pointsize>
                <weight>75</weight>
                <bold>true</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 170, 255);</string>
              </property>
              <property name="text">
               <string>Type</string>
@@ -2785,6 +2776,9 @@ QPushButton{
                <weight>50</weight>
                <bold>false</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(160, 128, 255);</string>
              </property>
              <property name="text">
               <string> Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passiveSuper_long_item_passiveSuper_long_item_passiveSuper_lon Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive Super_long_item_passive g_item_passiveSuper_long_item_passive</string>
@@ -2928,7 +2922,7 @@ QPushButton:checked{
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/images/melific.jpg</normaloff>:/images/melific.jpg</iconset>
+             <normaloff>:/images/Blade_of_Despair.webp</normaloff>:/images/Blade_of_Despair.webp</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -2951,7 +2945,7 @@ QPushButton:checked{
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/images/glowing_wand.jpg</normaloff>:/images/glowing_wand.jpg</iconset>
+             <normaloff>:/images/Genius_Wand.webp</normaloff>:/images/Genius_Wand.webp</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -2974,7 +2968,7 @@ QPushButton:checked{
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/images/blade_armour.jpg</normaloff>:/images/blade_armour.jpg</iconset>
+             <normaloff>:/images/Antique_Cuirass.webp</normaloff>:/images/Antique_Cuirass.webp</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -2997,7 +2991,7 @@ QPushButton:checked{
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/images/movement.jpg</normaloff>:/images/movement.jpg</iconset>
+             <normaloff>:/images/Swift_Boots.webp</normaloff>:/images/Swift_Boots.webp</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -3139,7 +3133,7 @@ QPushButton:checked{
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/images/melific.jpg</normaloff>:/images/melific.jpg</iconset>
+             <normaloff>:/images/Blade_of_Despair.webp</normaloff>:/images/Blade_of_Despair.webp</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -3162,7 +3156,7 @@ QPushButton:checked{
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/images/glowing_wand.jpg</normaloff>:/images/glowing_wand.jpg</iconset>
+             <normaloff>:/images/Genius_Wand.webp</normaloff>:/images/Genius_Wand.webp</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -3185,7 +3179,7 @@ QPushButton:checked{
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/images/blade_armour.jpg</normaloff>:/images/blade_armour.jpg</iconset>
+             <normaloff>:/images/Antique_Cuirass.webp</normaloff>:/images/Antique_Cuirass.webp</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -3208,7 +3202,7 @@ QPushButton:checked{
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/images/movement.jpg</normaloff>:/images/movement.jpg</iconset>
+             <normaloff>:/images/Swift_Boots.webp</normaloff>:/images/Swift_Boots.webp</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -3267,6 +3261,7 @@ QPushButton:checked{
  </widget>
  <resources>
   <include location="resources.qrc"/>
+  <include location="../../Users/tanyi/.designer/backup/resources.qrc"/>
  </resources>
  <connections>
   <connection>

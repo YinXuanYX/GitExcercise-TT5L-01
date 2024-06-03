@@ -15,17 +15,18 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QGridLayout, QHBoxLayout, QLabel,
-    QLineEdit, QMainWindow, QPushButton, QSizePolicy,
-    QSpacerItem, QSplitter, QStackedWidget, QVBoxLayout,
-    QWidget)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QLabel, QLineEdit, QMainWindow, QPushButton,
+    QScrollArea, QSizePolicy, QSpacerItem, QSplitter,
+    QStackedWidget, QVBoxLayout, QWidget)
+import resources_rc
 import resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1426, 854)
+        MainWindow.resize(1439, 860)
         MainWindow.setStyleSheet(u"\n"
 "background-color: rgb(147, 172, 255);")
         self.centralwidget = QWidget(MainWindow)
@@ -85,8 +86,7 @@ class Ui_MainWindow(object):
         font1.setPointSize(15)
         font1.setBold(True)
         self.stackedWidget.setFont(font1)
-        self.stackedWidget.setStyleSheet(u"background-color: rgb(221, 201, 255);\n"
-"background-color: rgb(110, 188, 255);\n"
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(207, 207, 207);\n"
 "\n"
 "")
         self.Landing_Page = QWidget()
@@ -132,28 +132,49 @@ class Ui_MainWindow(object):
         self.splitter = QSplitter(self.Landing_Page)
         self.splitter.setObjectName(u"splitter")
         self.splitter.setOrientation(Qt.Horizontal)
-        self.bloodyretri_pic = QLabel(self.splitter)
-        self.bloodyretri_pic.setObjectName(u"bloodyretri_pic")
-        self.bloodyretri_pic.setMinimumSize(QSize(40, 40))
-        self.bloodyretri_pic.setPixmap(QPixmap(u":/images/retri.jpg"))
-        self.bloodyretri_pic.setScaledContents(False)
-        self.bloodyretri_pic.setAlignment(Qt.AlignCenter)
-        self.splitter.addWidget(self.bloodyretri_pic)
-        self.bladeofkibou_pic = QLabel(self.splitter)
-        self.bladeofkibou_pic.setObjectName(u"bladeofkibou_pic")
-        self.bladeofkibou_pic.setPixmap(QPixmap(u":/images/blade_of_kibou.jpeg"))
-        self.bladeofkibou_pic.setAlignment(Qt.AlignCenter)
-        self.splitter.addWidget(self.bladeofkibou_pic)
-        self.geniuswand_pic = QLabel(self.splitter)
-        self.geniuswand_pic.setObjectName(u"geniuswand_pic")
-        self.geniuswand_pic.setMinimumSize(QSize(40, 40))
-        self.geniuswand_pic.setPixmap(QPixmap(u":/images/glowing_wand.jpg"))
-        self.geniuswand_pic.setAlignment(Qt.AlignCenter)
-        self.splitter.addWidget(self.geniuswand_pic)
+        self.label_4 = QLabel(self.splitter)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setMinimumSize(QSize(0, 350))
+        self.label_4.setPixmap(QPixmap(u":/images/images.jpeg"))
+        self.label_4.setScaledContents(False)
+        self.label_4.setAlignment(Qt.AlignCenter)
+        self.splitter.addWidget(self.label_4)
+        self.label_5 = QLabel(self.splitter)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setPixmap(QPixmap(u":/images/blade_of_kibou.jpeg"))
+        self.label_5.setAlignment(Qt.AlignCenter)
+        self.splitter.addWidget(self.label_5)
 
         self.verticalLayout_10.addWidget(self.splitter)
 
         self.stackedWidget.addWidget(self.Landing_Page)
+        self.page_2 = QWidget()
+        self.page_2.setObjectName(u"page_2")
+        self.verticalLayout_21 = QVBoxLayout(self.page_2)
+        self.verticalLayout_21.setObjectName(u"verticalLayout_21")
+        self.scrollArea = QScrollArea(self.page_2)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setStyleSheet(u"background-color: rgb(85, 0, 127);")
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 1222, 1222))
+        self.verticalLayout_22 = QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_22.setObjectName(u"verticalLayout_22")
+        self.frame = QFrame(self.scrollAreaWidgetContents)
+        self.frame.setObjectName(u"frame")
+        self.frame.setMinimumSize(QSize(1200, 1200))
+        self.frame.setStyleSheet(u"background-color: rgb(85, 170, 255);")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_22.addWidget(self.frame)
+
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+
+        self.verticalLayout_21.addWidget(self.scrollArea)
+
+        self.stackedWidget.addWidget(self.page_2)
         self.physical_page = QWidget()
         self.physical_page.setObjectName(u"physical_page")
         self.verticalLayout_9 = QVBoxLayout(self.physical_page)
@@ -267,29 +288,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_6.addWidget(self.SeaHalbert_button)
 
-        self.RoseGold_button = QPushButton(self.physical_page)
-        self.RoseGold_button.setObjectName(u"RoseGold_button")
-        self.RoseGold_button.setFont(font4)
-        self.RoseGold_button.setStyleSheet(u"QPushButton:checked{\n"
-" background-color: rgb(146, 74, 255);\n"
-" color: #1F95EF;\n"
-" font-weight:bold;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-" background-color: rgb(206, 121, 255);\n"
-"}\n"
-"\n"
-"QPushButton{\n"
-" background-color: rgb(135, 88, 255);\n"
-" color:white;\n"
-"}\n"
-"")
-        self.RoseGold_button.setCheckable(True)
-        self.RoseGold_button.setAutoExclusive(True)
-
-        self.verticalLayout_6.addWidget(self.RoseGold_button)
-
         self.Bloodlust_button = QPushButton(self.physical_page)
         self.Bloodlust_button.setObjectName(u"Bloodlust_button")
         self.Bloodlust_button.setFont(font4)
@@ -335,6 +333,29 @@ class Ui_MainWindow(object):
         self.Hunter_button.setAutoExclusive(True)
 
         self.verticalLayout_6.addWidget(self.Hunter_button)
+
+        self.RoseGold_button = QPushButton(self.physical_page)
+        self.RoseGold_button.setObjectName(u"RoseGold_button")
+        self.RoseGold_button.setFont(font4)
+        self.RoseGold_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.RoseGold_button.setCheckable(True)
+        self.RoseGold_button.setAutoExclusive(True)
+
+        self.verticalLayout_6.addWidget(self.RoseGold_button)
 
         self.Heptaseas_button = QPushButton(self.physical_page)
         self.Heptaseas_button.setObjectName(u"Heptaseas_button")
@@ -987,7 +1008,7 @@ class Ui_MainWindow(object):
         self.label_6.setObjectName(u"label_6")
         self.label_6.setMaximumSize(QSize(10000, 120))
         self.label_6.setFont(font3)
-        self.label_6.setStyleSheet(u"background-color: rgb(172, 119, 65);")
+        self.label_6.setStyleSheet(u"background-color: rgb(158, 158, 158);")
         self.label_6.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_16.addWidget(self.label_6)
@@ -1317,7 +1338,7 @@ class Ui_MainWindow(object):
         self.label_7.setObjectName(u"label_7")
         self.label_7.setMaximumSize(QSize(16777215, 120))
         self.label_7.setFont(font3)
-        self.label_7.setStyleSheet(u"background-color: rgb(206, 206, 0);")
+        self.label_7.setStyleSheet(u"background-color: rgb(245, 229, 255);")
         self.label_7.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_19.addWidget(self.label_7)
@@ -1692,29 +1713,36 @@ class Ui_MainWindow(object):
 
         self.ItemName_2 = QLabel(self.page)
         self.ItemName_2.setObjectName(u"ItemName_2")
-        self.ItemName_2.setFont(font4)
+        self.ItemName_2.setFont(font2)
+        self.ItemName_2.setStyleSheet(u"background-color: rgb(210, 255, 206);")
 
         self.verticalLayout_8.addWidget(self.ItemName_2)
 
         self.ItemAttributes = QLabel(self.page)
         self.ItemAttributes.setObjectName(u"ItemAttributes")
-        self.ItemAttributes.setFont(font4)
+        font8 = QFont()
+        font8.setPointSize(16)
+        font8.setBold(True)
+        self.ItemAttributes.setFont(font8)
+        self.ItemAttributes.setStyleSheet(u"background-color: rgb(170, 255, 255);")
         self.ItemAttributes.setWordWrap(True)
 
         self.verticalLayout_8.addWidget(self.ItemAttributes)
 
         self.ItemType = QLabel(self.page)
         self.ItemType.setObjectName(u"ItemType")
-        self.ItemType.setFont(font4)
+        self.ItemType.setFont(font2)
+        self.ItemType.setStyleSheet(u"background-color: rgb(170, 170, 255);")
 
         self.verticalLayout_8.addWidget(self.ItemType)
 
         self.ItemPassive = QLabel(self.page)
         self.ItemPassive.setObjectName(u"ItemPassive")
-        font8 = QFont()
-        font8.setPointSize(16)
-        font8.setBold(False)
-        self.ItemPassive.setFont(font8)
+        font9 = QFont()
+        font9.setPointSize(16)
+        font9.setBold(False)
+        self.ItemPassive.setFont(font9)
+        self.ItemPassive.setStyleSheet(u"background-color: rgb(160, 128, 255);")
         self.ItemPassive.setScaledContents(False)
         self.ItemPassive.setAlignment(Qt.AlignJustify|Qt.AlignVCenter)
         self.ItemPassive.setWordWrap(True)
@@ -1770,10 +1798,10 @@ class Ui_MainWindow(object):
 
         self.label_3 = QLabel(self.icon_name_widget)
         self.label_3.setObjectName(u"label_3")
-        font9 = QFont()
-        font9.setPointSize(12)
-        font9.setBold(True)
-        self.label_3.setFont(font9)
+        font10 = QFont()
+        font10.setPointSize(12)
+        font10.setBold(True)
+        self.label_3.setFont(font10)
 
         self.horizontalLayout_2.addWidget(self.label_3)
 
@@ -1803,7 +1831,7 @@ class Ui_MainWindow(object):
         self.physicalname = QPushButton(self.icon_name_widget)
         self.physicalname.setObjectName(u"physicalname")
         icon3 = QIcon()
-        icon3.addFile(u":/images/melific.jpg", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/images/Blade_of_Despair.webp", QSize(), QIcon.Normal, QIcon.Off)
         self.physicalname.setIcon(icon3)
         self.physicalname.setIconSize(QSize(30, 30))
         self.physicalname.setCheckable(True)
@@ -1814,7 +1842,7 @@ class Ui_MainWindow(object):
         self.magicname = QPushButton(self.icon_name_widget)
         self.magicname.setObjectName(u"magicname")
         icon4 = QIcon()
-        icon4.addFile(u":/images/glowing_wand.jpg", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/images/Genius_Wand.webp", QSize(), QIcon.Normal, QIcon.Off)
         self.magicname.setIcon(icon4)
         self.magicname.setIconSize(QSize(30, 30))
         self.magicname.setCheckable(True)
@@ -1825,7 +1853,7 @@ class Ui_MainWindow(object):
         self.defensename = QPushButton(self.icon_name_widget)
         self.defensename.setObjectName(u"defensename")
         icon5 = QIcon()
-        icon5.addFile(u":/images/blade_armour.jpg", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/images/Antique_Cuirass.webp", QSize(), QIcon.Normal, QIcon.Off)
         self.defensename.setIcon(icon5)
         self.defensename.setIconSize(QSize(30, 30))
         self.defensename.setCheckable(True)
@@ -1836,7 +1864,7 @@ class Ui_MainWindow(object):
         self.bootsname = QPushButton(self.icon_name_widget)
         self.bootsname.setObjectName(u"bootsname")
         icon6 = QIcon()
-        icon6.addFile(u":/images/movement.jpg", QSize(), QIcon.Normal, QIcon.Off)
+        icon6.addFile(u":/images/Swift_Boots.webp", QSize(), QIcon.Normal, QIcon.Off)
         self.bootsname.setIcon(icon6)
         self.bootsname.setIconSize(QSize(30, 30))
         self.bootsname.setCheckable(True)
@@ -1981,7 +2009,7 @@ class Ui_MainWindow(object):
         self.menu.toggled.connect(self.icon_only_widget.setHidden)
         self.menu.toggled.connect(self.icon_name_widget.setVisible)
 
-        self.stackedWidget.setCurrentIndex(5)
+        self.stackedWidget.setCurrentIndex(6)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1993,17 +2021,16 @@ class Ui_MainWindow(object):
         self.search.setText("")
         self.welcome_text.setText(QCoreApplication.translate("MainWindow", u"WELCOME TO THE ULTIMATE MLBB ITEMS GUIDE", None))
         self.WelcomeDescription.setText(QCoreApplication.translate("MainWindow", u"Are you ready to elevate your Mobile Legends gameplay? Whether you're a seasoned veteran or just starting your journey in the Land of Dawn, mastering the right items can make all the difference between victory and defeat. Our comprehensive items guide is designed to provide you with detailed insights, strategies, and tips to optimize your hero builds and dominate the battlefield. ", None))
-        self.bloodyretri_pic.setText("")
-        self.bladeofkibou_pic.setText("")
-        self.geniuswand_pic.setText("")
+        self.label_4.setText("")
+        self.label_5.setText("")
         self.Physical_pageIntro.setText(QCoreApplication.translate("MainWindow", u"PHYSICAL ITEMS PAGE", None))
         self.BOD_button.setText(QCoreApplication.translate("MainWindow", u"Blade of Despair", None))
         self.melefic_button.setText(QCoreApplication.translate("MainWindow", u"Melefic Roar", None))
         self.GreatDragon_button.setText(QCoreApplication.translate("MainWindow", u"Great Dragon Spear", None))
         self.SeaHalbert_button.setText(QCoreApplication.translate("MainWindow", u"Sea Halbert", None))
-        self.RoseGold_button.setText(QCoreApplication.translate("MainWindow", u"Rose Gold Meteor", None))
         self.Bloodlust_button.setText(QCoreApplication.translate("MainWindow", u"Bloodlust Axe", None))
         self.Hunter_button.setText(QCoreApplication.translate("MainWindow", u"Hunter Strike", None))
+        self.RoseGold_button.setText(QCoreApplication.translate("MainWindow", u"Rose Gold Meteor", None))
         self.Heptaseas_button.setText(QCoreApplication.translate("MainWindow", u"Blade of Heptaseas", None))
         self.Windtalker_button.setText(QCoreApplication.translate("MainWindow", u"Windtalker", None))
         self.Endless_button.setText(QCoreApplication.translate("MainWindow", u"Endless Battle", None))
@@ -2060,7 +2087,7 @@ class Ui_MainWindow(object):
         self.Encourage_button.setText(QCoreApplication.translate("MainWindow", u"Encourage", None))
         self.Favour_button.setText(QCoreApplication.translate("MainWindow", u"Favour", None))
         self.Dire_button.setText(QCoreApplication.translate("MainWindow", u"DireHit", None))
-        self.ItemIMG.setText(QCoreApplication.translate("MainWindow", u"ITEMIMAGE", None))
+        self.ItemIMG.setText(QCoreApplication.translate("MainWindow", u"ITEM IMAGE", None))
         self.ItemName.setText(QCoreApplication.translate("MainWindow", u"SUPER_LONG_ITEM_NAME", None))
         self.ItemName_2.setText(QCoreApplication.translate("MainWindow", u"Name", None))
         self.ItemAttributes.setText(QCoreApplication.translate("MainWindow", u"Attributes", None))
