@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1426</width>
-    <height>854</height>
+    <width>1439</width>
+    <height>860</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -105,11 +105,12 @@ background-color: rgb(147, 172, 255);</string>
          </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(221, 201, 255);
+background-color: rgb(110, 188, 255);
 
 </string>
          </property>
          <property name="currentIndex">
-          <number>2</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="Landing_Page">
           <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -144,7 +145,7 @@ background-color: rgb(147, 172, 255);</string>
                </property>
                <property name="font">
                 <font>
-                 <pointsize>17</pointsize>
+                 <pointsize>18</pointsize>
                  <weight>75</weight>
                  <bold>true</bold>
                 </font>
@@ -185,7 +186,7 @@ background-color: rgb(147, 172, 255);</string>
               <string>Are you ready to elevate your Mobile Legends gameplay? Whether you're a seasoned veteran or just starting your journey in the Land of Dawn, mastering the right items can make all the difference between victory and defeat. Our comprehensive items guide is designed to provide you with detailed insights, strategies, and tips to optimize your hero builds and dominate the battlefield. </string>
              </property>
              <property name="alignment">
-              <set>Qt::AlignCenter</set>
+              <set>Qt::AlignJustify|Qt::AlignVCenter</set>
              </property>
              <property name="wordWrap">
               <bool>true</bool>
@@ -249,6 +250,51 @@ background-color: rgb(147, 172, 255);</string>
            </item>
           </layout>
          </widget>
+         <widget class="QWidget" name="page_2">
+          <layout class="QVBoxLayout" name="verticalLayout_21">
+           <item>
+            <widget class="QScrollArea" name="scrollArea">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(85, 0, 127);</string>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>-26</y>
+                <width>1222</width>
+                <height>1222</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_22">
+               <item>
+                <widget class="QFrame" name="frame">
+                 <property name="minimumSize">
+                  <size>
+                   <width>1200</width>
+                   <height>1200</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(85, 170, 255);</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
          <widget class="QWidget" name="physical_page">
           <layout class="QVBoxLayout" name="verticalLayout_9">
            <item>
@@ -261,7 +307,7 @@ background-color: rgb(147, 172, 255);</string>
              </property>
              <property name="font">
               <font>
-               <pointsize>15</pointsize>
+               <pointsize>19</pointsize>
                <weight>75</weight>
                <bold>true</bold>
               </font>
@@ -936,10 +982,13 @@ QPushButton{
              </property>
              <property name="font">
               <font>
-               <pointsize>15</pointsize>
+               <pointsize>19</pointsize>
                <weight>75</weight>
                <bold>true</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(46, 154, 255);</string>
              </property>
              <property name="text">
               <string>MAGIC ITEMS PAGE</string>
@@ -954,7 +1003,7 @@ QPushButton{
              <item>
               <layout class="QVBoxLayout" name="verticalLayout_12">
                <item>
-                <widget class="QPushButton" name="pushButton_11">
+                <widget class="QPushButton" name="Flask_button">
                  <property name="font">
                   <font>
                    <pointsize>14</pointsize>
@@ -991,9 +1040,33 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_10">
+                <widget class="QPushButton" name="Genius_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Genius Wand</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1004,9 +1077,33 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_14">
+                <widget class="QPushButton" name="lightning_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Lightning Truncheon</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1017,9 +1114,33 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_15">
+                <widget class="QPushButton" name="fleeting_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Fleeting Time</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1030,9 +1151,33 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_13">
+                <widget class="QPushButton" name="BloodWings_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Blood Wings</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1043,9 +1188,33 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_12">
+                <widget class="QPushButton" name="COD_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Clock of Destiny</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1056,9 +1225,33 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_16">
+                <widget class="QPushButton" name="Starlium_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Starlium Scythe</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1073,7 +1266,7 @@ QPushButton{
              <item>
               <layout class="QVBoxLayout" name="verticalLayout_11">
                <item>
-                <widget class="QPushButton" name="pushButton_6">
+                <widget class="QPushButton" name="Glowing_button">
                  <property name="font">
                   <font>
                    <pointsize>14</pointsize>
@@ -1081,8 +1274,25 @@ QPushButton{
                    <bold>true</bold>
                   </font>
                  </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Glowing Wand</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1093,7 +1303,7 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton">
+                <widget class="QPushButton" name="IceQueenWand_button">
                  <property name="font">
                   <font>
                    <pointsize>14</pointsize>
@@ -1101,8 +1311,25 @@ QPushButton{
                    <bold>true</bold>
                   </font>
                  </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Ice Queen Wand</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1113,9 +1340,33 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_8">
+                <widget class="QPushButton" name="Concentrated_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Concentrated Energy</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1126,9 +1377,33 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_9">
+                <widget class="QPushButton" name="Holy_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Holy Crystal</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1139,9 +1414,33 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_3">
+                <widget class="QPushButton" name="Divine_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Divine Glaive</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1152,9 +1451,33 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_2">
+                <widget class="QPushButton" name="NOD_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Necklace of Durance</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1165,9 +1488,33 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_4">
+                <widget class="QPushButton" name="Feather_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Feather of Heaven</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1178,9 +1525,33 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_5">
+                <widget class="QPushButton" name="Winter_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Winter Truncheon</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1191,9 +1562,33 @@ QPushButton{
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="pushButton_7">
+                <widget class="QPushButton" name="Enchanted_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
                  <property name="text">
-                  <string>PushButton</string>
+                  <string>Enchanted Tailsman</string>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -1210,53 +1605,1096 @@ QPushButton{
           </layout>
          </widget>
          <widget class="QWidget" name="defense_page">
-          <widget class="QLabel" name="label_6">
-           <property name="geometry">
-            <rect>
-             <x>180</x>
-             <y>200</y>
-             <width>311</width>
-             <height>151</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>15</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>DEFENSE ITEMS PAGE</string>
-           </property>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_16">
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="maximumSize">
+              <size>
+               <width>10000</width>
+               <height>120</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>19</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(172, 119, 65);</string>
+             </property>
+             <property name="text">
+              <string>DEFENSE ITEMS PAGE</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_14">
+               <item>
+                <widget class="QPushButton" name="radiant_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Radiant Armor</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="twilight_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Twilight Armor</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="bruteforce_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Brute Force Breastplate</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="immo_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Immortality</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="dominance_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Dominance Ice</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="athena_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>AthenaSheild</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_15">
+               <item>
+                <widget class="QPushButton" name="Oracle_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Oracle</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="antique_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Antique Cuirass</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="Guardian_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Guardian Helmet</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cursehelmet_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Cursed Helmet</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="thunder_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Thunder Belt</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="queenswings_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Queen's Wings</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="Bladearmor_button">
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Blade Armor</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoExclusive">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
          </widget>
          <widget class="QWidget" name="movement_page">
-          <widget class="QLabel" name="label_7">
-           <property name="geometry">
-            <rect>
-             <x>140</x>
-             <y>180</y>
-             <width>331</width>
-             <height>171</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>15</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>MOVEMENT ITEMS PAGE</string>
-           </property>
-          </widget>
+          <layout class="QVBoxLayout" name="verticalLayout_20">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_19">
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>120</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>19</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(206, 206, 0);</string>
+               </property>
+               <property name="text">
+                <string>MOVEMENT ITEMS PAGE</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_17">
+                 <item>
+                  <widget class="QPushButton" name="demonBoots_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Demon Boots</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="RapidBoots_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Rapid Boots</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="swiftboots_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Swift Boots</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="ArcaneBoots_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Arcane Boots</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="MagicBoots_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Magic Boots</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="ToughBoots_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Tough Boots</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="WarriorBoots_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Warrior Boots</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_18">
+                 <item>
+                  <widget class="QPushButton" name="FlameRetri_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Flame Retribution</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="IceRetri_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Ice Retribution</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="BloodyRetri_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Bloody Retribution</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="Conceal_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Conceal</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="Encourage_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Encourage</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="Favour_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Favour</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="Dire_button">
+                   <property name="font">
+                    <font>
+                     <pointsize>14</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton:checked{
+ background-color: rgb(146, 74, 255);
+ color: #1F95EF;
+ font-weight:bold;
+}
+
+QPushButton:hover{
+ background-color: rgb(206, 121, 255);
+}
+
+QPushButton{
+ background-color: rgb(135, 88, 255);
+ color:white;
+}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>DireHit</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
          </widget>
          <widget class="QWidget" name="page">
           <layout class="QVBoxLayout" name="verticalLayout_8">
            <item>
-            <widget class="QLabel" name="label_4">
+            <widget class="QLabel" name="ItemIMG">
              <property name="font">
               <font>
                <pointsize>20</pointsize>
@@ -1312,7 +2750,7 @@ QPushButton{
             <widget class="QLabel" name="ItemAttributes">
              <property name="font">
               <font>
-               <pointsize>12</pointsize>
+               <pointsize>14</pointsize>
                <weight>75</weight>
                <bold>true</bold>
               </font>
@@ -1329,7 +2767,7 @@ QPushButton{
             <widget class="QLabel" name="ItemType">
              <property name="font">
               <font>
-               <pointsize>12</pointsize>
+               <pointsize>14</pointsize>
                <weight>75</weight>
                <bold>true</bold>
               </font>
@@ -1343,7 +2781,7 @@ QPushButton{
             <widget class="QLabel" name="ItemPassive">
              <property name="font">
               <font>
-               <pointsize>11</pointsize>
+               <pointsize>16</pointsize>
                <weight>50</weight>
                <bold>false</bold>
               </font>
@@ -1353,6 +2791,9 @@ QPushButton{
              </property>
              <property name="scaledContents">
               <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignJustify|Qt::AlignVCenter</set>
              </property>
              <property name="wordWrap">
               <bool>true</bool>
@@ -1364,6 +2805,8 @@ QPushButton{
         </widget>
        </item>
       </layout>
+      <zorder>stackedWidget</zorder>
+      <zorder>widget</zorder>
      </widget>
     </item>
     <item row="0" column="1">

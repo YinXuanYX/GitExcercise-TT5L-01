@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1426, 829)
+        MainWindow.resize(1426, 854)
         MainWindow.setStyleSheet(u"\n"
 "background-color: rgb(147, 172, 255);")
         self.centralwidget = QWidget(MainWindow)
@@ -86,6 +86,7 @@ class Ui_MainWindow(object):
         font1.setBold(True)
         self.stackedWidget.setFont(font1)
         self.stackedWidget.setStyleSheet(u"background-color: rgb(221, 201, 255);\n"
+"background-color: rgb(110, 188, 255);\n"
 "\n"
 "")
         self.Landing_Page = QWidget()
@@ -103,7 +104,7 @@ class Ui_MainWindow(object):
         self.welcome_text.setMinimumSize(QSize(120, 120))
         self.welcome_text.setMaximumSize(QSize(1000, 1000))
         font2 = QFont()
-        font2.setPointSize(17)
+        font2.setPointSize(18)
         font2.setBold(True)
         self.welcome_text.setFont(font2)
 
@@ -123,7 +124,7 @@ class Ui_MainWindow(object):
         font3.setBold(True)
         self.WelcomeDescription.setFont(font3)
         self.WelcomeDescription.setLineWidth(1)
-        self.WelcomeDescription.setAlignment(Qt.AlignCenter)
+        self.WelcomeDescription.setAlignment(Qt.AlignJustify|Qt.AlignVCenter)
         self.WelcomeDescription.setWordWrap(True)
 
         self.verticalLayout_10.addWidget(self.WelcomeDescription)
@@ -160,7 +161,7 @@ class Ui_MainWindow(object):
         self.Physical_pageIntro = QLabel(self.physical_page)
         self.Physical_pageIntro.setObjectName(u"Physical_pageIntro")
         self.Physical_pageIntro.setMaximumSize(QSize(16777215, 120))
-        self.Physical_pageIntro.setFont(font1)
+        self.Physical_pageIntro.setFont(font3)
         self.Physical_pageIntro.setStyleSheet(u"background-color: rgb(204, 115, 255);")
         self.Physical_pageIntro.setAlignment(Qt.AlignCenter)
 
@@ -583,38 +584,1098 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.physical_page)
         self.magic_page = QWidget()
         self.magic_page.setObjectName(u"magic_page")
-        self.label_5 = QLabel(self.magic_page)
-        self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(160, 160, 311, 141))
-        self.label_5.setFont(font1)
+        self.verticalLayout_13 = QVBoxLayout(self.magic_page)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.MagicItemTitle = QLabel(self.magic_page)
+        self.MagicItemTitle.setObjectName(u"MagicItemTitle")
+        self.MagicItemTitle.setMaximumSize(QSize(10000, 120))
+        self.MagicItemTitle.setFont(font3)
+        self.MagicItemTitle.setStyleSheet(u"background-color: rgb(46, 154, 255);")
+        self.MagicItemTitle.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_13.addWidget(self.MagicItemTitle)
+
+        self.horizontalLayout_7 = QHBoxLayout()
+        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
+        self.verticalLayout_12 = QVBoxLayout()
+        self.verticalLayout_12.setObjectName(u"verticalLayout_12")
+        self.Flask_button = QPushButton(self.magic_page)
+        self.Flask_button.setObjectName(u"Flask_button")
+        self.Flask_button.setFont(font4)
+        self.Flask_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Flask_button.setCheckable(True)
+        self.Flask_button.setAutoExclusive(True)
+
+        self.verticalLayout_12.addWidget(self.Flask_button)
+
+        self.Genius_button = QPushButton(self.magic_page)
+        self.Genius_button.setObjectName(u"Genius_button")
+        self.Genius_button.setFont(font4)
+        self.Genius_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Genius_button.setCheckable(True)
+        self.Genius_button.setAutoExclusive(True)
+
+        self.verticalLayout_12.addWidget(self.Genius_button)
+
+        self.lightning_button = QPushButton(self.magic_page)
+        self.lightning_button.setObjectName(u"lightning_button")
+        self.lightning_button.setFont(font4)
+        self.lightning_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.lightning_button.setCheckable(True)
+        self.lightning_button.setAutoExclusive(True)
+
+        self.verticalLayout_12.addWidget(self.lightning_button)
+
+        self.fleeting_button = QPushButton(self.magic_page)
+        self.fleeting_button.setObjectName(u"fleeting_button")
+        self.fleeting_button.setFont(font4)
+        self.fleeting_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.fleeting_button.setCheckable(True)
+        self.fleeting_button.setAutoExclusive(True)
+
+        self.verticalLayout_12.addWidget(self.fleeting_button)
+
+        self.BloodWings_button = QPushButton(self.magic_page)
+        self.BloodWings_button.setObjectName(u"BloodWings_button")
+        self.BloodWings_button.setFont(font4)
+        self.BloodWings_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.BloodWings_button.setCheckable(True)
+        self.BloodWings_button.setAutoExclusive(True)
+
+        self.verticalLayout_12.addWidget(self.BloodWings_button)
+
+        self.COD_button = QPushButton(self.magic_page)
+        self.COD_button.setObjectName(u"COD_button")
+        self.COD_button.setFont(font4)
+        self.COD_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.COD_button.setCheckable(True)
+        self.COD_button.setAutoExclusive(True)
+
+        self.verticalLayout_12.addWidget(self.COD_button)
+
+        self.Starlium_button = QPushButton(self.magic_page)
+        self.Starlium_button.setObjectName(u"Starlium_button")
+        self.Starlium_button.setFont(font4)
+        self.Starlium_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Starlium_button.setCheckable(True)
+        self.Starlium_button.setAutoExclusive(True)
+
+        self.verticalLayout_12.addWidget(self.Starlium_button)
+
+
+        self.horizontalLayout_7.addLayout(self.verticalLayout_12)
+
+        self.verticalLayout_11 = QVBoxLayout()
+        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.Glowing_button = QPushButton(self.magic_page)
+        self.Glowing_button.setObjectName(u"Glowing_button")
+        self.Glowing_button.setFont(font4)
+        self.Glowing_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Glowing_button.setCheckable(True)
+        self.Glowing_button.setAutoExclusive(True)
+
+        self.verticalLayout_11.addWidget(self.Glowing_button)
+
+        self.IceQueenWand_button = QPushButton(self.magic_page)
+        self.IceQueenWand_button.setObjectName(u"IceQueenWand_button")
+        self.IceQueenWand_button.setFont(font4)
+        self.IceQueenWand_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.IceQueenWand_button.setCheckable(True)
+        self.IceQueenWand_button.setAutoExclusive(True)
+
+        self.verticalLayout_11.addWidget(self.IceQueenWand_button)
+
+        self.Concentrated_button = QPushButton(self.magic_page)
+        self.Concentrated_button.setObjectName(u"Concentrated_button")
+        self.Concentrated_button.setFont(font4)
+        self.Concentrated_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Concentrated_button.setCheckable(True)
+        self.Concentrated_button.setAutoExclusive(True)
+
+        self.verticalLayout_11.addWidget(self.Concentrated_button)
+
+        self.Holy_button = QPushButton(self.magic_page)
+        self.Holy_button.setObjectName(u"Holy_button")
+        self.Holy_button.setFont(font4)
+        self.Holy_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Holy_button.setCheckable(True)
+        self.Holy_button.setAutoExclusive(True)
+
+        self.verticalLayout_11.addWidget(self.Holy_button)
+
+        self.Divine_button = QPushButton(self.magic_page)
+        self.Divine_button.setObjectName(u"Divine_button")
+        self.Divine_button.setFont(font4)
+        self.Divine_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Divine_button.setCheckable(True)
+        self.Divine_button.setAutoExclusive(True)
+
+        self.verticalLayout_11.addWidget(self.Divine_button)
+
+        self.NOD_button = QPushButton(self.magic_page)
+        self.NOD_button.setObjectName(u"NOD_button")
+        self.NOD_button.setFont(font4)
+        self.NOD_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.NOD_button.setCheckable(True)
+        self.NOD_button.setAutoExclusive(True)
+
+        self.verticalLayout_11.addWidget(self.NOD_button)
+
+        self.Feather_button = QPushButton(self.magic_page)
+        self.Feather_button.setObjectName(u"Feather_button")
+        self.Feather_button.setFont(font4)
+        self.Feather_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Feather_button.setCheckable(True)
+        self.Feather_button.setAutoExclusive(True)
+
+        self.verticalLayout_11.addWidget(self.Feather_button)
+
+        self.Winter_button = QPushButton(self.magic_page)
+        self.Winter_button.setObjectName(u"Winter_button")
+        self.Winter_button.setFont(font4)
+        self.Winter_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Winter_button.setCheckable(True)
+        self.Winter_button.setAutoExclusive(True)
+
+        self.verticalLayout_11.addWidget(self.Winter_button)
+
+        self.Enchanted_button = QPushButton(self.magic_page)
+        self.Enchanted_button.setObjectName(u"Enchanted_button")
+        self.Enchanted_button.setFont(font4)
+        self.Enchanted_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Enchanted_button.setCheckable(True)
+        self.Enchanted_button.setAutoExclusive(True)
+
+        self.verticalLayout_11.addWidget(self.Enchanted_button)
+
+
+        self.horizontalLayout_7.addLayout(self.verticalLayout_11)
+
+
+        self.verticalLayout_13.addLayout(self.horizontalLayout_7)
+
         self.stackedWidget.addWidget(self.magic_page)
         self.defense_page = QWidget()
         self.defense_page.setObjectName(u"defense_page")
+        self.verticalLayout_16 = QVBoxLayout(self.defense_page)
+        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
         self.label_6 = QLabel(self.defense_page)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(180, 200, 311, 151))
-        self.label_6.setFont(font1)
+        self.label_6.setMaximumSize(QSize(10000, 120))
+        self.label_6.setFont(font3)
+        self.label_6.setStyleSheet(u"background-color: rgb(172, 119, 65);")
+        self.label_6.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_16.addWidget(self.label_6)
+
+        self.horizontalLayout_8 = QHBoxLayout()
+        self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
+        self.verticalLayout_14 = QVBoxLayout()
+        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.radiant_button = QPushButton(self.defense_page)
+        self.radiant_button.setObjectName(u"radiant_button")
+        self.radiant_button.setFont(font4)
+        self.radiant_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.radiant_button.setCheckable(True)
+        self.radiant_button.setAutoExclusive(True)
+
+        self.verticalLayout_14.addWidget(self.radiant_button)
+
+        self.twilight_button = QPushButton(self.defense_page)
+        self.twilight_button.setObjectName(u"twilight_button")
+        self.twilight_button.setFont(font4)
+        self.twilight_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.twilight_button.setCheckable(True)
+        self.twilight_button.setAutoExclusive(True)
+
+        self.verticalLayout_14.addWidget(self.twilight_button)
+
+        self.bruteforce_button = QPushButton(self.defense_page)
+        self.bruteforce_button.setObjectName(u"bruteforce_button")
+        self.bruteforce_button.setFont(font4)
+        self.bruteforce_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.bruteforce_button.setCheckable(True)
+        self.bruteforce_button.setAutoExclusive(True)
+
+        self.verticalLayout_14.addWidget(self.bruteforce_button)
+
+        self.immo_button = QPushButton(self.defense_page)
+        self.immo_button.setObjectName(u"immo_button")
+        self.immo_button.setFont(font4)
+        self.immo_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.immo_button.setCheckable(True)
+        self.immo_button.setAutoExclusive(True)
+
+        self.verticalLayout_14.addWidget(self.immo_button)
+
+        self.dominance_button = QPushButton(self.defense_page)
+        self.dominance_button.setObjectName(u"dominance_button")
+        self.dominance_button.setFont(font4)
+        self.dominance_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.dominance_button.setCheckable(True)
+        self.dominance_button.setAutoExclusive(True)
+
+        self.verticalLayout_14.addWidget(self.dominance_button)
+
+        self.athena_button = QPushButton(self.defense_page)
+        self.athena_button.setObjectName(u"athena_button")
+        self.athena_button.setFont(font4)
+        self.athena_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.athena_button.setCheckable(True)
+        self.athena_button.setAutoExclusive(True)
+
+        self.verticalLayout_14.addWidget(self.athena_button)
+
+
+        self.horizontalLayout_8.addLayout(self.verticalLayout_14)
+
+        self.verticalLayout_15 = QVBoxLayout()
+        self.verticalLayout_15.setObjectName(u"verticalLayout_15")
+        self.Oracle_button = QPushButton(self.defense_page)
+        self.Oracle_button.setObjectName(u"Oracle_button")
+        self.Oracle_button.setFont(font4)
+        self.Oracle_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Oracle_button.setCheckable(True)
+        self.Oracle_button.setAutoExclusive(True)
+
+        self.verticalLayout_15.addWidget(self.Oracle_button)
+
+        self.antique_button = QPushButton(self.defense_page)
+        self.antique_button.setObjectName(u"antique_button")
+        self.antique_button.setFont(font4)
+        self.antique_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.antique_button.setCheckable(True)
+        self.antique_button.setAutoExclusive(True)
+
+        self.verticalLayout_15.addWidget(self.antique_button)
+
+        self.Guardian_button = QPushButton(self.defense_page)
+        self.Guardian_button.setObjectName(u"Guardian_button")
+        self.Guardian_button.setFont(font4)
+        self.Guardian_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Guardian_button.setCheckable(True)
+        self.Guardian_button.setAutoExclusive(True)
+
+        self.verticalLayout_15.addWidget(self.Guardian_button)
+
+        self.cursehelmet_button = QPushButton(self.defense_page)
+        self.cursehelmet_button.setObjectName(u"cursehelmet_button")
+        self.cursehelmet_button.setFont(font4)
+        self.cursehelmet_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.cursehelmet_button.setCheckable(True)
+        self.cursehelmet_button.setAutoExclusive(True)
+
+        self.verticalLayout_15.addWidget(self.cursehelmet_button)
+
+        self.thunder_button = QPushButton(self.defense_page)
+        self.thunder_button.setObjectName(u"thunder_button")
+        self.thunder_button.setFont(font4)
+        self.thunder_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.thunder_button.setCheckable(True)
+        self.thunder_button.setAutoExclusive(True)
+
+        self.verticalLayout_15.addWidget(self.thunder_button)
+
+        self.queenswings_button = QPushButton(self.defense_page)
+        self.queenswings_button.setObjectName(u"queenswings_button")
+        self.queenswings_button.setFont(font4)
+        self.queenswings_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.queenswings_button.setCheckable(True)
+        self.queenswings_button.setAutoExclusive(True)
+
+        self.verticalLayout_15.addWidget(self.queenswings_button)
+
+        self.Bladearmor_button = QPushButton(self.defense_page)
+        self.Bladearmor_button.setObjectName(u"Bladearmor_button")
+        self.Bladearmor_button.setFont(font4)
+        self.Bladearmor_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Bladearmor_button.setCheckable(True)
+        self.Bladearmor_button.setAutoExclusive(True)
+
+        self.verticalLayout_15.addWidget(self.Bladearmor_button)
+
+
+        self.horizontalLayout_8.addLayout(self.verticalLayout_15)
+
+
+        self.verticalLayout_16.addLayout(self.horizontalLayout_8)
+
         self.stackedWidget.addWidget(self.defense_page)
         self.movement_page = QWidget()
         self.movement_page.setObjectName(u"movement_page")
+        self.verticalLayout_20 = QVBoxLayout(self.movement_page)
+        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
+        self.verticalLayout_19 = QVBoxLayout()
+        self.verticalLayout_19.setObjectName(u"verticalLayout_19")
         self.label_7 = QLabel(self.movement_page)
         self.label_7.setObjectName(u"label_7")
-        self.label_7.setGeometry(QRect(140, 180, 331, 171))
-        self.label_7.setFont(font1)
+        self.label_7.setMaximumSize(QSize(16777215, 120))
+        self.label_7.setFont(font3)
+        self.label_7.setStyleSheet(u"background-color: rgb(206, 206, 0);")
+        self.label_7.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_19.addWidget(self.label_7)
+
+        self.horizontalLayout_9 = QHBoxLayout()
+        self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
+        self.verticalLayout_17 = QVBoxLayout()
+        self.verticalLayout_17.setObjectName(u"verticalLayout_17")
+        self.demonBoots_button = QPushButton(self.movement_page)
+        self.demonBoots_button.setObjectName(u"demonBoots_button")
+        self.demonBoots_button.setFont(font4)
+        self.demonBoots_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.demonBoots_button.setCheckable(True)
+        self.demonBoots_button.setAutoExclusive(True)
+
+        self.verticalLayout_17.addWidget(self.demonBoots_button)
+
+        self.RapidBoots_button = QPushButton(self.movement_page)
+        self.RapidBoots_button.setObjectName(u"RapidBoots_button")
+        self.RapidBoots_button.setFont(font4)
+        self.RapidBoots_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.RapidBoots_button.setCheckable(True)
+        self.RapidBoots_button.setAutoExclusive(True)
+
+        self.verticalLayout_17.addWidget(self.RapidBoots_button)
+
+        self.swiftboots_button = QPushButton(self.movement_page)
+        self.swiftboots_button.setObjectName(u"swiftboots_button")
+        self.swiftboots_button.setFont(font4)
+        self.swiftboots_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.swiftboots_button.setCheckable(True)
+        self.swiftboots_button.setAutoExclusive(True)
+
+        self.verticalLayout_17.addWidget(self.swiftboots_button)
+
+        self.ArcaneBoots_button = QPushButton(self.movement_page)
+        self.ArcaneBoots_button.setObjectName(u"ArcaneBoots_button")
+        self.ArcaneBoots_button.setFont(font4)
+        self.ArcaneBoots_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.ArcaneBoots_button.setCheckable(True)
+        self.ArcaneBoots_button.setAutoExclusive(True)
+
+        self.verticalLayout_17.addWidget(self.ArcaneBoots_button)
+
+        self.MagicBoots_button = QPushButton(self.movement_page)
+        self.MagicBoots_button.setObjectName(u"MagicBoots_button")
+        self.MagicBoots_button.setFont(font4)
+        self.MagicBoots_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.MagicBoots_button.setCheckable(True)
+        self.MagicBoots_button.setAutoExclusive(True)
+
+        self.verticalLayout_17.addWidget(self.MagicBoots_button)
+
+        self.ToughBoots_button = QPushButton(self.movement_page)
+        self.ToughBoots_button.setObjectName(u"ToughBoots_button")
+        self.ToughBoots_button.setFont(font4)
+        self.ToughBoots_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.ToughBoots_button.setCheckable(True)
+        self.ToughBoots_button.setAutoExclusive(True)
+
+        self.verticalLayout_17.addWidget(self.ToughBoots_button)
+
+        self.WarriorBoots_button = QPushButton(self.movement_page)
+        self.WarriorBoots_button.setObjectName(u"WarriorBoots_button")
+        self.WarriorBoots_button.setFont(font4)
+        self.WarriorBoots_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.WarriorBoots_button.setCheckable(True)
+        self.WarriorBoots_button.setAutoExclusive(True)
+
+        self.verticalLayout_17.addWidget(self.WarriorBoots_button)
+
+
+        self.horizontalLayout_9.addLayout(self.verticalLayout_17)
+
+        self.verticalLayout_18 = QVBoxLayout()
+        self.verticalLayout_18.setObjectName(u"verticalLayout_18")
+        self.FlameRetri_button = QPushButton(self.movement_page)
+        self.FlameRetri_button.setObjectName(u"FlameRetri_button")
+        self.FlameRetri_button.setFont(font4)
+        self.FlameRetri_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.FlameRetri_button.setCheckable(True)
+        self.FlameRetri_button.setAutoExclusive(True)
+
+        self.verticalLayout_18.addWidget(self.FlameRetri_button)
+
+        self.IceRetri_button = QPushButton(self.movement_page)
+        self.IceRetri_button.setObjectName(u"IceRetri_button")
+        self.IceRetri_button.setFont(font4)
+        self.IceRetri_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.IceRetri_button.setCheckable(True)
+        self.IceRetri_button.setAutoExclusive(True)
+
+        self.verticalLayout_18.addWidget(self.IceRetri_button)
+
+        self.BloodyRetri_button = QPushButton(self.movement_page)
+        self.BloodyRetri_button.setObjectName(u"BloodyRetri_button")
+        self.BloodyRetri_button.setFont(font4)
+        self.BloodyRetri_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.BloodyRetri_button.setCheckable(True)
+        self.BloodyRetri_button.setAutoExclusive(True)
+
+        self.verticalLayout_18.addWidget(self.BloodyRetri_button)
+
+        self.Conceal_button = QPushButton(self.movement_page)
+        self.Conceal_button.setObjectName(u"Conceal_button")
+        self.Conceal_button.setFont(font4)
+        self.Conceal_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Conceal_button.setCheckable(True)
+        self.Conceal_button.setAutoExclusive(True)
+
+        self.verticalLayout_18.addWidget(self.Conceal_button)
+
+        self.Encourage_button = QPushButton(self.movement_page)
+        self.Encourage_button.setObjectName(u"Encourage_button")
+        self.Encourage_button.setFont(font4)
+        self.Encourage_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Encourage_button.setCheckable(True)
+        self.Encourage_button.setAutoExclusive(True)
+
+        self.verticalLayout_18.addWidget(self.Encourage_button)
+
+        self.Favour_button = QPushButton(self.movement_page)
+        self.Favour_button.setObjectName(u"Favour_button")
+        self.Favour_button.setFont(font4)
+        self.Favour_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Favour_button.setCheckable(True)
+        self.Favour_button.setAutoExclusive(True)
+
+        self.verticalLayout_18.addWidget(self.Favour_button)
+
+        self.Dire_button = QPushButton(self.movement_page)
+        self.Dire_button.setObjectName(u"Dire_button")
+        self.Dire_button.setFont(font4)
+        self.Dire_button.setStyleSheet(u"QPushButton:checked{\n"
+" background-color: rgb(146, 74, 255);\n"
+" color: #1F95EF;\n"
+" font-weight:bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+" background-color: rgb(206, 121, 255);\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+" background-color: rgb(135, 88, 255);\n"
+" color:white;\n"
+"}\n"
+"")
+        self.Dire_button.setCheckable(True)
+        self.Dire_button.setAutoExclusive(True)
+
+        self.verticalLayout_18.addWidget(self.Dire_button)
+
+
+        self.horizontalLayout_9.addLayout(self.verticalLayout_18)
+
+
+        self.verticalLayout_19.addLayout(self.horizontalLayout_9)
+
+
+        self.verticalLayout_20.addLayout(self.verticalLayout_19)
+
         self.stackedWidget.addWidget(self.movement_page)
         self.page = QWidget()
         self.page.setObjectName(u"page")
         self.verticalLayout_8 = QVBoxLayout(self.page)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
-        self.label_4 = QLabel(self.page)
-        self.label_4.setObjectName(u"label_4")
+        self.ItemIMG = QLabel(self.page)
+        self.ItemIMG.setObjectName(u"ItemIMG")
         font6 = QFont()
         font6.setPointSize(20)
         font6.setBold(True)
-        self.label_4.setFont(font6)
-        self.label_4.setAlignment(Qt.AlignCenter)
+        self.ItemIMG.setFont(font6)
+        self.ItemIMG.setAlignment(Qt.AlignCenter)
 
-        self.verticalLayout_8.addWidget(self.label_4)
+        self.verticalLayout_8.addWidget(self.ItemIMG)
 
         self.ItemName = QLabel(self.page)
         self.ItemName.setObjectName(u"ItemName")
@@ -637,27 +1698,25 @@ class Ui_MainWindow(object):
 
         self.ItemAttributes = QLabel(self.page)
         self.ItemAttributes.setObjectName(u"ItemAttributes")
-        font8 = QFont()
-        font8.setPointSize(12)
-        font8.setBold(True)
-        self.ItemAttributes.setFont(font8)
+        self.ItemAttributes.setFont(font4)
         self.ItemAttributes.setWordWrap(True)
 
         self.verticalLayout_8.addWidget(self.ItemAttributes)
 
         self.ItemType = QLabel(self.page)
         self.ItemType.setObjectName(u"ItemType")
-        self.ItemType.setFont(font8)
+        self.ItemType.setFont(font4)
 
         self.verticalLayout_8.addWidget(self.ItemType)
 
         self.ItemPassive = QLabel(self.page)
         self.ItemPassive.setObjectName(u"ItemPassive")
-        font9 = QFont()
-        font9.setPointSize(11)
-        font9.setBold(False)
-        self.ItemPassive.setFont(font9)
+        font8 = QFont()
+        font8.setPointSize(16)
+        font8.setBold(False)
+        self.ItemPassive.setFont(font8)
         self.ItemPassive.setScaledContents(False)
+        self.ItemPassive.setAlignment(Qt.AlignJustify|Qt.AlignVCenter)
         self.ItemPassive.setWordWrap(True)
 
         self.verticalLayout_8.addWidget(self.ItemPassive)
@@ -666,6 +1725,8 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_5.addWidget(self.stackedWidget)
 
+        self.stackedWidget.raise_()
+        self.widget.raise_()
 
         self.gridLayout.addWidget(self.main_menu, 0, 2, 1, 1)
 
@@ -709,7 +1770,10 @@ class Ui_MainWindow(object):
 
         self.label_3 = QLabel(self.icon_name_widget)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setFont(font8)
+        font9 = QFont()
+        font9.setPointSize(12)
+        font9.setBold(True)
+        self.label_3.setFont(font9)
 
         self.horizontalLayout_2.addWidget(self.label_3)
 
@@ -917,7 +1981,7 @@ class Ui_MainWindow(object):
         self.menu.toggled.connect(self.icon_only_widget.setHidden)
         self.menu.toggled.connect(self.icon_name_widget.setVisible)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(5)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -950,10 +2014,53 @@ class Ui_MainWindow(object):
         self.Golden_button.setText(QCoreApplication.translate("MainWindow", u"Golden Staff", None))
         self.Corrosion_button.setText(QCoreApplication.translate("MainWindow", u"Corrosion Scythe", None))
         self.DHS_button.setText(QCoreApplication.translate("MainWindow", u"Demon Hunter Sword", None))
-        self.label_5.setText(QCoreApplication.translate("MainWindow", u"MAGIC ITEMS PAGE", None))
+        self.MagicItemTitle.setText(QCoreApplication.translate("MainWindow", u"MAGIC ITEMS PAGE", None))
+        self.Flask_button.setText(QCoreApplication.translate("MainWindow", u"Flask of The Oasis", None))
+        self.Genius_button.setText(QCoreApplication.translate("MainWindow", u"Genius Wand", None))
+        self.lightning_button.setText(QCoreApplication.translate("MainWindow", u"Lightning Truncheon", None))
+        self.fleeting_button.setText(QCoreApplication.translate("MainWindow", u"Fleeting Time", None))
+        self.BloodWings_button.setText(QCoreApplication.translate("MainWindow", u"Blood Wings", None))
+        self.COD_button.setText(QCoreApplication.translate("MainWindow", u"Clock of Destiny", None))
+        self.Starlium_button.setText(QCoreApplication.translate("MainWindow", u"Starlium Scythe", None))
+        self.Glowing_button.setText(QCoreApplication.translate("MainWindow", u"Glowing Wand", None))
+        self.IceQueenWand_button.setText(QCoreApplication.translate("MainWindow", u"Ice Queen Wand", None))
+        self.Concentrated_button.setText(QCoreApplication.translate("MainWindow", u"Concentrated Energy", None))
+        self.Holy_button.setText(QCoreApplication.translate("MainWindow", u"Holy Crystal", None))
+        self.Divine_button.setText(QCoreApplication.translate("MainWindow", u"Divine Glaive", None))
+        self.NOD_button.setText(QCoreApplication.translate("MainWindow", u"Necklace of Durance", None))
+        self.Feather_button.setText(QCoreApplication.translate("MainWindow", u"Feather of Heaven", None))
+        self.Winter_button.setText(QCoreApplication.translate("MainWindow", u"Winter Truncheon", None))
+        self.Enchanted_button.setText(QCoreApplication.translate("MainWindow", u"Enchanted Tailsman", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"DEFENSE ITEMS PAGE", None))
+        self.radiant_button.setText(QCoreApplication.translate("MainWindow", u"Radiant Armor", None))
+        self.twilight_button.setText(QCoreApplication.translate("MainWindow", u"Twilight Armor", None))
+        self.bruteforce_button.setText(QCoreApplication.translate("MainWindow", u"Brute Force Breastplate", None))
+        self.immo_button.setText(QCoreApplication.translate("MainWindow", u"Immortality", None))
+        self.dominance_button.setText(QCoreApplication.translate("MainWindow", u"Dominance Ice", None))
+        self.athena_button.setText(QCoreApplication.translate("MainWindow", u"AthenaSheild", None))
+        self.Oracle_button.setText(QCoreApplication.translate("MainWindow", u"Oracle", None))
+        self.antique_button.setText(QCoreApplication.translate("MainWindow", u"Antique Cuirass", None))
+        self.Guardian_button.setText(QCoreApplication.translate("MainWindow", u"Guardian Helmet", None))
+        self.cursehelmet_button.setText(QCoreApplication.translate("MainWindow", u"Cursed Helmet", None))
+        self.thunder_button.setText(QCoreApplication.translate("MainWindow", u"Thunder Belt", None))
+        self.queenswings_button.setText(QCoreApplication.translate("MainWindow", u"Queen's Wings", None))
+        self.Bladearmor_button.setText(QCoreApplication.translate("MainWindow", u"Blade Armor", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"MOVEMENT ITEMS PAGE", None))
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"ITEMIMAGE", None))
+        self.demonBoots_button.setText(QCoreApplication.translate("MainWindow", u"Demon Boots", None))
+        self.RapidBoots_button.setText(QCoreApplication.translate("MainWindow", u"Rapid Boots", None))
+        self.swiftboots_button.setText(QCoreApplication.translate("MainWindow", u"Swift Boots", None))
+        self.ArcaneBoots_button.setText(QCoreApplication.translate("MainWindow", u"Arcane Boots", None))
+        self.MagicBoots_button.setText(QCoreApplication.translate("MainWindow", u"Magic Boots", None))
+        self.ToughBoots_button.setText(QCoreApplication.translate("MainWindow", u"Tough Boots", None))
+        self.WarriorBoots_button.setText(QCoreApplication.translate("MainWindow", u"Warrior Boots", None))
+        self.FlameRetri_button.setText(QCoreApplication.translate("MainWindow", u"Flame Retribution", None))
+        self.IceRetri_button.setText(QCoreApplication.translate("MainWindow", u"Ice Retribution", None))
+        self.BloodyRetri_button.setText(QCoreApplication.translate("MainWindow", u"Bloody Retribution", None))
+        self.Conceal_button.setText(QCoreApplication.translate("MainWindow", u"Conceal", None))
+        self.Encourage_button.setText(QCoreApplication.translate("MainWindow", u"Encourage", None))
+        self.Favour_button.setText(QCoreApplication.translate("MainWindow", u"Favour", None))
+        self.Dire_button.setText(QCoreApplication.translate("MainWindow", u"DireHit", None))
+        self.ItemIMG.setText(QCoreApplication.translate("MainWindow", u"ITEMIMAGE", None))
         self.ItemName.setText(QCoreApplication.translate("MainWindow", u"SUPER_LONG_ITEM_NAME", None))
         self.ItemName_2.setText(QCoreApplication.translate("MainWindow", u"Name", None))
         self.ItemAttributes.setText(QCoreApplication.translate("MainWindow", u"Attributes", None))

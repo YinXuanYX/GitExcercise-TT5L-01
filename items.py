@@ -54,6 +54,24 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
         self.Golden_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 15))
         self.Corrosion_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 16))
         self.DHS_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 17))
+
+        #Magic Items Buttons
+        self.Flask_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 18))
+        self.Genius_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 19))
+        self.lightning_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 20))
+        self.fleeting_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 21))
+        self.BloodWings_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 22))
+        self.COD_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 23))
+        self.Starlium_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 24))
+        self.Glowing_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 25))
+        self.IceQueenWand_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 26))
+        self.Concentrated_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 27))
+        self.Holy_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 28))
+        self.Divine_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 29))
+        self.NOD_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 30))
+        self.Feather_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 31))
+        self.Winter_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 32))
+        self.Enchanted_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 33))
         
 
 
@@ -72,7 +90,7 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
         self.stackedWidget.setCurrentIndex(4)
 
 
-    #*args allows the thing to accept any number of additional arguments, solve the issue of receiving more arguments than expected from the clicked signal.
+    #*args allows the thing to accept any number of additional arguments, solve the issue of receiving more arguments than expected from the clicked signal. Basically for the double digit.
 
     def switch_to_ItemInfoPage(self, item_id, *args):
         self.stackedWidget.setCurrentIndex(5)
