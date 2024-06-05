@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>670</width>
+    <width>709</width>
     <height>377</height>
    </rect>
   </property>
@@ -30,7 +30,136 @@
     <property name="bottomMargin">
      <number>0</number>
     </property>
-    <item row="0" column="1" rowspan="2">
+    <item row="0" column="0" rowspan="3">
+     <widget class="QWidget" name="iconwgt" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+background-color: rgb(148, 148, 148);
+}
+QPushButton{
+height:30px;
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+}
+</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="calcicon">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="icon.qrc">:/calcbtn.jpg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="overallbtn">
+           <property name="styleSheet">
+            <string notr="true">QWidget{
+background-color: rgb(255, 255, 255);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Overall</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="herobtn">
+           <property name="styleSheet">
+            <string notr="true">QWidget{
+background-color: rgb(255, 255, 255);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Hero</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="gamesbtn">
+           <property name="styleSheet">
+            <string notr="true">QWidget{
+background-color: rgb(255, 255, 255);
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Games</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>150</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="signout_2">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icon.qrc">
+           <normaloff>:/signout.jpg</normaloff>:/signout.jpg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="3">
      <widget class="QWidget" name="iconnamewgt" native="true">
       <property name="styleSheet">
        <string notr="true">QWidget{
@@ -68,8 +197,14 @@ border-bottom-right-radius:10px;
           <string>Sign Out</string>
          </property>
          <property name="icon">
-          <iconset resource="george/icon.qrc">
-           <normaloff>:/icons/signoutbtn.png</normaloff>:/icons/signoutbtn.png</iconset>
+          <iconset resource="icon.qrc">
+           <normaloff>:/signout.jpg</normaloff>:/signout.jpg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -96,7 +231,7 @@ border-bottom-right-radius:10px;
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="george/icon.qrc">:/icons/calcbtn.png</pixmap>
+            <pixmap resource="icon.qrc">:/calcbtn.jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -215,8 +350,8 @@ background-color: rgb(255, 255, 255);
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="george/icon.qrc">
-             <normaloff>:/icons/menubtn.png</normaloff>:/icons/menubtn.png</iconset>
+            <iconset resource="icon.qrc">
+             <normaloff>:/menubtn.jpg</normaloff>:/menubtn.jpg</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -251,7 +386,7 @@ background-color: rgb(255, 255, 255);
         </layout>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_10">
+        <widget class="QPushButton" name="signout_3">
          <property name="minimumSize">
           <size>
            <width>40</width>
@@ -275,8 +410,8 @@ background-color: rgb(148, 148, 148);
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="george/icon.qrc">
-           <normaloff>:/icons/signoutbtn.png</normaloff>:/icons/signoutbtn.png</iconset>
+          <iconset resource="icon.qrc">
+           <normaloff>:/signout.jpg</normaloff>:/signout.jpg</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -295,446 +430,413 @@ background-color: rgb(148, 148, 148);
       </layout>
      </widget>
     </item>
-    <item row="0" column="0" rowspan="2">
-     <widget class="QWidget" name="iconwgt" native="true">
-      <property name="styleSheet">
-       <string notr="true">QWidget{
-background-color: rgb(148, 148, 148);
-}
-QPushButton{
-height:30px;
-border-top-left-radius:10px;
-border-bottom-left-radius:10px;
-border-top-right-radius:10px;
-border-bottom-right-radius:10px;
-}
-</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
-        <widget class="QLabel" name="label">
-         <property name="minimumSize">
-          <size>
-           <width>40</width>
-           <height>40</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>40</width>
-           <height>40</height>
-          </size>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap resource="george/icon.qrc">:/icons/calcbtn.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
-          <widget class="QPushButton" name="overallbtn">
-           <property name="styleSheet">
-            <string notr="true">QWidget{
-background-color: rgb(255, 255, 255);
-}
-</string>
-           </property>
-           <property name="text">
-            <string>Overall</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="herobtn">
-           <property name="styleSheet">
-            <string notr="true">QWidget{
-background-color: rgb(255, 255, 255);
-}
-</string>
-           </property>
-           <property name="text">
-            <string>Hero</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="gamesbtn">
-           <property name="styleSheet">
-            <string notr="true">QWidget{
-background-color: rgb(255, 255, 255);
-}
-</string>
-           </property>
-           <property name="text">
-            <string>Games</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="verticalSpacer_3">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>150</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </item>
-       <item row="2" column="0">
-        <widget class="QPushButton" name="pushButton_7">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="george/icon.qrc">
-           <normaloff>:/icons/signoutbtn.png</normaloff>:/icons/signoutbtn.png</iconset>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
     <item row="1" column="2">
      <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
       <widget class="QWidget" name="overallpg">
-       <widget class="QLabel" name="label_4">
-        <property name="geometry">
-         <rect>
-          <x>34</x>
-          <y>59</y>
-          <width>201</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Yu Gothic Light</family>
-          <pointsize>20</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Number Of Games:</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_5">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>110</y>
-          <width>201</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Yu Gothic Light</family>
-          <pointsize>20</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Number Of Wins:</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_6">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>160</y>
-          <width>201</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Yu Gothic Light</family>
-          <pointsize>20</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Winrate:</string>
-        </property>
-       </widget>
-       <widget class="QTextEdit" name="textEdit">
-        <property name="geometry">
-         <rect>
-          <x>220</x>
-          <y>70</y>
-          <width>131</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="overwriteMode">
-         <bool>false</bool>
-        </property>
-        <property name="textInteractionFlags">
-         <set>Qt::TextEditorInteraction</set>
-        </property>
-       </widget>
-       <widget class="QTextEdit" name="textEdit_2">
-        <property name="geometry">
-         <rect>
-          <x>220</x>
-          <y>120</y>
-          <width>131</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="overwriteMode">
-         <bool>false</bool>
-        </property>
-        <property name="textInteractionFlags">
-         <set>Qt::TextEditorInteraction</set>
-        </property>
-       </widget>
-       <widget class="QLCDNumber" name="lcdNumber">
-        <property name="geometry">
-         <rect>
-          <x>220</x>
-          <y>160</y>
-          <width>131</width>
-          <height>31</height>
-         </rect>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="heropg">
-       <widget class="QLabel" name="label_7">
-        <property name="geometry">
-         <rect>
-          <x>60</x>
-          <y>90</y>
-          <width>151</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Yu Gothic Light</family>
-          <pointsize>20</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Number Of Wins:</string>
-        </property>
-       </widget>
-       <widget class="QTextEdit" name="textEdit_3">
-        <property name="geometry">
-         <rect>
-          <x>240</x>
-          <y>50</y>
-          <width>131</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="overwriteMode">
-         <bool>false</bool>
-        </property>
-        <property name="textInteractionFlags">
-         <set>Qt::TextEditorInteraction</set>
-        </property>
-       </widget>
-       <widget class="QLCDNumber" name="lcdNumber_2">
-        <property name="geometry">
-         <rect>
-          <x>240</x>
-          <y>140</y>
-          <width>131</width>
-          <height>31</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_8">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>50</y>
-          <width>171</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Yu Gothic Light</family>
-          <pointsize>20</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Number Of Games:</string>
-        </property>
-       </widget>
-       <widget class="QTextEdit" name="textEdit_4">
-        <property name="geometry">
-         <rect>
-          <x>240</x>
-          <y>100</y>
-          <width>131</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="overwriteMode">
-         <bool>false</bool>
-        </property>
-        <property name="textInteractionFlags">
-         <set>Qt::TextEditorInteraction</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_9">
-        <property name="geometry">
-         <rect>
-          <x>140</x>
-          <y>130</y>
-          <width>81</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Yu Gothic Light</family>
-          <pointsize>20</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Winrate:</string>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="gamespg">
-       <widget class="QLCDNumber" name="lcdNumber_3">
-        <property name="geometry">
-         <rect>
-          <x>260</x>
-          <y>150</y>
-          <width>131</width>
-          <height>31</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QTextEdit" name="textEdit_5">
-        <property name="geometry">
-         <rect>
-          <x>260</x>
-          <y>60</y>
-          <width>131</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="overwriteMode">
-         <bool>false</bool>
-        </property>
-        <property name="textInteractionFlags">
-         <set>Qt::TextEditorInteraction</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_10">
-        <property name="geometry">
-         <rect>
-          <x>50</x>
-          <y>150</y>
-          <width>201</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Yu Gothic Light</family>
-          <pointsize>20</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Games Won Required:</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_11">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>100</y>
-          <width>131</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Yu Gothic Light</family>
-          <pointsize>20</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Games Played:</string>
-        </property>
-       </widget>
-       <widget class="QTextEdit" name="textEdit_6">
-        <property name="geometry">
-         <rect>
-          <x>260</x>
-          <y>110</y>
-          <width>131</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="overwriteMode">
-         <bool>false</bool>
-        </property>
-        <property name="textInteractionFlags">
-         <set>Qt::TextEditorInteraction</set>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_12">
+       <widget class="QPushButton" name="calcbtn1">
         <property name="geometry">
          <rect>
           <x>160</x>
-          <y>50</y>
-          <width>91</width>
-          <height>41</height>
+          <y>190</y>
+          <width>111</width>
+          <height>31</height>
          </rect>
         </property>
         <property name="font">
          <font>
-          <family>Yu Gothic Light</family>
-          <pointsize>20</pointsize>
+          <pointsize>18</pointsize>
          </font>
         </property>
         <property name="text">
-         <string>WinRate:</string>
+         <string>Calculate</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
         </property>
        </widget>
+       <widget class="QSplitter" name="splitter_2">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>70</y>
+          <width>341</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QWidget" name="">
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="font">
+             <font>
+              <family>Yu Gothic Light</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Number Of Games:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="font">
+             <font>
+              <family>Yu Gothic Light</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Number Of Wins:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <family>Yu Gothic Light</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Winrate:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="">
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QTextEdit" name="nog1">
+            <property name="toolTip">
+             <string>input1</string>
+            </property>
+            <property name="overwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::TextEditorInteraction</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="now1">
+            <property name="toolTip">
+             <string>input2</string>
+            </property>
+            <property name="overwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::TextEditorInteraction</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="wrlabel1">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
       </widget>
-      <widget class="QWidget" name="page_2"/>
+      <widget class="QWidget" name="heropg">
+       <widget class="QPushButton" name="calcbtn2">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>190</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Calculate</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QSplitter" name="splitter">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>40</y>
+          <width>281</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QWidget" name="">
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="font">
+             <font>
+              <family>Yu Gothic Light</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Number Of Games:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="font">
+             <font>
+              <family>Yu Gothic Light</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Number Of Wins:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="font">
+             <font>
+              <family>Yu Gothic Light</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Winrate:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="">
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QTextEdit" name="nog2">
+            <property name="toolTip">
+             <string>input3</string>
+            </property>
+            <property name="overwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::TextEditorInteraction</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="now2">
+            <property name="toolTip">
+             <string>input4</string>
+            </property>
+            <property name="overwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::TextEditorInteraction</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="wrlabel2">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="gamespg">
+       <widget class="QPushButton" name="calcbtn3">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>230</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Calculate</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QSplitter" name="splitter_3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>60</y>
+          <width>361</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QWidget" name="">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="cm">
+            <property name="font">
+             <font>
+              <family>Yu Gothic Light</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Current Matches:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_16">
+            <property name="font">
+             <font>
+              <family>Yu Gothic Light</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Desired WinRate:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="font">
+             <font>
+              <family>Yu Gothic Light</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Current Winrate:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_15">
+            <property name="font">
+             <font>
+              <family>Yu Gothic Light</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Games Won Required:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>8</number>
+          </property>
+          <item>
+           <widget class="QTextEdit" name="cmtext">
+            <property name="toolTip">
+             <string>input5</string>
+            </property>
+            <property name="overwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::TextEditorInteraction</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="dwrtext">
+            <property name="toolTip">
+             <string>input6</string>
+            </property>
+            <property name="overwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::TextEditorInteraction</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="cwrtext">
+            <property name="toolTip">
+             <string>input6</string>
+            </property>
+            <property name="overwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="textInteractionFlags">
+             <set>Qt::TextEditorInteraction</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="gwreqlabel">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
      </widget>
     </item>
    </layout>
-   <zorder>iconnamewgt</zorder>
-   <zorder>iconwgt</zorder>
-   <zorder>widget</zorder>
-   <zorder>stackedWidget</zorder>
   </widget>
  </widget>
  <resources>
-  <include location="george/icon.qrc"/>
+  <include location="icon.qrc"/>
  </resources>
  <connections>
   <connection>
@@ -850,7 +952,7 @@ background-color: rgb(255, 255, 255);
    </hints>
   </connection>
   <connection>
-   <sender>pushButton_7</sender>
+   <sender>signout_2</sender>
    <signal>toggled(bool)</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>
@@ -882,7 +984,7 @@ background-color: rgb(255, 255, 255);
    </hints>
   </connection>
   <connection>
-   <sender>pushButton_10</sender>
+   <sender>signout_3</sender>
    <signal>toggled(bool)</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>

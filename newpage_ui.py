@@ -52,6 +52,8 @@ class Ui_MainWindow(object):
 
         self.allhero = QPushButton(self.layoutWidget)
         self.allhero.setObjectName(u"allhero")
+        self.allhero.setCheckable(True)
+        self.allhero.setAutoExclusive(True)
 
         self.verticalLayout.addWidget(self.allhero)
 
@@ -61,6 +63,7 @@ class Ui_MainWindow(object):
         icon.addFile(u":/Assassin_Icon.webp", QSize(), QIcon.Normal, QIcon.Off)
         self.assa.setIcon(icon)
         self.assa.setCheckable(True)
+        self.assa.setAutoExclusive(True)
 
         self.verticalLayout.addWidget(self.assa)
 
@@ -70,6 +73,7 @@ class Ui_MainWindow(object):
         icon1.addFile(u":/Tank_Icon.webp", QSize(), QIcon.Normal, QIcon.Off)
         self.tank.setIcon(icon1)
         self.tank.setCheckable(True)
+        self.tank.setAutoExclusive(True)
 
         self.verticalLayout.addWidget(self.tank)
 
@@ -79,6 +83,7 @@ class Ui_MainWindow(object):
         icon2.addFile(u":/Fighter_Icon.webp", QSize(), QIcon.Normal, QIcon.Off)
         self.fighter.setIcon(icon2)
         self.fighter.setCheckable(True)
+        self.fighter.setAutoExclusive(True)
 
         self.verticalLayout.addWidget(self.fighter)
 
@@ -88,6 +93,7 @@ class Ui_MainWindow(object):
         icon3.addFile(u":/Mage_Icon.webp", QSize(), QIcon.Normal, QIcon.Off)
         self.mage.setIcon(icon3)
         self.mage.setCheckable(True)
+        self.mage.setAutoExclusive(True)
 
         self.verticalLayout.addWidget(self.mage)
 
@@ -97,6 +103,7 @@ class Ui_MainWindow(object):
         icon4.addFile(u":/Marksman_Icon.webp", QSize(), QIcon.Normal, QIcon.Off)
         self.mm.setIcon(icon4)
         self.mm.setCheckable(True)
+        self.mm.setAutoExclusive(True)
 
         self.verticalLayout.addWidget(self.mm)
 
@@ -106,6 +113,7 @@ class Ui_MainWindow(object):
         icon5.addFile(u":/Support_Icon.webp", QSize(), QIcon.Normal, QIcon.Off)
         self.sup.setIcon(icon5)
         self.sup.setCheckable(True)
+        self.sup.setAutoExclusive(True)
 
         self.verticalLayout.addWidget(self.sup)
 
@@ -160,7 +168,8 @@ class Ui_MainWindow(object):
         self.Saber.setGeometry(QRect(20, 60, 81, 23))
         self.Saber.setStyleSheet(u"background-color: rgb(0, 170, 255);\n"
 "color: rgb(255, 255, 255);")
-        self.Saber.setCheckable(False)
+        self.Saber.setCheckable(True)
+        self.Saber.setAutoExclusive(True)
         self.label_9 = QLabel(self.frame)
         self.label_9.setObjectName(u"label_9")
         self.label_9.setGeometry(QRect(20, 0, 81, 51))
@@ -171,25 +180,29 @@ class Ui_MainWindow(object):
         self.Karina.setGeometry(QRect(130, 60, 81, 23))
         self.Karina.setStyleSheet(u"background-color: rgb(0, 170, 255);\n"
 "color: rgb(255, 255, 255);")
-        self.Karina.setCheckable(False)
+        self.Karina.setCheckable(True)
+        self.Karina.setAutoExclusive(True)
         self.Alucard = QPushButton(self.frame)
         self.Alucard.setObjectName(u"Alucard")
         self.Alucard.setGeometry(QRect(240, 60, 81, 23))
         self.Alucard.setStyleSheet(u"background-color: rgb(0, 170, 255);\n"
 "color: rgb(255, 255, 255);")
-        self.Alucard.setCheckable(False)
+        self.Alucard.setCheckable(True)
+        self.Alucard.setAutoExclusive(True)
         self.Hayabusa = QPushButton(self.frame)
         self.Hayabusa.setObjectName(u"Hayabusa")
         self.Hayabusa.setGeometry(QRect(440, 60, 81, 23))
         self.Hayabusa.setStyleSheet(u"background-color: rgb(0, 170, 255);\n"
 "color: rgb(255, 255, 255);")
-        self.Hayabusa.setCheckable(False)
+        self.Hayabusa.setCheckable(True)
+        self.Hayabusa.setAutoExclusive(True)
         self.Fanny = QPushButton(self.frame)
         self.Fanny.setObjectName(u"Fanny")
         self.Fanny.setGeometry(QRect(340, 60, 81, 23))
         self.Fanny.setStyleSheet(u"background-color: rgb(0, 170, 255);\n"
 "color: rgb(255, 255, 255);")
-        self.Fanny.setCheckable(False)
+        self.Fanny.setCheckable(True)
+        self.Fanny.setAutoExclusive(True)
         self.Natalia = QPushButton(self.frame)
         self.Natalia.setObjectName(u"Natalia")
         self.Natalia.setGeometry(QRect(540, 60, 81, 23))
