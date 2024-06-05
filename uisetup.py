@@ -27,6 +27,11 @@ class heroinfo(QMainWindow,Ui_MainWindow):
         self.Fanny.clicked.connect(partial(self.saberpg, 4))
         self.Hayabusa.clicked.connect(partial(self.saberpg, 5))
         self.Natalia.clicked.connect(partial(self.saberpg, 6))
+        self.Lancelot.clicked.connect(partial(self.saberpg, 7))
+        self.Helcurt.clicked.connect(partial(self.saberpg, 8))
+        self.Gusion.clicked.connect(partial(self.saberpg, 9))
+        self.Hanzo.clicked.connect(partial(self.saberpg, 10))
+        self.Ling.clicked.connect(partial(self.saberpg, 11))
       
     def allpg(self):
         self.stackedWidget.setCurrentIndex(0)
