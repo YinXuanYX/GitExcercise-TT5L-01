@@ -25,6 +25,8 @@ class heroinfo(QMainWindow,Ui_MainWindow):
         self.Karina.clicked.connect(partial(self.saberpg, 2))
         self.Alucard.clicked.connect(partial(self.saberpg, 3))
         self.Fanny.clicked.connect(partial(self.saberpg, 4))
+        self.Hayabusa.clicked.connect(partial(self.saberpg, 5))
+        self.Natalia.clicked.connect(partial(self.saberpg, 6))
       
     def allpg(self):
         self.stackedWidget.setCurrentIndex(0)
@@ -51,12 +53,6 @@ class heroinfo(QMainWindow,Ui_MainWindow):
         self.stackedWidget.setCurrentIndex(7)
         conn = sqlite3.connect('heroes.db')
         cursor = conn.cursor()
-        self.heropic.setPixmap(QPixmap(u":/Saber.png"))
-        self.passivepic.setPixmap(QPixmap(u":/EnemyBane.png"))
-        self.skill1pic.setPixmap(QPixmap(u":/Orbiting_Swords.png"))
-        self.skill2pic.setPixmap(QPixmap(u":/Charge.png")) 
-        self.ultipic.setPixmap(QPixmap(u":/Triple_Sweep.png"))
-
         cursor.execute('SELECT Passive_name, Passive, Skill_1_name, Skill_1, Skill_2_name, Skill_2, Skill_3_name, Skill_3, Ultimate_name, Ultimate, Heroimage, passive_image, skill1_image, skill2_image, ultimate_image FROM heroes WHERE Id = ?', (item_id,))
         result = cursor.fetchone()
 
