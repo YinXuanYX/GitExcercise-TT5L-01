@@ -1,6 +1,6 @@
 from calculatormain1 import Ui_MainWindow
-from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton, QWidget
-
+from PyQt6.QtWidgets import QApplication, QMainWindow
+import sqlite3
 
 class MySideBar(QMainWindow, Ui_MainWindow):
     def __init__(self):
@@ -19,9 +19,27 @@ class MySideBar(QMainWindow, Ui_MainWindow):
         self.gamesbtn.clicked.connect(self.switch_to_gamespg)
         self.gamesbtn1.clicked.connect(self.switch_to_gamespg)
 
+        self.rrbtn.clicked.connect(self.switch_to_rankpg)
+        self.rrbtn1.clicked.connect(self.switch_to_rankpg)
+
         self.calcbtn1.clicked.connect(self.calculate1)
         self.calcbtn2.clicked.connect(self.calculate2)
         self.calcbtn3.clicked.connect(self.calculate3)
+
+        self.warriorbtn.clicked.connect(self.switch_to_warriorpg)
+        self.masterbtn.clicked.connect(self.switch_to_masterpg)
+        self.elitebtn.clicked.connect(self.switch_to_elitepg)
+        self.grandmasterbtn.clicked.connect(self.switch_to_grandmasterpg)
+        self.epicbtn.clicked.connect(self.switch_to_epicpg)
+        self.legendbtn.clicked.connect(self.switch_to_legendpg)
+        self.mythicbtn.clicked.connect(self.switch_to_mythicpg)
+        self.rtrnbtn1.clicked.connect(self.switch_to_rankpg)
+        self.rtrnbtn2.clicked.connect(self.switch_to_rankpg)
+        self.rtrnbtn3.clicked.connect(self.switch_to_rankpg)
+        self.rtrnbtn4.clicked.connect(self.switch_to_rankpg)
+        self.rtrnbtn5.clicked.connect(self.switch_to_rankpg)
+        self.rtrnbtn6.clicked.connect(self.switch_to_rankpg)
+        self.rtrnbtn7.clicked.connect(self.switch_to_rankpg)
 
     def switch_to_overallpg(self):
         self.stackedWidget.setCurrentIndex(0)
@@ -31,6 +49,32 @@ class MySideBar(QMainWindow, Ui_MainWindow):
    
     def switch_to_gamespg(self):
         self.stackedWidget.setCurrentIndex(2)
+
+    def switch_to_rankpg(self):
+        self.stackedWidget.setCurrentIndex(3)
+
+    def switch_to_warriorpg(self):
+        self.stackedWidget.setCurrentIndex(4)
+
+    def switch_to_elitepg(self):
+        self.stackedWidget.setCurrentIndex(5)
+
+    def switch_to_masterpg(self):
+        self.stackedWidget.setCurrentIndex(6)
+
+    def switch_to_grandmasterpg(self):
+        self.stackedWidget.setCurrentIndex(7)
+
+    def switch_to_epicpg(self):
+        self.stackedWidget.setCurrentIndex(8)
+
+    def switch_to_legendpg(self):
+        self.stackedWidget.setCurrentIndex(9)
+
+    def switch_to_mythicpg(self):
+        self.stackedWidget.setCurrentIndex(10)
+    
+
 
     def calculate1(self):
         input_text1 = self.now1.toPlainText()
@@ -63,12 +107,26 @@ class MySideBar(QMainWindow, Ui_MainWindow):
         try:
             value1 = float(input_text5)
             value2 = float(input_text6)
-            value3 = float(input_text7) 
-            result = ((value1 * value2) -(value1 * value3))/ (value2 -100)
+            value3 = float(input_text7)
+            result = (((((value3 / 100) * value1) - (value2 * value1 / 100)) / (1 - (value3 / 100))))
             self.gwreqlabel.setText(f" {int(result)}")
         except Exception as e:
             self.gwreqlabel.setText(f"Error: {e}")
 
+    def load_data(self):
+        conn = sqlite3.connect('rank.db')
+        cursor = conn.cursor()
+        cursor.execute('SELECT * FROM "Ranking Rewards"')
+        rows = cursor.fetchall()
+
+        data_text = "\n".join(", ".join(map(str, row)) for row in rows)
+
+        self.warriorinfo.setText(data_text)
+
+        conn.close()
+        
+
+                
 
 def main():
     app = QApplication([])
