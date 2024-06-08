@@ -74,22 +74,7 @@ background-color: rgb(147, 172, 255);</string>
            </spacer>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout">
-            <item>
-             <widget class="QLineEdit" name="lineEdit"/>
-            </item>
-            <item>
-             <widget class="QPushButton" name="search">
-              <property name="text">
-               <string/>
-              </property>
-              <property name="icon">
-               <iconset resource="resources.qrc">
-                <normaloff>:/images/search.png</normaloff>:/images/search.png</iconset>
-              </property>
-             </widget>
-            </item>
-           </layout>
+           <layout class="QHBoxLayout" name="horizontalLayout"/>
           </item>
          </layout>
         </widget>
@@ -109,7 +94,7 @@ background-color: rgb(147, 172, 255);</string>
 </string>
          </property>
          <property name="currentIndex">
-          <number>6</number>
+          <number>3</number>
          </property>
          <widget class="QWidget" name="Landing_Page">
           <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -237,7 +222,66 @@ background-color: rgb(147, 172, 255);</string>
            <item>
             <widget class="QScrollArea" name="scrollArea">
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(85, 0, 127);</string>
+              <string notr="true">/*VERTICAL SCROLLBAR */
+QScrollBar:vertical {
+	boder:none;
+	background-color: rgb(59, 59, 90);
+	width: 14px;
+	margin: 15px 0 15px 0;
+	boder-radius: 0px;
+}
+/* HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical{
+ background-color: rgb(80, 80, 122);
+ min-height: 30px;
+ border-radius: 7px;
+}
+
+QScrollBar::handle:vertical:hover{
+ background-color: rgb(255, 0, 127);
+}
+QScrollBar::handle:vertical:pressed{
+ background-color: rgb(185, 0, 92);
+}
+
+/*BTN TOP */
+QScrollBar::sub-line:vertical{
+ border:none;
+ background-color: rgb(59, 59, 90);
+ height: 15px;
+ border-top-left-radius: 7px;
+ border-top-right-radius: 7px;
+ subcontrol-position: top;
+ subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover{
+ background-color: rgb(255, 0, 127);
+}
+QScrollBar::sub-line:vertical:pressed{
+ background-color: rgb(185, 0, 92);
+}
+
+/*BTN BOTTOM */
+QScrollBar::sub-line:vertical{
+ border:none;
+ background-color: rgb(59, 59, 90);
+ height: 15px;
+ border-bottom-left-radius: 7px;
+ border-bottom-right-radius: 7px;
+ subcontrol-position: bottom;
+ subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover{
+ background-color: rgb(255, 0, 127);
+}
+QScrollBar::add-line:vertical:pressed{
+ background-color: rgb(185, 0, 92);
+}
+
+
+
+
+</string>
              </property>
              <property name="widgetResizable">
               <bool>true</bool>
@@ -245,8 +289,8 @@ background-color: rgb(147, 172, 255);</string>
              <widget class="QWidget" name="scrollAreaWidgetContents">
               <property name="geometry">
                <rect>
-                <x>0</x>
-                <y>0</y>
+                <x>-65</x>
+                <y>-478</y>
                 <width>1222</width>
                 <height>1222</height>
                </rect>
@@ -261,7 +305,7 @@ background-color: rgb(147, 172, 255);</string>
                   </size>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(85, 170, 255);</string>
+                  <string notr="true">background-color: rgb(170, 255, 0);</string>
                  </property>
                  <property name="frameShape">
                   <enum>QFrame::StyledPanel</enum>
@@ -1012,6 +1056,16 @@ QPushButton{
                  </property>
                  <property name="text">
                   <string>Flask of The Oasis</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="resources.qrc">
+                   <normaloff>:/images/Flask_of_the_Oasis.webp</normaloff>:/images/Flask_of_the_Oasis.webp</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>40</width>
+                   <height>40</height>
+                  </size>
                  </property>
                  <property name="checkable">
                   <bool>true</bool>
@@ -2772,7 +2826,7 @@ QPushButton{
             <widget class="QLabel" name="ItemPassive">
              <property name="font">
               <font>
-               <pointsize>16</pointsize>
+               <pointsize>18</pointsize>
                <weight>50</weight>
                <bold>false</bold>
               </font>
