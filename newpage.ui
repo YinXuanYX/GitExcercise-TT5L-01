@@ -298,7 +298,7 @@ color: rgb(255, 255, 255);</string>
              <string>Saber</string>
             </property>
             <property name="checkable">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <property name="autoExclusive">
              <bool>true</bool>
@@ -340,7 +340,7 @@ color: rgb(255, 255, 255);</string>
              <string>Karina</string>
             </property>
             <property name="checkable">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <property name="autoExclusive">
              <bool>true</bool>
@@ -363,7 +363,7 @@ color: rgb(255, 255, 255);</string>
              <string>Alucard</string>
             </property>
             <property name="checkable">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <property name="autoExclusive">
              <bool>true</bool>
@@ -386,7 +386,7 @@ color: rgb(255, 255, 255);</string>
              <string>Hayabusa</string>
             </property>
             <property name="checkable">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <property name="autoExclusive">
              <bool>true</bool>
@@ -409,7 +409,7 @@ color: rgb(255, 255, 255);</string>
              <string>Fanny</string>
             </property>
             <property name="checkable">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <property name="autoExclusive">
              <bool>true</bool>
@@ -628,7 +628,7 @@ color: rgb(255, 255, 255);</string>
              <string>Gusion</string>
             </property>
             <property name="checkable">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <property name="autoExclusive">
              <bool>true</bool>
@@ -692,7 +692,7 @@ color: rgb(255, 255, 255);</string>
              <string>Hanzo</string>
             </property>
             <property name="checkable">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <property name="autoExclusive">
              <bool>true</bool>
@@ -718,7 +718,7 @@ color: rgb(255, 255, 255);</string>
              <string>Ling</string>
             </property>
             <property name="checkable">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <property name="autoExclusive">
              <bool>true</bool>
@@ -763,7 +763,7 @@ color: rgb(255, 255, 255);</string>
              <string>Aamon</string>
             </property>
             <property name="checkable">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <property name="autoExclusive">
              <bool>true</bool>
@@ -827,7 +827,7 @@ color: rgb(255, 255, 255);</string>
              <string>Joy</string>
             </property>
             <property name="checkable">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <property name="autoExclusive">
              <bool>true</bool>
@@ -872,7 +872,7 @@ color: rgb(255, 255, 255);</string>
              <string>Nolan</string>
             </property>
             <property name="checkable">
-             <bool>true</bool>
+             <bool>false</bool>
             </property>
             <property name="autoExclusive">
              <bool>true</bool>

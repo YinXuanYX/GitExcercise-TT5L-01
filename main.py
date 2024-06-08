@@ -1,6 +1,9 @@
-from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QGridLayout, QVBoxLayout, QHBoxLayout, QWidget, QDialog
-from PyQt6.QtGui import QIcon
-from PyQt6.QtCore import Qt
+from PySide6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QGridLayout, QVBoxLayout, QHBoxLayout, QWidget, QDialog
+from PySide6.QtGui import QIcon
+from PySide6.QtCore import Qt
+from uisetup import heroinfo
+import sys
+import subprocess
 
 class Window(QMainWindow):
     def __init__(self):
@@ -38,6 +41,8 @@ class Window(QMainWindow):
         buttonLayout.addWidget(self.button3)
         buttonLayout.addSpacing(50)
         buttonLayout.addWidget(self.button4)
+        
+        
 
         self.label = QLabel("Welcome to the best guides app for Mobile Legends Bang Bang", alignment=Qt.AlignmentFlag.AlignCenter)
         font = self.font()
@@ -51,13 +56,14 @@ class Window(QMainWindow):
         centerWidget.setLayout(parentLayout)
         self.setCentralWidget(centerWidget)
 
-
-
-app = QApplication([])
+        self.button1.clicked.connect(self.run_heropage)
+    
+    def run_heropage(self):
+        subprocess.Popen(['python', 'heropage.py'])  # Execute heropage.py
+   
+app = QApplication(sys.argv)
 window = Window()
-
-
 window.show()
-app.exec()
+sys.exit(app.exec())
 
 
