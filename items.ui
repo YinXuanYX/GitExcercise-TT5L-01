@@ -52,7 +52,7 @@ background-color: rgb(147, 172, 255);</string>
              <string/>
             </property>
             <property name="icon">
-             <iconset resource="resources.qrc">
+             <iconset resource="resources_items.qrc">
               <normaloff>:/images/menu.png</normaloff>:/images/menu.png</iconset>
             </property>
             <property name="checkable">
@@ -193,7 +193,7 @@ background-color: rgb(147, 172, 255);</string>
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap resource="resources.qrc">:/images/images.jpeg</pixmap>
+               <pixmap resource="resources_items.qrc">:/images/images.jpeg</pixmap>
               </property>
               <property name="scaledContents">
                <bool>false</bool>
@@ -207,7 +207,7 @@ background-color: rgb(147, 172, 255);</string>
                <string/>
               </property>
               <property name="pixmap">
-               <pixmap resource="resources.qrc">:/images/blade_of_kibou.jpeg</pixmap>
+               <pixmap resource="resources_items.qrc">:/images/blade_of_kibou.jpeg</pixmap>
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
@@ -289,8 +289,8 @@ QScrollBar::add-line:vertical:pressed{
              <widget class="QWidget" name="scrollAreaWidgetContents">
               <property name="geometry">
                <rect>
-                <x>-65</x>
-                <y>-478</y>
+                <x>0</x>
+                <y>0</y>
                 <width>1222</width>
                 <height>1222</height>
                </rect>
@@ -1058,7 +1058,7 @@ QPushButton{
                   <string>Flask of The Oasis</string>
                  </property>
                  <property name="icon">
-                  <iconset resource="resources.qrc">
+                  <iconset resource="resources_items.qrc">
                    <normaloff>:/images/Flask_of_the_Oasis.webp</normaloff>:/images/Flask_of_the_Oasis.webp</iconset>
                  </property>
                  <property name="iconSize">
@@ -2909,7 +2909,7 @@ QPushButton:checked{
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="resources.qrc">:/images/mlbb.jpg</pixmap>
+            <pixmap resource="resources_items.qrc">:/images/mlbb.jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -2952,7 +2952,7 @@ QPushButton:checked{
             <string>HOME</string>
            </property>
            <property name="icon">
-            <iconset resource="resources.qrc">
+            <iconset resource="resources_items.qrc">
              <normaloff>:/images/home_button.png</normaloff>:/images/home_button.png</iconset>
            </property>
            <property name="iconSize">
@@ -2975,7 +2975,7 @@ QPushButton:checked{
             <string>PHYSICAL</string>
            </property>
            <property name="icon">
-            <iconset resource="resources.qrc">
+            <iconset resource="resources_items.qrc">
              <normaloff>:/images/Blade_of_Despair.webp</normaloff>:/images/Blade_of_Despair.webp</iconset>
            </property>
            <property name="iconSize">
@@ -2998,7 +2998,7 @@ QPushButton:checked{
             <string>MAGIC</string>
            </property>
            <property name="icon">
-            <iconset resource="resources.qrc">
+            <iconset resource="resources_items.qrc">
              <normaloff>:/images/Genius_Wand.webp</normaloff>:/images/Genius_Wand.webp</iconset>
            </property>
            <property name="iconSize">
@@ -3021,7 +3021,7 @@ QPushButton:checked{
             <string>DEFENSE</string>
            </property>
            <property name="icon">
-            <iconset resource="resources.qrc">
+            <iconset resource="resources_items.qrc">
              <normaloff>:/images/Antique_Cuirass.webp</normaloff>:/images/Antique_Cuirass.webp</iconset>
            </property>
            <property name="iconSize">
@@ -3044,7 +3044,7 @@ QPushButton:checked{
             <string>MOVEMENT</string>
            </property>
            <property name="icon">
-            <iconset resource="resources.qrc">
+            <iconset resource="resources_items.qrc">
              <normaloff>:/images/Swift_Boots.webp</normaloff>:/images/Swift_Boots.webp</iconset>
            </property>
            <property name="iconSize">
@@ -3082,7 +3082,7 @@ QPushButton:checked{
           <string>CLOSE</string>
          </property>
          <property name="icon">
-          <iconset resource="resources.qrc">
+          <iconset resource="resources_items.qrc">
            <normaloff>:/images/log_out.png</normaloff>:/images/log_out.png</iconset>
          </property>
          <property name="iconSize">
@@ -3140,7 +3140,7 @@ QPushButton:checked{
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="resources.qrc">:/images/mlbb.jpg</pixmap>
+            <pixmap resource="resources_items.qrc">:/images/mlbb.jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -3163,7 +3163,7 @@ QPushButton:checked{
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="resources.qrc">
+            <iconset resource="resources_items.qrc">
              <normaloff>:/images/home_button.png</normaloff>:/images/home_button.png</iconset>
            </property>
            <property name="iconSize">
@@ -3186,7 +3186,7 @@ QPushButton:checked{
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="resources.qrc">
+            <iconset resource="resources_items.qrc">
              <normaloff>:/images/Blade_of_Despair.webp</normaloff>:/images/Blade_of_Despair.webp</iconset>
            </property>
            <property name="iconSize">
@@ -3209,7 +3209,7 @@ QPushButton:checked{
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="resources.qrc">
+            <iconset resource="resources_items.qrc">
              <normaloff>:/images/Genius_Wand.webp</normaloff>:/images/Genius_Wand.webp</iconset>
            </property>
            <property name="iconSize">
@@ -3232,7 +3232,7 @@ QPushButton:checked{
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="resources.qrc">
+            <iconset resource="resources_items.qrc">
              <normaloff>:/images/Antique_Cuirass.webp</normaloff>:/images/Antique_Cuirass.webp</iconset>
            </property>
            <property name="iconSize">
@@ -3255,7 +3255,7 @@ QPushButton:checked{
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="resources.qrc">
+            <iconset resource="resources_items.qrc">
              <normaloff>:/images/Swift_Boots.webp</normaloff>:/images/Swift_Boots.webp</iconset>
            </property>
            <property name="iconSize">
@@ -3293,7 +3293,7 @@ QPushButton:checked{
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="resources.qrc">
+          <iconset resource="resources_items.qrc">
            <normaloff>:/images/log_out.png</normaloff>:/images/log_out.png</iconset>
          </property>
          <property name="iconSize">
@@ -3314,8 +3314,7 @@ QPushButton:checked{
   </widget>
  </widget>
  <resources>
-  <include location="resources.qrc"/>
-  <include location="../../Users/tanyi/.designer/backup/resources.qrc"/>
+  <include location="resources_items.qrc"/>
  </resources>
  <connections>
   <connection>
