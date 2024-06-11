@@ -30,9 +30,9 @@ class Window(QMainWindow):
         ''')
 
         self.button1 = QPushButton("Heroes")
-        self.button2 = QPushButton("Skins")
-        self.button3 = QPushButton("Events and recharge")
-        self.button4 = QPushButton("Rank system and line ups")
+        self.button2 = QPushButton("Items")
+        self.button3 = QPushButton("Ranked")
+        self.button4 = QPushButton("Win rate calculator")
 
         buttonLayout.addWidget(self.button1)
         buttonLayout.addSpacing(50)
@@ -57,9 +57,12 @@ class Window(QMainWindow):
         self.setCentralWidget(centerWidget)
 
         self.button1.clicked.connect(self.run_heropage)
+        self.button2.clicked.connect(self.run_Itemspage)
     
     def run_heropage(self):
         subprocess.Popen(['python', 'heropage.py'])  # Execute heropage.py
+    def run_Itemspage(self):
+        subprocess.Popen(['python', 'main_items.py'])  
    
 app = QApplication(sys.argv)
 window = Window()
