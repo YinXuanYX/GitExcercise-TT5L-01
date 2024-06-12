@@ -34,6 +34,10 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
 
         self.bootsicon.clicked.connect(self.switch_to_MovementPage)
         self.bootsname.clicked.connect(self.switch_to_MovementPage)
+
+        self.AllItemsIcon.clicked.connect(self.switch_to_AllPage)
+        self.AllItemsName.clicked.connect(self.switch_to_AllPage)
+
          
         #physical items buttons 
         #use partial to avoid the extra argument problem so each button correctly passes item ID to the switch_to_ItemInfoPage function
@@ -55,6 +59,25 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
         self.Corrosion_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 16))
         self.DHS_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 17))
 
+        #all part
+        self.BOD_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 1))
+        self.melefic_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 2))
+        self.GreatDragon_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 3))
+        self.SeaHalbert_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 4))
+        self.RoseGold_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 5))
+        self.Bloodlust_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 6))
+        self.Hunter_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 7))
+        self.Heptaseas_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 8))
+        self.Windtalker_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 9))
+        self.Endless_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 10))
+        self.Berserker_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 11))
+        self.Haas_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 12))
+        self.WarX_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 13))
+        self.WON_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 14))
+        self.Golden_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 15))
+        self.Corrosion_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 16))
+        self.DHS_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 17))
+
         #Magic Items Buttons
         self.Flask_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 18))
         self.Genius_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 19))
@@ -73,6 +96,24 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
         self.Winter_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 32))
         self.Enchanted_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 33))
 
+        #all part
+        self.Flask_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 18))
+        self.Genius_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 19))
+        self.lightning_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 20))
+        self.fleeting_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 21))
+        self.BloodWings_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 22))
+        self.COD_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 23))
+        self.Starlium_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 24))
+        self.Glowing_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 25))
+        self.IceQueenWand_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 26))
+        self.Concentrated_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 27))
+        self.Holy_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 28))
+        self.Divine_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 29))
+        self.NOD_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 30))
+        self.Feather_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 31))
+        self.Winter_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 32))
+        self.Enchanted_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 33))
+
         #defense buttons
         self.radiant_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 34))
         self.twilight_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 35))
@@ -87,6 +128,21 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
         self.thunder_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 44))
         self.queenswings_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 45))
         self.Bladearmor_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 46))
+
+        #all part
+        self.radiant_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 34))
+        self.twilight_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 35))
+        self.bruteforce_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 36))
+        self.immo_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 37))
+        self.dominance_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 38))
+        self.athena_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 39))
+        self.Oracle_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 40))
+        self.antique_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 41))
+        self.Guardian_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 42))
+        self.cursehelmet_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 43))
+        self.thunder_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 44))
+        self.queenswings_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 45))
+        self.Bladearmor_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 46))
         
         #movement buttons
         self.demonBoots_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 47))
@@ -103,11 +159,31 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
         self.Encourage_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 58))
         self.Favour_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 59))
         self.Dire_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 60))
+
+        #all part
+        self.demonBoots_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 47))
+        self.RapidBoots_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 48))
+        self.swiftboots_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 49))
+        self.ArcaneBoots_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 50))
+        self.MagicBoots_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 51))
+        self.ToughBoots_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 52))
+        self.WarriorBoots_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 53))
+        self.FlameRetri_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 54))
+        self.IceRetri_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 55))
+        self.BloodyRetri_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 56))
+        self.Conceal_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 57))
+        self.Encourage_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 58))
+        self.Favour_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 59))
+        self.Dire_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 60))
         
 
 
     def switch_to_LandingPage(self):
         self.stackedWidget.setCurrentIndex(0)
+
+    def switch_to_AllPage(self):
+        self.stackedWidget.setCurrentIndex(1)
+
     def switch_to_PhysicalPage(self):
         self.stackedWidget.setCurrentIndex(2)
 
