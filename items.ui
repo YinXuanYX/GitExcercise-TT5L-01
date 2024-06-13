@@ -93,7 +93,7 @@ background-color: rgb(147, 172, 255);</string>
 </string>
          </property>
          <property name="currentIndex">
-          <number>1</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="Landing_Page">
           <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -166,7 +166,7 @@ background-color: rgb(147, 172, 255);</string>
               <number>1</number>
              </property>
              <property name="text">
-              <string>Are you ready to elevate your Mobile Legends gameplay? Whether you're a seasoned veteran or just starting your journey in the Land of Dawn, mastering the right items can make all the difference between victory and defeat. Our comprehensive items guide is designed to provide you with detailed insights, strategies, and tips to optimize your hero builds and dominate the battlefield. </string>
+              <string>Are you ready to elevate your Mobile Legends gameplay? Whether you're a seasoned veteran or just starting your journey in the Land of Dawn, mastering the right items can make all the difference between victory and defeat. Our comprehensive items guide is designed to provide you with detailed insights to optimize your hero builds and dominate the battlefield. </string>
              </property>
              <property name="alignment">
               <set>Qt::AlignJustify|Qt::AlignVCenter</set>
