@@ -1,6 +1,7 @@
 from calculatormain1 import Ui_MainWindow
 from PyQt6.QtWidgets import QApplication, QMainWindow
 import sqlite3
+import icon_rc
 
 class MySideBar(QMainWindow, Ui_MainWindow):
     def __init__(self):
@@ -40,7 +41,9 @@ class MySideBar(QMainWindow, Ui_MainWindow):
         self.rtrnbtn5.clicked.connect(self.switch_to_rankpg)
         self.rtrnbtn6.clicked.connect(self.switch_to_rankpg)
         self.rtrnbtn7.clicked.connect(self.switch_to_rankpg)
-
+        self.honorbtn.clicked.connect(self.switch_to_hononarypg)
+        self.load_data()
+    
     def switch_to_overallpg(self):
         self.stackedWidget.setCurrentIndex(0)
     
@@ -55,25 +58,35 @@ class MySideBar(QMainWindow, Ui_MainWindow):
 
     def switch_to_warriorpg(self):
         self.stackedWidget.setCurrentIndex(4)
+        self.load_data()
 
     def switch_to_elitepg(self):
         self.stackedWidget.setCurrentIndex(5)
+        self.load_data()
 
     def switch_to_masterpg(self):
         self.stackedWidget.setCurrentIndex(6)
+        self.load_data()
 
     def switch_to_grandmasterpg(self):
         self.stackedWidget.setCurrentIndex(7)
+        self.load_data()
 
     def switch_to_epicpg(self):
         self.stackedWidget.setCurrentIndex(8)
+        self.load_data()
 
     def switch_to_legendpg(self):
         self.stackedWidget.setCurrentIndex(9)
+        self.load_data()
 
     def switch_to_mythicpg(self):
         self.stackedWidget.setCurrentIndex(10)
-    
+        self.load_data()
+
+    def switch_to_hononarypg(self):
+        self.stackedWidget.setCurrentIndex(11)
+        self.load_data()
 
 
     def calculate1(self):
@@ -116,18 +129,17 @@ class MySideBar(QMainWindow, Ui_MainWindow):
     def load_data(self):
         conn = sqlite3.connect('rank.db')
         cursor = conn.cursor()
-        cursor.execute('SELECT * FROM "Ranking Rewards"')
-        rows = cursor.fetchall()
+        cursor.execute('SELECT * FROM "Ranking Rewards" ORDER BY id')
+        data = cursor.fetchall()
 
-        data_text = "\n".join(", ".join(map(str, row)) for row in rows)
-
-        self.warriorinfo.setText(data_text)
+        labels = [self.warriorinfo, self.eliteinfo, self.masterinfo, self.grandmasterinfo, self.epicinfo, self.legendinfo, self.myhticinfo]
+        
+        for i, row in enumerate(data[:7]): 
+            display_text = "\n".join(f"• {str(item)}" for item in row[2:])
+            labels[i].setText(display_text)
 
         conn.close()
-        
-
-                
-
+             
 def main():
     app = QApplication([])
     window = MySideBar()
