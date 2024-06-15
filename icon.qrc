@@ -1,0 +1,15 @@
+<RCC>
+  <qresource>
+    <file>icons/Warrior.png</file>
+    <file>icons/Elite.png</file>
+    <file>icons/Epic.png</file>
+    <file>icons/Grandmaster.png</file>
+    <file>icons/honorary titles.png</file>
+    <file>icons/Legend.png</file>
+    <file>icons/Master.png</file>
+    <file>icons/menubtn.png</file>
+    <file>icons/mlbb.jpg</file>
+    <file>icons/Mythic.png</file>
+    <file>icons/signout.png</file>
+  </qresource>
+</RCC>
