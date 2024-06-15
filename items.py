@@ -36,9 +36,8 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
         self.bootsname.clicked.connect(self.switch_to_MovementPage)
 
         self.AllItemsIcon.clicked.connect(self.switch_to_AllPage)
-        self.AllItemsName.clicked.connect(self.switch_to_AllPage)
+        self.AllItemsName.clicked.connect(self.switch_to_AllPage) 
 
-         
         #physical items buttons 
         #use partial to avoid the extra argument problem so each button correctly passes item ID to the switch_to_ItemInfoPage function
         self.BOD_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 1))
@@ -59,7 +58,7 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
         self.Corrosion_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 16))
         self.DHS_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 17))
 
-        #all part
+        #code for sort
         self.BOD_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 1))
         self.melefic_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 2))
         self.GreatDragon_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 3))
@@ -96,7 +95,7 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
         self.Winter_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 32))
         self.Enchanted_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 33))
 
-        #all part
+        #code for sort
         self.Flask_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 18))
         self.Genius_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 19))
         self.lightning_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 20))
@@ -129,7 +128,7 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
         self.queenswings_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 45))
         self.Bladearmor_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 46))
 
-        #all part
+        #code for sort
         self.radiant_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 34))
         self.twilight_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 35))
         self.bruteforce_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 36))
@@ -160,7 +159,7 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
         self.Favour_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 59))
         self.Dire_button.clicked.connect(partial(self.switch_to_ItemInfoPage, 60))
 
-        #all part
+        #code for sort
         self.demonBoots_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 47))
         self.RapidBoots_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 48))
         self.swiftboots_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 49))
@@ -176,8 +175,7 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
         self.Favour_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 59))
         self.Dire_button_2.clicked.connect(partial(self.switch_to_ItemInfoPage, 60))
         
-
-
+#switch pages
     def switch_to_LandingPage(self):
         self.stackedWidget.setCurrentIndex(0)
 
@@ -195,8 +193,6 @@ class ItemsGuide(QMainWindow, Ui_MainWindow):
     
     def switch_to_MovementPage(self):
         self.stackedWidget.setCurrentIndex(5)
-
-
     #*args allows the thing to accept any number of additional arguments, solve the issue of receiving more arguments than expected from the clicked signal. Basically for the double digit.
 
     def switch_to_ItemInfoPage(self, item_id, *args):
