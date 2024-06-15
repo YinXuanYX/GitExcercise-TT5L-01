@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1402</width>
+    <height>698</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #D1E7FF
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="Welcome">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>120</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>20</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    background: qlineargradient(
+        spread: pad, x1: 0, y1: 0, x2: 1, y2: 0,
+        stop:0 #E6E6FA, stop:0.2 #B3E5FC, stop: 0.4 #E6E6FA,
+        stop: 0.6 #B3E5FC, stop: 0.8 #B3E5FC, stop: 1 #E6E6FA
+    );
+}
+</string>
+           </property>
+           <property name="text">
+            <string>WELCOME TO THE MLBB ULTIMATE GUIDE!!!</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>25</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    background: qlineargradient(
+        spread: pad, x1: 0, y1: 0, x2: 1, y2: 0,
+        stop:0 #E6E6FA, stop:0.2 #B3E5FC, stop: 0.4 #E6E6FA,
+        stop: 0.6 #B3E5FC, stop: 0.8 #B3E5FC, stop: 1 #E6E6FA
+    );
+}
+</string>
+           </property>
+           <property name="text">
+            <string>CLICK THE BUTTONS BELOW TO NAVIGATE AROUND OUR APP</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QPushButton" name="Items_page">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #E6E6FA;
+    border: 2px solid #E0BAFF;
+    color: black;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background-color: #CCCCFF;
+    border: 2px solid #BAFFC9;
+}
+
+QPushButton:pressed {
+    background-color: #D8BFD8;
+    border: 2px solid #FFFFBA;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Items Page</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Heroes_page">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #E6E6FA;
+    border: 2px solid #E0BAFF;
+    color: black;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background-color: #CCCCFF;
+    border: 2px solid #BAFFC9;
+}
+
+QPushButton:pressed {
+    background-color: #D8BFD8;
+    border: 2px solid #FFFFBA;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Heroes Page</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Calculator_page">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #E6E6FA;
+    border: 2px solid #E0BAFF;
+    color: black;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background-color: #CCCCFF;
+    border: 2px solid #BAFFC9;
+}
+
+QPushButton:pressed {
+    background-color: #D8BFD8;
+    border: 2px solid #FFFFBA;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Win Rate Calculator + Rank Info</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1402</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMain_Page">
+    <property name="title">
+     <string>Main Page</string>
+    </property>
+   </widget>
+   <addaction name="menuMain_Page"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="main_page_icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,5 +1,6 @@
 <RCC>
   <qresource>
+    <file>images/all_items.png</file>
     <file>images/Sea_Halberd.webp</file>
     <file>images/Active_-_Conceal.webp</file>
     <file>images/Antique_Cuirass.webp</file>
