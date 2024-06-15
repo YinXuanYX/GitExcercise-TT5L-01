@@ -43,7 +43,7 @@ border-bottom-right-radius:10px;
       </property>
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="0">
-        <widget class="QLabel" name="calcicon">
+        <widget class="QLabel" name="icon">
          <property name="minimumSize">
           <size>
            <width>40</width>
@@ -67,7 +67,7 @@ border-bottom-right-radius:10px;
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="icon.qrc">:/mlbb.jpg</pixmap>
+          <pixmap resource="icon.qrc">:/icons/mlbb.jpg</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
@@ -189,7 +189,7 @@ border-bottom-right-radius:10px;
          </property>
          <property name="icon">
           <iconset resource="icon.qrc">
-           <normaloff>:/signout.png</normaloff>:/signout.png</iconset>
+           <normaloff>:/icons/signout.png</normaloff>:/icons/signout.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -245,7 +245,7 @@ border-bottom-right-radius:10px;
          </property>
          <property name="icon">
           <iconset resource="icon.qrc">
-           <normaloff>:/signout.png</normaloff>:/signout.png</iconset>
+           <normaloff>:/icons/signout.png</normaloff>:/icons/signout.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -386,7 +386,7 @@ border-bottom-right-radius:10px;
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="icon.qrc">:/mlbb.jpg</pixmap>
+            <pixmap resource="icon.qrc">:/icons/mlbb.jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -460,7 +460,7 @@ border: none
          </property>
          <property name="icon">
           <iconset resource="icon.qrc">
-           <normaloff>:/signout.png</normaloff>:/signout.png</iconset>
+           <normaloff>:/icons/signout.png</normaloff>:/icons/signout.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -500,7 +500,7 @@ border: none
            </property>
            <property name="icon">
             <iconset resource="icon.qrc">
-             <normaloff>:/menubtn.png</normaloff>:/menubtn.png</iconset>
+             <normaloff>:/icons/menubtn.png</normaloff>:/icons/menubtn.png</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -540,7 +540,7 @@ border: none
     <item row="1" column="2">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>2</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="overallpg">
        <widget class="QPushButton" name="calcbtn1">
@@ -1378,7 +1378,7 @@ border-bottom-right-radius:10px;
               </property>
               <property name="icon">
                <iconset resource="icon.qrc">
-                <normaloff>:/Epic.png</normaloff>:/Epic.png</iconset>
+                <normaloff>:/icons/Epic.png</normaloff>:/icons/Epic.png</iconset>
               </property>
               <property name="iconSize">
                <size>
@@ -1418,7 +1418,7 @@ border-bottom-right-radius:10px;
               </property>
               <property name="icon">
                <iconset resource="icon.qrc">
-                <normaloff>:/Legend.png</normaloff>:/Legend.png</iconset>
+                <normaloff>:/icons/Legend.png</normaloff>:/icons/Legend.png</iconset>
               </property>
               <property name="iconSize">
                <size>
@@ -1458,7 +1458,7 @@ border-bottom-right-radius:10px;
               </property>
               <property name="icon">
                <iconset resource="icon.qrc">
-                <normaloff>:/Mythic.png</normaloff>:/Mythic.png</iconset>
+                <normaloff>:/icons/Mythic.png</normaloff>:/icons/Mythic.png</iconset>
               </property>
               <property name="iconSize">
                <size>
@@ -1535,7 +1535,7 @@ border-bottom-right-radius:10px;
               </property>
               <property name="icon">
                <iconset resource="icon.qrc">
-                <normaloff>:/Warrior.png</normaloff>:/Warrior.png</iconset>
+                <normaloff>:/icons/Warrior.png</normaloff>:/icons/Warrior.png</iconset>
               </property>
               <property name="iconSize">
                <size>
@@ -1578,7 +1578,7 @@ border-bottom-right-radius:10px;
               </property>
               <property name="icon">
                <iconset resource="icon.qrc">
-                <normaloff>:/Elite.png</normaloff>:/Elite.png</iconset>
+                <normaloff>:/icons/Elite.png</normaloff>:/icons/Elite.png</iconset>
               </property>
               <property name="iconSize">
                <size>
@@ -1618,7 +1618,7 @@ border-bottom-right-radius:10px;
               </property>
               <property name="icon">
                <iconset resource="icon.qrc">
-                <normaloff>:/Master.png</normaloff>:/Master.png</iconset>
+                <normaloff>:/icons/Master.png</normaloff>:/icons/Master.png</iconset>
               </property>
               <property name="iconSize">
                <size>
@@ -1658,7 +1658,7 @@ border-bottom-right-radius:10px;
               </property>
               <property name="icon">
                <iconset resource="icon.qrc">
-                <normaloff>:/Grandmaster.png</normaloff>:/Grandmaster.png</iconset>
+                <normaloff>:/icons/Grandmaster.png</normaloff>:/icons/Grandmaster.png</iconset>
               </property>
               <property name="iconSize">
                <size>
@@ -2227,7 +2227,7 @@ border-bottom-right-radius:10px;
          <enum>Qt::AutoText</enum>
         </property>
         <property name="pixmap">
-         <pixmap resource="icon.qrc">:/honorary titles.png</pixmap>
+         <pixmap resource="icon.qrc">:/icons/honorary titles.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>

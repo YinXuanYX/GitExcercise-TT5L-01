@@ -7,10 +7,11 @@ class MySideBar(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.setWindowTitle("Mobile Legends Guide")
+        self.setWindowTitle("Mobile Legends Guide")# Window Name
 
-        self.iconnamewgt.setHidden(True)
+        self.iconnamewgt.setHidden(True)#to hide expandable sidebar
 
+        #linking buttons to respective pages
         self.overallbtn.clicked.connect(self.switch_to_overallpg)
         self.overbtn1.clicked.connect(self.switch_to_overallpg)
        
@@ -44,7 +45,7 @@ class MySideBar(QMainWindow, Ui_MainWindow):
         self.honorbtn.clicked.connect(self.switch_to_hononarypg)
 
         self.load_data()
-    
+    #defining pages according to index(0-11) page number in stacked widget 
     def switch_to_overallpg(self):
         self.stackedWidget.setCurrentIndex(0)
     
@@ -88,23 +89,25 @@ class MySideBar(QMainWindow, Ui_MainWindow):
     def switch_to_hononarypg(self):
         self.stackedWidget.setCurrentIndex(11)
         self.load_honorary_titles()
-
+    #define buttons in overall winrate page
     def calculate1(self):
         self.calculate(self.now1, self.nog1, self.wrlabel1)
-
+    #define buttons in hero page
     def calculate2(self):
         self.calculate(self.now2, self.nog2, self.wrlabel2)
-    
+    #define buttons in games required page
     def calculate3(self):
         input_text5 = self.cmtext.toPlainText()
         input_text6 = self.cwrtext.toPlainText()
         input_text7 = self.dwrtext.toPlainText()
+        #calculate games required
         try:
             value1 = float(input_text5)
             value2 = float(input_text6)
             value3 = float(input_text7)
             result = (((((value3 / 100) * value1) - (value2 * value1 / 100)) / (1 - (value3 / 100))))
             self.gwreqlabel.setText(f"{int(result)}")
+        #print error when error detected
         except ValueError:
             self.gwreqlabel.setText("Error")
 
@@ -112,7 +115,7 @@ class MySideBar(QMainWindow, Ui_MainWindow):
         input_text1 = now_widget.toPlainText()
         input_text2 = nog_widget.toPlainText()
 
-        try:
+        try:#formula to calculate hero and overall winrate
             value1 = float(input_text1)
             value2 = float(input_text2)
             result = (value1 / value2) * 100
@@ -120,11 +123,11 @@ class MySideBar(QMainWindow, Ui_MainWindow):
         except ValueError:
             result_label.setText("Error")
 
-    def load_data(self):
+    def load_data(self):#define tables from database
         self.load_ranking_rewards()
         self.load_honorary_titles()
 
-    def load_ranking_rewards(self):
+    def load_ranking_rewards(self):#read data from database
         try:
             conn = sqlite3.connect('rank.db')
             cursor = conn.cursor()
@@ -132,11 +135,11 @@ class MySideBar(QMainWindow, Ui_MainWindow):
             data = cursor.fetchall()
             labels = [self.warriorinfo, self.eliteinfo, self.masterinfo, self.grandmasterinfo, self.epicinfo, self.legendinfo, self.myhticinfo]
 
-            for i, row in enumerate(data[:7]):
-                display_text = "\n".join(f"• {str(item)}" for item in row[2:])
+            for i, row in enumerate(data[:7]):#print data accordingly to id(7rows) in different labels
+                display_text = "\n".join(f"• {str(item)}" for item in row[2:])#print data starting from the second row
                 labels[i].setText(display_text)
         except sqlite3.Error as e:
-            print(f"Database error: {e}")
+            print(f"Database error: {e}")#print e when data is unable to be retrieved
         finally:
             if conn:
                 conn.close()
@@ -147,10 +150,10 @@ class MySideBar(QMainWindow, Ui_MainWindow):
             cursor = conn.cursor()
             cursor.execute('SELECT * FROM "hononary titles" ORDER BY id')
             data = cursor.fetchall()
-            labels = [self.beginnerlbl, self.juniorlbl, self.seniorlbl, self.suprelbl]
+            labels = [self.beginnerlbl, self.juniorlbl, self.seniorlbl, self.suprelbl]#labels in hononary page
 
             for i, row in enumerate(data[:4]):
-                display_text = "\n".join(f"• {str(item)}" for item in row[1:])
+                display_text = "\n".join(f"• {str(item)}" for item in row[1:])#print data starting from first row
                 labels[i].setText(display_text)
         except sqlite3.Error as e:
             print(f"Database error: {e}")
