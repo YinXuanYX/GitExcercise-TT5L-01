@@ -7,7 +7,7 @@ class MySideBar(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.setWindowTitle("Sidebar Menu")
+        self.setWindowTitle("Mobile Legends Guide")
 
         self.iconnamewgt.setHidden(True)
 
@@ -42,6 +42,7 @@ class MySideBar(QMainWindow, Ui_MainWindow):
         self.rtrnbtn6.clicked.connect(self.switch_to_rankpg)
         self.rtrnbtn7.clicked.connect(self.switch_to_rankpg)
         self.honorbtn.clicked.connect(self.switch_to_hononarypg)
+
         self.load_data()
     
     def switch_to_overallpg(self):
@@ -58,60 +59,41 @@ class MySideBar(QMainWindow, Ui_MainWindow):
 
     def switch_to_warriorpg(self):
         self.stackedWidget.setCurrentIndex(4)
-        self.load_data()
+        self.load_ranking_rewards()
 
     def switch_to_elitepg(self):
         self.stackedWidget.setCurrentIndex(5)
-        self.load_data()
+        self.load_ranking_rewards()
 
     def switch_to_masterpg(self):
         self.stackedWidget.setCurrentIndex(6)
-        self.load_data()
+        self.load_ranking_rewards()
 
     def switch_to_grandmasterpg(self):
         self.stackedWidget.setCurrentIndex(7)
-        self.load_data()
+        self.load_ranking_rewards()
 
     def switch_to_epicpg(self):
         self.stackedWidget.setCurrentIndex(8)
-        self.load_data()
+        self.load_ranking_rewards()
 
     def switch_to_legendpg(self):
         self.stackedWidget.setCurrentIndex(9)
-        self.load_data()
+        self.load_ranking_rewards()
 
     def switch_to_mythicpg(self):
         self.stackedWidget.setCurrentIndex(10)
-        self.load_data()
+        self.load_ranking_rewards()
 
     def switch_to_hononarypg(self):
         self.stackedWidget.setCurrentIndex(11)
-        self.load_data()
-
+        self.load_honorary_titles()
 
     def calculate1(self):
-        input_text1 = self.now1.toPlainText()
-        input_text2 = self.nog1.toPlainText()
-
-        try:
-            value1 = float(input_text1)
-            value2 = float(input_text2)
-            result = (value1 / value2) * 100
-            self.wrlabel1.setText(f" {result:.2f}%")
-        except Exception as e:
-            self.wrlabel1.setText(f"Error: {e}")
+        self.calculate(self.now1, self.nog1, self.wrlabel1)
 
     def calculate2(self):
-        input_text3 = self.now2.toPlainText()
-        input_text4 = self.nog2.toPlainText()
-
-        try:
-            value1 = float(input_text3)
-            value2 = float(input_text4)
-            result = (value1 / value2) * 100
-            self.wrlabel2.setText(f" {result:.2f}%")
-        except Exception as e:
-            self.wrlabel2.setText(f"Error: {e}")
+        self.calculate(self.now2, self.nog2, self.wrlabel2)
     
     def calculate3(self):
         input_text5 = self.cmtext.toPlainText()
@@ -122,24 +104,60 @@ class MySideBar(QMainWindow, Ui_MainWindow):
             value2 = float(input_text6)
             value3 = float(input_text7)
             result = (((((value3 / 100) * value1) - (value2 * value1 / 100)) / (1 - (value3 / 100))))
-            self.gwreqlabel.setText(f" {int(result)}")
-        except Exception as e:
-            self.gwreqlabel.setText(f"Error: {e}")
+            self.gwreqlabel.setText(f"{int(result)}")
+        except ValueError:
+            self.gwreqlabel.setText("Error")
+
+    def calculate(self, now_widget, nog_widget, result_label):
+        input_text1 = now_widget.toPlainText()
+        input_text2 = nog_widget.toPlainText()
+
+        try:
+            value1 = float(input_text1)
+            value2 = float(input_text2)
+            result = (value1 / value2) * 100
+            result_label.setText(f"{result:.2f}%")
+        except ValueError:
+            result_label.setText("Error")
 
     def load_data(self):
-        conn = sqlite3.connect('rank.db')
-        cursor = conn.cursor()
-        cursor.execute('SELECT * FROM "Ranking Rewards" ORDER BY id')
-        data = cursor.fetchall()
+        self.load_ranking_rewards()
+        self.load_honorary_titles()
 
-        labels = [self.warriorinfo, self.eliteinfo, self.masterinfo, self.grandmasterinfo, self.epicinfo, self.legendinfo, self.myhticinfo]
-        
-        for i, row in enumerate(data[:7]): 
-            display_text = "\n".join(f"• {str(item)}" for item in row[2:])
-            labels[i].setText(display_text)
+    def load_ranking_rewards(self):
+        try:
+            conn = sqlite3.connect('rank.db')
+            cursor = conn.cursor()
+            cursor.execute('SELECT * FROM "Ranking Rewards" ORDER BY id')
+            data = cursor.fetchall()
+            labels = [self.warriorinfo, self.eliteinfo, self.masterinfo, self.grandmasterinfo, self.epicinfo, self.legendinfo, self.myhticinfo]
 
-        conn.close()
-             
+            for i, row in enumerate(data[:7]):
+                display_text = "\n".join(f"• {str(item)}" for item in row[2:])
+                labels[i].setText(display_text)
+        except sqlite3.Error as e:
+            print(f"Database error: {e}")
+        finally:
+            if conn:
+                conn.close()
+
+    def load_honorary_titles(self):
+        try:
+            conn = sqlite3.connect('titles.db')
+            cursor = conn.cursor()
+            cursor.execute('SELECT * FROM "hononary titles" ORDER BY id')
+            data = cursor.fetchall()
+            labels = [self.beginnerlbl, self.juniorlbl, self.seniorlbl, self.suprelbl]
+
+            for i, row in enumerate(data[:4]):
+                display_text = "\n".join(f"• {str(item)}" for item in row[1:])
+                labels[i].setText(display_text)
+        except sqlite3.Error as e:
+            print(f"Database error: {e}")
+        finally:
+            if conn:
+                conn.close()
+
 def main():
     app = QApplication([])
     window = MySideBar()

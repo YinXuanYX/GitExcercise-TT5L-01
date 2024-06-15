@@ -12,100 +12,14 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(670, 377)
-        MainWindow.setStyleSheet("background-color: rgb(245, 248, 254);")
+        MainWindow.resize(698, 427)
+        MainWindow.setStyleSheet("background-color: rgb(100,181,246);")
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.gridLayout_3 = QtWidgets.QGridLayout(self.centralwidget)
-        self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.gridLayout_3.setObjectName("gridLayout_3")
-        self.iconnamewgt = QtWidgets.QWidget(parent=self.centralwidget)
-        self.iconnamewgt.setStyleSheet("QWidget{\n"
-"background-color: rgb(148, 148, 148);\n"
-"}\n"
-"QPushButton{\n"
-"height:30px;\n"
-"border-top-left-radius:10px;\n"
-"border-bottom-left-radius:10px;\n"
-"border-top-right-radius:10px;\n"
-"border-bottom-right-radius:10px;\n"
-"}\n"
-"")
-        self.iconnamewgt.setObjectName("iconnamewgt")
-        self.gridLayout_4 = QtWidgets.QGridLayout(self.iconnamewgt)
-        self.gridLayout_4.setObjectName("gridLayout_4")
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.label_2 = QtWidgets.QLabel(parent=self.iconnamewgt)
-        self.label_2.setMinimumSize(QtCore.QSize(40, 40))
-        self.label_2.setMaximumSize(QtCore.QSize(40, 40))
-        self.label_2.setText("")
-        self.label_2.setPixmap(QtGui.QPixmap(":/Mobile-legends-ultimate-guide/calcbtn.png"))
-        self.label_2.setScaledContents(True)
-        self.label_2.setObjectName("label_2")
-        self.horizontalLayout_2.addWidget(self.label_2)
-        self.label_3 = QtWidgets.QLabel(parent=self.iconnamewgt)
-        font = QtGui.QFont()
-        font.setFamily("Nirmala UI Semilight")
-        font.setPointSize(10)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_3.setFont(font)
-        self.label_3.setObjectName("label_3")
-        self.horizontalLayout_2.addWidget(self.label_3)
-        self.gridLayout_4.addLayout(self.horizontalLayout_2, 0, 0, 1, 1)
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.overbtn1 = QtWidgets.QPushButton(parent=self.iconnamewgt)
-        self.overbtn1.setStyleSheet("QWidget{\n"
-"background-color: rgb(255, 255, 255);\n"
-"}\n"
-"")
-        self.overbtn1.setCheckable(True)
-        self.overbtn1.setAutoDefault(True)
-        self.overbtn1.setObjectName("overbtn1")
-        self.verticalLayout_2.addWidget(self.overbtn1)
-        self.herobtn1 = QtWidgets.QPushButton(parent=self.iconnamewgt)
-        self.herobtn1.setStyleSheet("QWidget{\n"
-"background-color: rgb(255, 255, 255);\n"
-"}\n"
-"")
-        self.herobtn1.setCheckable(True)
-        self.herobtn1.setObjectName("herobtn1")
-        self.verticalLayout_2.addWidget(self.herobtn1)
-        self.gamesbtn1 = QtWidgets.QPushButton(parent=self.iconnamewgt)
-        self.gamesbtn1.setStyleSheet("QWidget{\n"
-"background-color: rgb(255, 255, 255);\n"
-"}\n"
-"")
-        self.gamesbtn1.setCheckable(True)
-        self.gamesbtn1.setObjectName("gamesbtn1")
-        self.verticalLayout_2.addWidget(self.gamesbtn1)
-        self.rrbtn1 = QtWidgets.QPushButton(parent=self.iconnamewgt)
-        self.rrbtn1.setStyleSheet("QWidget{\n"
-"background-color: rgb(255, 255, 255);\n"
-"}\n"
-"")
-        self.rrbtn1.setCheckable(True)
-        self.rrbtn1.setObjectName("rrbtn1")
-        self.verticalLayout_2.addWidget(self.rrbtn1)
-        spacerItem = QtWidgets.QSpacerItem(88, 142, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem)
-        self.gridLayout_4.addLayout(self.verticalLayout_2, 1, 0, 1, 1)
-        self.signout = QtWidgets.QPushButton(parent=self.iconnamewgt)
-        self.signout.setStyleSheet("color: rgb(255, 255, 255);")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/Mobile-legends-ultimate-guide/signout.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.signout.setIcon(icon)
-        self.signout.setIconSize(QtCore.QSize(30, 30))
-        self.signout.setCheckable(True)
-        self.signout.setObjectName("signout")
-        self.gridLayout_4.addWidget(self.signout, 2, 0, 1, 1)
-        self.gridLayout_3.addWidget(self.iconnamewgt, 0, 1, 2, 1)
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.centralwidget)
+        self.gridLayout_2.setObjectName("gridLayout_2")
         self.iconwgt = QtWidgets.QWidget(parent=self.centralwidget)
-        self.iconwgt.setStyleSheet("QWidget{\n"
-"background-color: rgb(148, 148, 148);\n"
-"}\n"
+        self.iconwgt.setStyleSheet("\n"
 "QPushButton{\n"
 "height:30px;\n"
 "border-top-left-radius:10px;\n"
@@ -113,83 +27,262 @@ class Ui_MainWindow(object):
 "border-top-right-radius:10px;\n"
 "border-bottom-right-radius:10px;\n"
 "}\n"
+"\n"
+"border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"\n"
 "")
         self.iconwgt.setObjectName("iconwgt")
         self.gridLayout = QtWidgets.QGridLayout(self.iconwgt)
         self.gridLayout.setObjectName("gridLayout")
-        self.signout_2 = QtWidgets.QPushButton(parent=self.iconwgt)
-        self.signout_2.setText("")
-        self.signout_2.setIcon(icon)
-        self.signout_2.setIconSize(QtCore.QSize(30, 30))
-        self.signout_2.setCheckable(True)
-        self.signout_2.setObjectName("signout_2")
-        self.gridLayout.addWidget(self.signout_2, 2, 0, 1, 1)
         self.calcicon = QtWidgets.QLabel(parent=self.iconwgt)
         self.calcicon.setMinimumSize(QtCore.QSize(40, 40))
         self.calcicon.setMaximumSize(QtCore.QSize(40, 40))
+        self.calcicon.setStyleSheet("QLabel {\n"
+"    border-radius: 200px\n"
+"\n"
+"}\n"
+"")
         self.calcicon.setText("")
-        self.calcicon.setPixmap(QtGui.QPixmap(":/Mobile-legends-ultimate-guide/calcbtn.png"))
+        self.calcicon.setPixmap(QtGui.QPixmap(":/mlbb.jpg"))
         self.calcicon.setScaledContents(True)
         self.calcicon.setObjectName("calcicon")
         self.gridLayout.addWidget(self.calcicon, 0, 0, 1, 1)
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
         self.overallbtn = QtWidgets.QPushButton(parent=self.iconwgt)
-        self.overallbtn.setStyleSheet("QWidget{\n"
+        self.overallbtn.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Serif\";\n"
 "background-color: rgb(255, 255, 255);\n"
-"}\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
 "")
         self.overallbtn.setCheckable(True)
         self.overallbtn.setObjectName("overallbtn")
         self.verticalLayout.addWidget(self.overallbtn)
         self.herobtn = QtWidgets.QPushButton(parent=self.iconwgt)
-        self.herobtn.setStyleSheet("QWidget{\n"
+        self.herobtn.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Serif\";\n"
 "background-color: rgb(255, 255, 255);\n"
-"}\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
 "")
         self.herobtn.setCheckable(True)
         self.herobtn.setObjectName("herobtn")
         self.verticalLayout.addWidget(self.herobtn)
         self.gamesbtn = QtWidgets.QPushButton(parent=self.iconwgt)
-        self.gamesbtn.setStyleSheet("QWidget{\n"
+        self.gamesbtn.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Serif\";\n"
 "background-color: rgb(255, 255, 255);\n"
-"}\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
 "")
         self.gamesbtn.setCheckable(True)
         self.gamesbtn.setObjectName("gamesbtn")
         self.verticalLayout.addWidget(self.gamesbtn)
         self.rrbtn = QtWidgets.QPushButton(parent=self.iconwgt)
-        self.rrbtn.setStyleSheet("QWidget{\n"
+        self.rrbtn.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Serif\";\n"
 "background-color: rgb(255, 255, 255);\n"
-"}\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
 "")
         self.rrbtn.setCheckable(True)
         self.rrbtn.setObjectName("rrbtn")
         self.verticalLayout.addWidget(self.rrbtn)
-        spacerItem1 = QtWidgets.QSpacerItem(20, 150, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
-        self.verticalLayout.addItem(spacerItem1)
+        spacerItem = QtWidgets.QSpacerItem(20, 150, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        self.verticalLayout.addItem(spacerItem)
         self.gridLayout.addLayout(self.verticalLayout, 1, 0, 1, 1)
-        self.gridLayout_3.addWidget(self.iconwgt, 0, 0, 2, 1)
-        self.widget = QtWidgets.QWidget(parent=self.centralwidget)
-        self.widget.setStyleSheet("QWidget{\n"
-"background-color: rgb(148, 148, 148);\n"
+        self.signout_2 = QtWidgets.QPushButton(parent=self.iconwgt)
+        self.signout_2.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.signout_2.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/signout.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.signout_2.setIcon(icon)
+        self.signout_2.setIconSize(QtCore.QSize(30, 30))
+        self.signout_2.setCheckable(True)
+        self.signout_2.setObjectName("signout_2")
+        self.gridLayout.addWidget(self.signout_2, 2, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.iconwgt, 0, 0, 2, 1)
+        self.iconnamewgt = QtWidgets.QWidget(parent=self.centralwidget)
+        self.iconnamewgt.setStyleSheet("\n"
+"QPushButton{\n"
+"height:30px;\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
 "}\n"
+"\n"
+"border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;")
+        self.iconnamewgt.setObjectName("iconnamewgt")
+        self.gridLayout_4 = QtWidgets.QGridLayout(self.iconnamewgt)
+        self.gridLayout_4.setObjectName("gridLayout_4")
+        self.signout = QtWidgets.QPushButton(parent=self.iconnamewgt)
+        self.signout.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 9pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.signout.setIcon(icon)
+        self.signout.setIconSize(QtCore.QSize(30, 30))
+        self.signout.setCheckable(True)
+        self.signout.setObjectName("signout")
+        self.gridLayout_4.addWidget(self.signout, 2, 0, 1, 1)
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.overbtn1 = QtWidgets.QPushButton(parent=self.iconnamewgt)
+        self.overbtn1.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.overbtn1.setCheckable(True)
+        self.overbtn1.setAutoDefault(True)
+        self.overbtn1.setObjectName("overbtn1")
+        self.verticalLayout_2.addWidget(self.overbtn1)
+        self.herobtn1 = QtWidgets.QPushButton(parent=self.iconnamewgt)
+        self.herobtn1.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 10pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.herobtn1.setCheckable(True)
+        self.herobtn1.setObjectName("herobtn1")
+        self.verticalLayout_2.addWidget(self.herobtn1)
+        self.gamesbtn1 = QtWidgets.QPushButton(parent=self.iconnamewgt)
+        self.gamesbtn1.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.gamesbtn1.setCheckable(True)
+        self.gamesbtn1.setObjectName("gamesbtn1")
+        self.verticalLayout_2.addWidget(self.gamesbtn1)
+        self.rrbtn1 = QtWidgets.QPushButton(parent=self.iconnamewgt)
+        self.rrbtn1.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.rrbtn1.setCheckable(True)
+        self.rrbtn1.setObjectName("rrbtn1")
+        self.verticalLayout_2.addWidget(self.rrbtn1)
+        spacerItem1 = QtWidgets.QSpacerItem(88, 142, QtWidgets.QSizePolicy.Policy.Minimum, QtWidgets.QSizePolicy.Policy.Expanding)
+        self.verticalLayout_2.addItem(spacerItem1)
+        self.gridLayout_4.addLayout(self.verticalLayout_2, 1, 0, 1, 1)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.label_2 = QtWidgets.QLabel(parent=self.iconnamewgt)
+        self.label_2.setMinimumSize(QtCore.QSize(40, 40))
+        self.label_2.setMaximumSize(QtCore.QSize(40, 40))
+        self.label_2.setStyleSheet("QLabel{\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"}")
+        self.label_2.setText("")
+        self.label_2.setPixmap(QtGui.QPixmap(":/mlbb.jpg"))
+        self.label_2.setScaledContents(True)
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout_2.addWidget(self.label_2)
+        self.label_3 = QtWidgets.QLabel(parent=self.iconnamewgt)
+        font = QtGui.QFont()
+        font.setFamily("MS Serif")
+        font.setPointSize(4)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_3.setFont(font)
+        self.label_3.setStyleSheet("color: rgb(255, 255, 255);\n"
+"font: 4pt \"MS Serif\";\n"
+"\n"
+"")
+        self.label_3.setObjectName("label_3")
+        self.horizontalLayout_2.addWidget(self.label_3)
+        self.gridLayout_4.addLayout(self.horizontalLayout_2, 0, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.iconnamewgt, 0, 1, 2, 1)
+        self.widget = QtWidgets.QWidget(parent=self.centralwidget)
+        self.widget.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
 "")
         self.widget.setObjectName("widget")
-        self.horizontalLayout_3 = QtWidgets.QHBoxLayout(self.widget)
-        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.gridLayout_12 = QtWidgets.QGridLayout(self.widget)
+        self.gridLayout_12.setObjectName("gridLayout_12")
+        self.signout_3 = QtWidgets.QPushButton(parent=self.widget)
+        self.signout_3.setMinimumSize(QtCore.QSize(40, 40))
+        self.signout_3.setMaximumSize(QtCore.QSize(40, 40))
+        self.signout_3.setStyleSheet("\n"
+"border: none\n"
+"")
+        self.signout_3.setText("")
+        self.signout_3.setIcon(icon)
+        self.signout_3.setIconSize(QtCore.QSize(40, 40))
+        self.signout_3.setCheckable(True)
+        self.signout_3.setAutoDefault(True)
+        self.signout_3.setObjectName("signout_3")
+        self.gridLayout_12.addWidget(self.signout_3, 0, 1, 1, 1)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.pushButton_9 = QtWidgets.QPushButton(parent=self.widget)
         self.pushButton_9.setMinimumSize(QtCore.QSize(30, 30))
         self.pushButton_9.setMaximumSize(QtCore.QSize(30, 30))
-        self.pushButton_9.setStyleSheet("QWidget{\n"
-"background-color: rgb(255, 255, 255);\n"
-"}\n"
-"")
+        self.pushButton_9.setStyleSheet("border: none")
         self.pushButton_9.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/Mobile-legends-ultimate-guide/menubtn.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap(":/menubtn.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_9.setIcon(icon1)
         self.pushButton_9.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_9.setCheckable(True)
@@ -199,36 +292,34 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addWidget(self.pushButton_9)
         spacerItem2 = QtWidgets.QSpacerItem(288, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout.addItem(spacerItem2)
-        self.horizontalLayout_3.addLayout(self.horizontalLayout)
-        self.signout_3 = QtWidgets.QPushButton(parent=self.widget)
-        self.signout_3.setMinimumSize(QtCore.QSize(40, 40))
-        self.signout_3.setMaximumSize(QtCore.QSize(40, 40))
-        self.signout_3.setStyleSheet("QWidget{\n"
-"    border:none;\n"
-"background-color: rgb(148, 148, 148);\n"
-"}\n"
-"")
-        self.signout_3.setText("")
-        self.signout_3.setIcon(icon)
-        self.signout_3.setIconSize(QtCore.QSize(30, 30))
-        self.signout_3.setCheckable(True)
-        self.signout_3.setAutoDefault(True)
-        self.signout_3.setObjectName("signout_3")
-        self.horizontalLayout_3.addWidget(self.signout_3)
-        self.gridLayout_3.addWidget(self.widget, 0, 2, 1, 1)
+        self.gridLayout_12.addLayout(self.horizontalLayout, 0, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.widget, 0, 2, 1, 1)
         self.stackedWidget = QtWidgets.QStackedWidget(parent=self.centralwidget)
         self.stackedWidget.setObjectName("stackedWidget")
         self.overallpg = QtWidgets.QWidget()
         self.overallpg.setObjectName("overallpg")
         self.calcbtn1 = QtWidgets.QPushButton(parent=self.overallpg)
-        self.calcbtn1.setGeometry(QtCore.QRect(130, 170, 111, 31))
+        self.calcbtn1.setGeometry(QtCore.QRect(190, 240, 111, 31))
         font = QtGui.QFont()
-        font.setPointSize(18)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.calcbtn1.setFont(font)
+        self.calcbtn1.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.calcbtn1.setCheckable(True)
         self.calcbtn1.setObjectName("calcbtn1")
         self.layoutWidget = QtWidgets.QWidget(parent=self.overallpg)
-        self.layoutWidget.setGeometry(QtCore.QRect(40, 50, 281, 101))
+        self.layoutWidget.setGeometry(QtCore.QRect(80, 50, 351, 168))
         self.layoutWidget.setObjectName("layoutWidget")
         self.horizontalLayout_6 = QtWidgets.QHBoxLayout(self.layoutWidget)
         self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
@@ -237,49 +328,111 @@ class Ui_MainWindow(object):
         self.verticalLayout_5.setObjectName("verticalLayout_5")
         self.label_4 = QtWidgets.QLabel(parent=self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Yu Gothic Light")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.label_4.setFont(font)
+        self.label_4.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.label_4.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_4.setObjectName("label_4")
         self.verticalLayout_5.addWidget(self.label_4)
         self.label_5 = QtWidgets.QLabel(parent=self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Yu Gothic Light")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.label_5.setFont(font)
-        self.label_5.setStyleSheet("")
+        self.label_5.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.label_5.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_5.setObjectName("label_5")
         self.verticalLayout_5.addWidget(self.label_5)
         self.label_6 = QtWidgets.QLabel(parent=self.layoutWidget)
         font = QtGui.QFont()
-        font.setFamily("Yu Gothic Light")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.label_6.setFont(font)
+        self.label_6.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.label_6.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_6.setObjectName("label_6")
         self.verticalLayout_5.addWidget(self.label_6)
         self.horizontalLayout_6.addLayout(self.verticalLayout_5)
         self.verticalLayout_6 = QtWidgets.QVBoxLayout()
         self.verticalLayout_6.setObjectName("verticalLayout_6")
         self.nog1 = QtWidgets.QTextEdit(parent=self.layoutWidget)
+        self.nog1.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.nog1.setOverwriteMode(False)
         self.nog1.setTextInteractionFlags(QtCore.Qt.TextInteractionFlag.TextEditorInteraction)
         self.nog1.setObjectName("nog1")
         self.verticalLayout_6.addWidget(self.nog1)
         self.now1 = QtWidgets.QTextEdit(parent=self.layoutWidget)
+        self.now1.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.now1.setOverwriteMode(False)
         self.now1.setTextInteractionFlags(QtCore.Qt.TextInteractionFlag.TextEditorInteraction)
         self.now1.setObjectName("now1")
         self.verticalLayout_6.addWidget(self.now1)
         self.wrlabel1 = QtWidgets.QLabel(parent=self.layoutWidget)
+        self.wrlabel1.setMinimumSize(QtCore.QSize(0, 50))
         font = QtGui.QFont()
-        font.setPointSize(20)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.wrlabel1.setFont(font)
+        self.wrlabel1.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.wrlabel1.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.wrlabel1.setObjectName("wrlabel1")
         self.verticalLayout_6.addWidget(self.wrlabel1)
         self.horizontalLayout_6.addLayout(self.verticalLayout_6)
@@ -287,14 +440,27 @@ class Ui_MainWindow(object):
         self.heropg = QtWidgets.QWidget()
         self.heropg.setObjectName("heropg")
         self.calcbtn2 = QtWidgets.QPushButton(parent=self.heropg)
-        self.calcbtn2.setGeometry(QtCore.QRect(150, 170, 111, 31))
+        self.calcbtn2.setGeometry(QtCore.QRect(190, 230, 111, 31))
         font = QtGui.QFont()
-        font.setPointSize(18)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.calcbtn2.setFont(font)
+        self.calcbtn2.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.calcbtn2.setCheckable(True)
         self.calcbtn2.setObjectName("calcbtn2")
         self.layoutWidget1 = QtWidgets.QWidget(parent=self.heropg)
-        self.layoutWidget1.setGeometry(QtCore.QRect(80, 40, 271, 111))
+        self.layoutWidget1.setGeometry(QtCore.QRect(80, 40, 331, 166))
         self.layoutWidget1.setObjectName("layoutWidget1")
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.layoutWidget1)
         self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
@@ -303,48 +469,114 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.label_8 = QtWidgets.QLabel(parent=self.layoutWidget1)
         font = QtGui.QFont()
-        font.setFamily("Yu Gothic Light")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.label_8.setFont(font)
+        self.label_8.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.label_8.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_8.setObjectName("label_8")
         self.verticalLayout_3.addWidget(self.label_8)
         self.label_7 = QtWidgets.QLabel(parent=self.layoutWidget1)
         font = QtGui.QFont()
-        font.setFamily("Yu Gothic Light")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.label_7.setFont(font)
+        self.label_7.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.label_7.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_7.setObjectName("label_7")
         self.verticalLayout_3.addWidget(self.label_7)
         self.label_9 = QtWidgets.QLabel(parent=self.layoutWidget1)
         font = QtGui.QFont()
-        font.setFamily("Yu Gothic Light")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.label_9.setFont(font)
+        self.label_9.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.label_9.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_9.setObjectName("label_9")
         self.verticalLayout_3.addWidget(self.label_9)
         self.horizontalLayout_5.addLayout(self.verticalLayout_3)
         self.verticalLayout_8 = QtWidgets.QVBoxLayout()
         self.verticalLayout_8.setObjectName("verticalLayout_8")
         self.nog2 = QtWidgets.QTextEdit(parent=self.layoutWidget1)
+        self.nog2.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.nog2.setOverwriteMode(False)
         self.nog2.setTextInteractionFlags(QtCore.Qt.TextInteractionFlag.TextEditorInteraction)
         self.nog2.setObjectName("nog2")
         self.verticalLayout_8.addWidget(self.nog2)
         self.now2 = QtWidgets.QTextEdit(parent=self.layoutWidget1)
+        self.now2.setMinimumSize(QtCore.QSize(10, 50))
+        self.now2.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.now2.setOverwriteMode(False)
         self.now2.setTextInteractionFlags(QtCore.Qt.TextInteractionFlag.TextEditorInteraction)
         self.now2.setObjectName("now2")
         self.verticalLayout_8.addWidget(self.now2)
         self.wrlabel2 = QtWidgets.QLabel(parent=self.layoutWidget1)
+        self.wrlabel2.setMinimumSize(QtCore.QSize(0, 50))
+        self.wrlabel2.setMaximumSize(QtCore.QSize(16777215, 16777215))
         font = QtGui.QFont()
-        font.setPointSize(20)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.wrlabel2.setFont(font)
+        self.wrlabel2.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.wrlabel2.setLineWidth(0)
+        self.wrlabel2.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.wrlabel2.setObjectName("wrlabel2")
         self.verticalLayout_8.addWidget(self.wrlabel2)
         self.horizontalLayout_5.addLayout(self.verticalLayout_8)
@@ -352,14 +584,27 @@ class Ui_MainWindow(object):
         self.gamespg = QtWidgets.QWidget()
         self.gamespg.setObjectName("gamespg")
         self.calcbtn3 = QtWidgets.QPushButton(parent=self.gamespg)
-        self.calcbtn3.setGeometry(QtCore.QRect(160, 190, 111, 31))
+        self.calcbtn3.setGeometry(QtCore.QRect(190, 240, 111, 31))
         font = QtGui.QFont()
-        font.setPointSize(18)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.calcbtn3.setFont(font)
+        self.calcbtn3.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.calcbtn3.setCheckable(True)
         self.calcbtn3.setObjectName("calcbtn3")
         self.layoutWidget2 = QtWidgets.QWidget(parent=self.gamespg)
-        self.layoutWidget2.setGeometry(QtCore.QRect(70, 50, 311, 131))
+        self.layoutWidget2.setGeometry(QtCore.QRect(60, 10, 371, 222))
         self.layoutWidget2.setObjectName("layoutWidget2")
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.layoutWidget2)
         self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
@@ -369,274 +614,717 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.setObjectName("verticalLayout_4")
         self.label = QtWidgets.QLabel(parent=self.layoutWidget2)
         font = QtGui.QFont()
-        font.setFamily("Yu Gothic Light")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.label.setFont(font)
+        self.label.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label.setObjectName("label")
         self.verticalLayout_4.addWidget(self.label)
         self.label_11 = QtWidgets.QLabel(parent=self.layoutWidget2)
-        font = QtGui.QFont()
-        font.setFamily("Yu Gothic Light")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_11.setFont(font)
-        self.label_11.setObjectName("label_11")
-        self.verticalLayout_4.addWidget(self.label_11)
-        self.label_10 = QtWidgets.QLabel(parent=self.layoutWidget2)
-        font = QtGui.QFont()
-        font.setFamily("Yu Gothic Light")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_10.setFont(font)
-        self.label_10.setObjectName("label_10")
-        self.verticalLayout_4.addWidget(self.label_10)
-        self.label_12 = QtWidgets.QLabel(parent=self.layoutWidget2)
-        font = QtGui.QFont()
-        font.setFamily("Yu Gothic Light")
-        font.setPointSize(16)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_12.setFont(font)
-        self.label_12.setObjectName("label_12")
-        self.verticalLayout_4.addWidget(self.label_12)
-        self.horizontalLayout_4.addLayout(self.verticalLayout_4)
-        self.verticalLayout_7 = QtWidgets.QVBoxLayout()
-        self.verticalLayout_7.setObjectName("verticalLayout_7")
-        self.cmtext = QtWidgets.QTextEdit(parent=self.layoutWidget2)
-        self.cmtext.setOverwriteMode(False)
-        self.cmtext.setTextInteractionFlags(QtCore.Qt.TextInteractionFlag.TextEditorInteraction)
-        self.cmtext.setObjectName("cmtext")
-        self.verticalLayout_7.addWidget(self.cmtext)
-        self.cwrtext = QtWidgets.QTextEdit(parent=self.layoutWidget2)
-        self.cwrtext.setOverwriteMode(False)
-        self.cwrtext.setTextInteractionFlags(QtCore.Qt.TextInteractionFlag.TextEditorInteraction)
-        self.cwrtext.setObjectName("cwrtext")
-        self.verticalLayout_7.addWidget(self.cwrtext)
-        self.dwrtext = QtWidgets.QTextEdit(parent=self.layoutWidget2)
-        self.dwrtext.setOverwriteMode(False)
-        self.dwrtext.setTextInteractionFlags(QtCore.Qt.TextInteractionFlag.TextEditorInteraction)
-        self.dwrtext.setObjectName("dwrtext")
-        self.verticalLayout_7.addWidget(self.dwrtext)
-        self.gwreqlabel = QtWidgets.QLabel(parent=self.layoutWidget2)
-        font = QtGui.QFont()
-        font.setPointSize(20)
-        self.gwreqlabel.setFont(font)
-        self.gwreqlabel.setObjectName("gwreqlabel")
-        self.verticalLayout_7.addWidget(self.gwreqlabel)
-        self.horizontalLayout_4.addLayout(self.verticalLayout_7)
-        self.stackedWidget.addWidget(self.gamespg)
-        self.rankpg = QtWidgets.QWidget()
-        self.rankpg.setObjectName("rankpg")
-        self.label_23 = QtWidgets.QLabel(parent=self.rankpg)
-        self.label_23.setGeometry(QtCore.QRect(6, 6, 491, 21))
-        self.label_23.setMaximumSize(QtCore.QSize(16777215, 30))
         font = QtGui.QFont()
         font.setFamily("MS Sans Serif")
         font.setPointSize(8)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
+        self.label_11.setFont(font)
+        self.label_11.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.label_11.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_11.setObjectName("label_11")
+        self.verticalLayout_4.addWidget(self.label_11)
+        self.label_10 = QtWidgets.QLabel(parent=self.layoutWidget2)
+        font = QtGui.QFont()
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_10.setFont(font)
+        self.label_10.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.label_10.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_10.setObjectName("label_10")
+        self.verticalLayout_4.addWidget(self.label_10)
+        self.label_12 = QtWidgets.QLabel(parent=self.layoutWidget2)
+        font = QtGui.QFont()
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_12.setFont(font)
+        self.label_12.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.label_12.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_12.setObjectName("label_12")
+        self.verticalLayout_4.addWidget(self.label_12)
+        self.horizontalLayout_4.addLayout(self.verticalLayout_4)
+        self.verticalLayout_7 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_7.setObjectName("verticalLayout_7")
+        self.cmtext = QtWidgets.QTextEdit(parent=self.layoutWidget2)
+        self.cmtext.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.cmtext.setOverwriteMode(False)
+        self.cmtext.setTextInteractionFlags(QtCore.Qt.TextInteractionFlag.TextEditorInteraction)
+        self.cmtext.setObjectName("cmtext")
+        self.verticalLayout_7.addWidget(self.cmtext)
+        self.cwrtext = QtWidgets.QTextEdit(parent=self.layoutWidget2)
+        self.cwrtext.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.cwrtext.setOverwriteMode(False)
+        self.cwrtext.setTextInteractionFlags(QtCore.Qt.TextInteractionFlag.TextEditorInteraction)
+        self.cwrtext.setObjectName("cwrtext")
+        self.verticalLayout_7.addWidget(self.cwrtext)
+        self.dwrtext = QtWidgets.QTextEdit(parent=self.layoutWidget2)
+        self.dwrtext.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.dwrtext.setOverwriteMode(False)
+        self.dwrtext.setTextInteractionFlags(QtCore.Qt.TextInteractionFlag.TextEditorInteraction)
+        self.dwrtext.setObjectName("dwrtext")
+        self.verticalLayout_7.addWidget(self.dwrtext)
+        self.gwreqlabel = QtWidgets.QLabel(parent=self.layoutWidget2)
+        self.gwreqlabel.setMinimumSize(QtCore.QSize(0, 50))
+        font = QtGui.QFont()
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.gwreqlabel.setFont(font)
+        self.gwreqlabel.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.gwreqlabel.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.gwreqlabel.setObjectName("gwreqlabel")
+        self.verticalLayout_7.addWidget(self.gwreqlabel)
+        self.horizontalLayout_4.addLayout(self.verticalLayout_7)
+        self.stackedWidget.addWidget(self.gamespg)
+        self.rankpg = QtWidgets.QWidget()
+        self.rankpg.setObjectName("rankpg")
+        self.gridLayout_13 = QtWidgets.QGridLayout(self.rankpg)
+        self.gridLayout_13.setObjectName("gridLayout_13")
+        self.label_23 = QtWidgets.QLabel(parent=self.rankpg)
+        self.label_23.setMinimumSize(QtCore.QSize(0, 70))
+        self.label_23.setMaximumSize(QtCore.QSize(16777215, 30))
+        font = QtGui.QFont()
+        font.setFamily("MS Serif")
+        font.setPointSize(27)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.label_23.setFont(font)
-        self.label_23.setStyleSheet("font: 8pt \"MS Sans Serif\";")
+        self.label_23.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.label_23.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_23.setObjectName("label_23")
-        self.warriorbtn = QtWidgets.QPushButton(parent=self.rankpg)
-        self.warriorbtn.setGeometry(QtCore.QRect(40, 90, 81, 81))
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(":/Warrior.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.warriorbtn.setIcon(icon2)
-        self.warriorbtn.setIconSize(QtCore.QSize(40, 40))
-        self.warriorbtn.setCheckable(True)
-        self.warriorbtn.setObjectName("warriorbtn")
-        self.elitebtn = QtWidgets.QPushButton(parent=self.rankpg)
-        self.elitebtn.setGeometry(QtCore.QRect(150, 90, 81, 81))
-        icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap(":/Elite.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.elitebtn.setIcon(icon3)
-        self.elitebtn.setIconSize(QtCore.QSize(40, 40))
-        self.elitebtn.setObjectName("elitebtn")
-        self.masterbtn = QtWidgets.QPushButton(parent=self.rankpg)
-        self.masterbtn.setGeometry(QtCore.QRect(260, 90, 81, 81))
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap(":/Master.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.masterbtn.setIcon(icon4)
-        self.masterbtn.setIconSize(QtCore.QSize(40, 40))
-        self.masterbtn.setObjectName("masterbtn")
+        self.gridLayout_13.addWidget(self.label_23, 0, 0, 1, 1)
+        self.gridLayout_11 = QtWidgets.QGridLayout()
+        self.gridLayout_11.setObjectName("gridLayout_11")
+        self.horizontalLayout_8 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_8.setObjectName("horizontalLayout_8")
         self.epicbtn = QtWidgets.QPushButton(parent=self.rankpg)
-        self.epicbtn.setGeometry(QtCore.QRect(40, 190, 81, 81))
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap(":/Epic.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.epicbtn.setIcon(icon5)
-        self.epicbtn.setIconSize(QtCore.QSize(40, 40))
+        self.epicbtn.setMinimumSize(QtCore.QSize(0, 100))
+        self.epicbtn.setMaximumSize(QtCore.QSize(120, 90))
+        self.epicbtn.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.epicbtn.setText("")
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap(":/Epic.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.epicbtn.setIcon(icon2)
+        self.epicbtn.setIconSize(QtCore.QSize(80, 80))
         self.epicbtn.setObjectName("epicbtn")
-        self.mythicbtn = QtWidgets.QPushButton(parent=self.rankpg)
-        self.mythicbtn.setGeometry(QtCore.QRect(260, 190, 81, 81))
-        icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap(":/Mythic.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.mythicbtn.setIcon(icon6)
-        self.mythicbtn.setIconSize(QtCore.QSize(40, 40))
-        self.mythicbtn.setObjectName("mythicbtn")
+        self.horizontalLayout_8.addWidget(self.epicbtn)
         self.legendbtn = QtWidgets.QPushButton(parent=self.rankpg)
-        self.legendbtn.setGeometry(QtCore.QRect(150, 190, 81, 81))
-        icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap(":/Legend.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.legendbtn.setIcon(icon7)
-        self.legendbtn.setIconSize(QtCore.QSize(40, 40))
+        self.legendbtn.setMinimumSize(QtCore.QSize(0, 100))
+        self.legendbtn.setMaximumSize(QtCore.QSize(120, 90))
+        self.legendbtn.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.legendbtn.setText("")
+        icon3 = QtGui.QIcon()
+        icon3.addPixmap(QtGui.QPixmap(":/Legend.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.legendbtn.setIcon(icon3)
+        self.legendbtn.setIconSize(QtCore.QSize(80, 80))
         self.legendbtn.setObjectName("legendbtn")
-        self.grandmasterbtn = QtWidgets.QPushButton(parent=self.rankpg)
-        self.grandmasterbtn.setGeometry(QtCore.QRect(370, 90, 81, 81))
-        icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap(":/Grandmaster.webp"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.grandmasterbtn.setIcon(icon8)
-        self.grandmasterbtn.setIconSize(QtCore.QSize(40, 40))
-        self.grandmasterbtn.setObjectName("grandmasterbtn")
+        self.horizontalLayout_8.addWidget(self.legendbtn)
+        self.mythicbtn = QtWidgets.QPushButton(parent=self.rankpg)
+        self.mythicbtn.setMinimumSize(QtCore.QSize(0, 100))
+        self.mythicbtn.setMaximumSize(QtCore.QSize(120, 90))
+        self.mythicbtn.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.mythicbtn.setText("")
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap(":/Mythic.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.mythicbtn.setIcon(icon4)
+        self.mythicbtn.setIconSize(QtCore.QSize(80, 80))
+        self.mythicbtn.setObjectName("mythicbtn")
+        self.horizontalLayout_8.addWidget(self.mythicbtn)
         self.honorbtn = QtWidgets.QPushButton(parent=self.rankpg)
-        self.honorbtn.setGeometry(QtCore.QRect(370, 190, 81, 81))
+        self.honorbtn.setMinimumSize(QtCore.QSize(0, 100))
+        self.honorbtn.setMaximumSize(QtCore.QSize(120, 90))
+        self.honorbtn.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.honorbtn.setCheckable(True)
         self.honorbtn.setObjectName("honorbtn")
+        self.horizontalLayout_8.addWidget(self.honorbtn)
+        self.gridLayout_11.addLayout(self.horizontalLayout_8, 1, 0, 1, 1)
+        self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_7.setObjectName("horizontalLayout_7")
+        self.warriorbtn = QtWidgets.QPushButton(parent=self.rankpg)
+        self.warriorbtn.setMinimumSize(QtCore.QSize(0, 100))
+        self.warriorbtn.setMaximumSize(QtCore.QSize(120, 90))
+        self.warriorbtn.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.warriorbtn.setText("")
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap(":/Warrior.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.warriorbtn.setIcon(icon5)
+        self.warriorbtn.setIconSize(QtCore.QSize(80, 90))
+        self.warriorbtn.setCheckable(True)
+        self.warriorbtn.setObjectName("warriorbtn")
+        self.horizontalLayout_7.addWidget(self.warriorbtn)
+        self.elitebtn = QtWidgets.QPushButton(parent=self.rankpg)
+        self.elitebtn.setMinimumSize(QtCore.QSize(0, 100))
+        self.elitebtn.setMaximumSize(QtCore.QSize(120, 90))
+        self.elitebtn.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.elitebtn.setText("")
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap(":/Elite.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.elitebtn.setIcon(icon6)
+        self.elitebtn.setIconSize(QtCore.QSize(80, 80))
+        self.elitebtn.setObjectName("elitebtn")
+        self.horizontalLayout_7.addWidget(self.elitebtn)
+        self.masterbtn = QtWidgets.QPushButton(parent=self.rankpg)
+        self.masterbtn.setMinimumSize(QtCore.QSize(0, 100))
+        self.masterbtn.setMaximumSize(QtCore.QSize(120, 90))
+        self.masterbtn.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.masterbtn.setText("")
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap(":/Master.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.masterbtn.setIcon(icon7)
+        self.masterbtn.setIconSize(QtCore.QSize(80, 80))
+        self.masterbtn.setObjectName("masterbtn")
+        self.horizontalLayout_7.addWidget(self.masterbtn)
+        self.grandmasterbtn = QtWidgets.QPushButton(parent=self.rankpg)
+        self.grandmasterbtn.setMinimumSize(QtCore.QSize(0, 100))
+        self.grandmasterbtn.setMaximumSize(QtCore.QSize(120, 90))
+        self.grandmasterbtn.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.grandmasterbtn.setText("")
+        icon8 = QtGui.QIcon()
+        icon8.addPixmap(QtGui.QPixmap(":/Grandmaster.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.grandmasterbtn.setIcon(icon8)
+        self.grandmasterbtn.setIconSize(QtCore.QSize(80, 80))
+        self.grandmasterbtn.setObjectName("grandmasterbtn")
+        self.horizontalLayout_7.addWidget(self.grandmasterbtn)
+        self.gridLayout_11.addLayout(self.horizontalLayout_7, 0, 0, 1, 1)
+        self.gridLayout_13.addLayout(self.gridLayout_11, 1, 0, 1, 1)
         self.stackedWidget.addWidget(self.rankpg)
         self.warriorpg = QtWidgets.QWidget()
         self.warriorpg.setObjectName("warriorpg")
+        self.gridLayout_10 = QtWidgets.QGridLayout(self.warriorpg)
+        self.gridLayout_10.setObjectName("gridLayout_10")
+        self.rtrnbtn1 = QtWidgets.QPushButton(parent=self.warriorpg)
+        self.rtrnbtn1.setMinimumSize(QtCore.QSize(0, 40))
+        self.rtrnbtn1.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.rtrnbtn1.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.rtrnbtn1.setObjectName("rtrnbtn1")
+        self.gridLayout_10.addWidget(self.rtrnbtn1, 0, 0, 1, 1)
+        self.label_24 = QtWidgets.QLabel(parent=self.warriorpg)
+        self.label_24.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.label_24.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.label_24.setObjectName("label_24")
+        self.gridLayout_10.addWidget(self.label_24, 0, 1, 1, 1)
         self.warriorinfo = QtWidgets.QLabel(parent=self.warriorpg)
-        self.warriorinfo.setGeometry(QtCore.QRect(14, 69, 481, 241))
+        self.warriorinfo.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.warriorinfo.setText("")
         self.warriorinfo.setTextFormat(QtCore.Qt.TextFormat.PlainText)
         self.warriorinfo.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
         self.warriorinfo.setObjectName("warriorinfo")
-        self.rtrnbtn1 = QtWidgets.QPushButton(parent=self.warriorpg)
-        self.rtrnbtn1.setGeometry(QtCore.QRect(10, 10, 56, 17))
-        self.rtrnbtn1.setObjectName("rtrnbtn1")
-        self.label_24 = QtWidgets.QLabel(parent=self.warriorpg)
-        self.label_24.setGeometry(QtCore.QRect(120, 10, 251, 41))
-        self.label_24.setStyleSheet("font: 75 24pt \"MS Sans Serif\";")
-        self.label_24.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.label_24.setObjectName("label_24")
+        self.gridLayout_10.addWidget(self.warriorinfo, 1, 0, 1, 2)
         self.stackedWidget.addWidget(self.warriorpg)
         self.elitepg = QtWidgets.QWidget()
         self.elitepg.setObjectName("elitepg")
-        self.eliteinfo = QtWidgets.QLabel(parent=self.elitepg)
-        self.eliteinfo.setGeometry(QtCore.QRect(14, 69, 481, 241))
-        self.eliteinfo.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
-        self.eliteinfo.setObjectName("eliteinfo")
+        self.gridLayout_9 = QtWidgets.QGridLayout(self.elitepg)
+        self.gridLayout_9.setObjectName("gridLayout_9")
         self.rtrnbtn2 = QtWidgets.QPushButton(parent=self.elitepg)
-        self.rtrnbtn2.setGeometry(QtCore.QRect(10, 10, 56, 17))
+        self.rtrnbtn2.setMinimumSize(QtCore.QSize(0, 40))
+        self.rtrnbtn2.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.rtrnbtn2.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.rtrnbtn2.setObjectName("rtrnbtn2")
+        self.gridLayout_9.addWidget(self.rtrnbtn2, 0, 0, 1, 1)
         self.label_25 = QtWidgets.QLabel(parent=self.elitepg)
-        self.label_25.setGeometry(QtCore.QRect(110, 10, 251, 41))
-        self.label_25.setStyleSheet("font: 75 24pt \"MS Sans Serif\";")
+        self.label_25.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.label_25.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_25.setObjectName("label_25")
+        self.gridLayout_9.addWidget(self.label_25, 0, 1, 1, 1)
+        self.eliteinfo = QtWidgets.QLabel(parent=self.elitepg)
+        self.eliteinfo.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.eliteinfo.setText("")
+        self.eliteinfo.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
+        self.eliteinfo.setObjectName("eliteinfo")
+        self.gridLayout_9.addWidget(self.eliteinfo, 1, 0, 1, 2)
         self.stackedWidget.addWidget(self.elitepg)
         self.masterpg = QtWidgets.QWidget()
         self.masterpg.setObjectName("masterpg")
-        self.masterinfo = QtWidgets.QLabel(parent=self.masterpg)
-        self.masterinfo.setGeometry(QtCore.QRect(14, 69, 481, 241))
-        self.masterinfo.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
-        self.masterinfo.setObjectName("masterinfo")
+        self.gridLayout_8 = QtWidgets.QGridLayout(self.masterpg)
+        self.gridLayout_8.setObjectName("gridLayout_8")
         self.rtrnbtn3 = QtWidgets.QPushButton(parent=self.masterpg)
-        self.rtrnbtn3.setGeometry(QtCore.QRect(10, 10, 56, 17))
+        self.rtrnbtn3.setMinimumSize(QtCore.QSize(0, 40))
+        self.rtrnbtn3.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.rtrnbtn3.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.rtrnbtn3.setObjectName("rtrnbtn3")
+        self.gridLayout_8.addWidget(self.rtrnbtn3, 0, 0, 1, 1)
         self.label_26 = QtWidgets.QLabel(parent=self.masterpg)
-        self.label_26.setGeometry(QtCore.QRect(110, 10, 251, 41))
-        self.label_26.setStyleSheet("font: 75 24pt \"MS Sans Serif\";")
+        self.label_26.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.label_26.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_26.setObjectName("label_26")
+        self.gridLayout_8.addWidget(self.label_26, 0, 1, 1, 1)
+        self.masterinfo = QtWidgets.QLabel(parent=self.masterpg)
+        self.masterinfo.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.masterinfo.setText("")
+        self.masterinfo.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
+        self.masterinfo.setObjectName("masterinfo")
+        self.gridLayout_8.addWidget(self.masterinfo, 1, 0, 1, 2)
         self.stackedWidget.addWidget(self.masterpg)
         self.grandmasterpg = QtWidgets.QWidget()
         self.grandmasterpg.setObjectName("grandmasterpg")
-        self.grandmasterinfo = QtWidgets.QLabel(parent=self.grandmasterpg)
-        self.grandmasterinfo.setGeometry(QtCore.QRect(14, 65, 481, 251))
-        self.grandmasterinfo.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
-        self.grandmasterinfo.setObjectName("grandmasterinfo")
+        self.gridLayout_7 = QtWidgets.QGridLayout(self.grandmasterpg)
+        self.gridLayout_7.setObjectName("gridLayout_7")
         self.rtrnbtn4 = QtWidgets.QPushButton(parent=self.grandmasterpg)
-        self.rtrnbtn4.setGeometry(QtCore.QRect(10, 10, 56, 17))
+        self.rtrnbtn4.setMinimumSize(QtCore.QSize(0, 40))
+        self.rtrnbtn4.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.rtrnbtn4.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.rtrnbtn4.setObjectName("rtrnbtn4")
+        self.gridLayout_7.addWidget(self.rtrnbtn4, 0, 0, 1, 1)
         self.label_27 = QtWidgets.QLabel(parent=self.grandmasterpg)
-        self.label_27.setGeometry(QtCore.QRect(130, 10, 271, 41))
-        self.label_27.setStyleSheet("font: 75 24pt \"MS Sans Serif\";")
+        self.label_27.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.label_27.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_27.setObjectName("label_27")
+        self.gridLayout_7.addWidget(self.label_27, 0, 1, 1, 1)
+        self.grandmasterinfo = QtWidgets.QLabel(parent=self.grandmasterpg)
+        self.grandmasterinfo.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.grandmasterinfo.setText("")
+        self.grandmasterinfo.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
+        self.grandmasterinfo.setObjectName("grandmasterinfo")
+        self.gridLayout_7.addWidget(self.grandmasterinfo, 1, 0, 1, 2)
         self.stackedWidget.addWidget(self.grandmasterpg)
         self.epicpg = QtWidgets.QWidget()
         self.epicpg.setObjectName("epicpg")
-        self.epicinfo = QtWidgets.QLabel(parent=self.epicpg)
-        self.epicinfo.setGeometry(QtCore.QRect(14, 69, 481, 241))
-        self.epicinfo.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
-        self.epicinfo.setObjectName("epicinfo")
+        self.gridLayout_6 = QtWidgets.QGridLayout(self.epicpg)
+        self.gridLayout_6.setObjectName("gridLayout_6")
         self.rtrnbtn5 = QtWidgets.QPushButton(parent=self.epicpg)
-        self.rtrnbtn5.setGeometry(QtCore.QRect(10, 10, 56, 17))
+        self.rtrnbtn5.setMinimumSize(QtCore.QSize(40, 50))
+        self.rtrnbtn5.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.rtrnbtn5.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.rtrnbtn5.setObjectName("rtrnbtn5")
+        self.gridLayout_6.addWidget(self.rtrnbtn5, 0, 0, 1, 1)
         self.label_28 = QtWidgets.QLabel(parent=self.epicpg)
-        self.label_28.setGeometry(QtCore.QRect(140, 10, 251, 41))
-        self.label_28.setStyleSheet("font: 75 24pt \"MS Sans Serif\";")
+        self.label_28.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.label_28.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_28.setObjectName("label_28")
+        self.gridLayout_6.addWidget(self.label_28, 0, 1, 1, 1)
+        self.epicinfo = QtWidgets.QLabel(parent=self.epicpg)
+        self.epicinfo.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.epicinfo.setText("")
+        self.epicinfo.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
+        self.epicinfo.setObjectName("epicinfo")
+        self.gridLayout_6.addWidget(self.epicinfo, 1, 0, 1, 2)
         self.stackedWidget.addWidget(self.epicpg)
         self.legendpg = QtWidgets.QWidget()
         self.legendpg.setObjectName("legendpg")
-        self.legendinfo = QtWidgets.QLabel(parent=self.legendpg)
-        self.legendinfo.setGeometry(QtCore.QRect(14, 69, 481, 241))
-        self.legendinfo.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
-        self.legendinfo.setObjectName("legendinfo")
+        self.gridLayout_5 = QtWidgets.QGridLayout(self.legendpg)
+        self.gridLayout_5.setObjectName("gridLayout_5")
         self.rtrnbtn6 = QtWidgets.QPushButton(parent=self.legendpg)
-        self.rtrnbtn6.setGeometry(QtCore.QRect(10, 10, 56, 17))
+        self.rtrnbtn6.setMinimumSize(QtCore.QSize(0, 40))
+        self.rtrnbtn6.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.rtrnbtn6.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.rtrnbtn6.setObjectName("rtrnbtn6")
+        self.gridLayout_5.addWidget(self.rtrnbtn6, 0, 0, 1, 1)
         self.label_29 = QtWidgets.QLabel(parent=self.legendpg)
-        self.label_29.setGeometry(QtCore.QRect(130, 10, 251, 41))
-        self.label_29.setStyleSheet("font: 75 24pt \"MS Sans Serif\";")
+        self.label_29.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.label_29.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_29.setObjectName("label_29")
+        self.gridLayout_5.addWidget(self.label_29, 0, 1, 1, 1)
+        self.legendinfo = QtWidgets.QLabel(parent=self.legendpg)
+        self.legendinfo.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.legendinfo.setText("")
+        self.legendinfo.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
+        self.legendinfo.setObjectName("legendinfo")
+        self.gridLayout_5.addWidget(self.legendinfo, 1, 0, 1, 2)
         self.stackedWidget.addWidget(self.legendpg)
         self.mythicpg = QtWidgets.QWidget()
         self.mythicpg.setObjectName("mythicpg")
-        self.myhticinfo = QtWidgets.QLabel(parent=self.mythicpg)
-        self.myhticinfo.setGeometry(QtCore.QRect(14, 65, 481, 241))
-        self.myhticinfo.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
-        self.myhticinfo.setObjectName("myhticinfo")
+        self.gridLayout_3 = QtWidgets.QGridLayout(self.mythicpg)
+        self.gridLayout_3.setObjectName("gridLayout_3")
         self.rtrnbtn7 = QtWidgets.QPushButton(parent=self.mythicpg)
-        self.rtrnbtn7.setGeometry(QtCore.QRect(10, 10, 56, 17))
+        self.rtrnbtn7.setMinimumSize(QtCore.QSize(40, 40))
+        self.rtrnbtn7.setMaximumSize(QtCore.QSize(50, 16777215))
+        self.rtrnbtn7.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.rtrnbtn7.setIconSize(QtCore.QSize(40, 40))
         self.rtrnbtn7.setObjectName("rtrnbtn7")
+        self.gridLayout_3.addWidget(self.rtrnbtn7, 0, 0, 1, 1)
         self.label_30 = QtWidgets.QLabel(parent=self.mythicpg)
-        self.label_30.setGeometry(QtCore.QRect(130, 10, 251, 41))
-        self.label_30.setStyleSheet("font: 75 24pt \"MS Sans Serif\";")
+        self.label_30.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_30.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.label_30.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_30.setObjectName("label_30")
+        self.gridLayout_3.addWidget(self.label_30, 0, 1, 1, 1)
+        self.myhticinfo = QtWidgets.QLabel(parent=self.mythicpg)
+        self.myhticinfo.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 27pt \"MS Serif\";\n"
+"background-color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
+        self.myhticinfo.setText("")
+        self.myhticinfo.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
+        self.myhticinfo.setObjectName("myhticinfo")
+        self.gridLayout_3.addWidget(self.myhticinfo, 1, 0, 1, 2)
         self.stackedWidget.addWidget(self.mythicpg)
         self.hononarypg = QtWidgets.QWidget()
         self.hononarypg.setObjectName("hononarypg")
         self.label_31 = QtWidgets.QLabel(parent=self.hononarypg)
-        self.label_31.setGeometry(QtCore.QRect(80, 50, 361, 191))
+        self.label_31.setGeometry(QtCore.QRect(10, 30, 471, 261))
+        self.label_31.setStyleSheet("background-color: rgb(100,181,246);")
         self.label_31.setText("")
         self.label_31.setTextFormat(QtCore.Qt.TextFormat.AutoText)
-        self.label_31.setPixmap(QtGui.QPixmap(":/honorary titles.webp"))
+        self.label_31.setPixmap(QtGui.QPixmap(":/honorary titles.png"))
         self.label_31.setScaledContents(True)
         self.label_31.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label_31.setObjectName("label_31")
         self.beginnerlbl = QtWidgets.QLabel(parent=self.hononarypg)
-        self.beginnerlbl.setGeometry(QtCore.QRect(90, 90, 81, 51))
+        self.beginnerlbl.setGeometry(QtCore.QRect(10, 80, 121, 81))
+        self.beginnerlbl.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.beginnerlbl.setText("")
+        self.beginnerlbl.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
         self.beginnerlbl.setObjectName("beginnerlbl")
         self.juniorlbl = QtWidgets.QLabel(parent=self.hononarypg)
-        self.juniorlbl.setGeometry(QtCore.QRect(350, 90, 81, 51))
+        self.juniorlbl.setGeometry(QtCore.QRect(360, 80, 121, 81))
+        self.juniorlbl.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.juniorlbl.setText("")
+        self.juniorlbl.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
         self.juniorlbl.setObjectName("juniorlbl")
         self.suprelbl = QtWidgets.QLabel(parent=self.hononarypg)
-        self.suprelbl.setGeometry(QtCore.QRect(350, 160, 81, 51))
+        self.suprelbl.setGeometry(QtCore.QRect(360, 170, 121, 81))
+        self.suprelbl.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.suprelbl.setText("")
+        self.suprelbl.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
         self.suprelbl.setObjectName("suprelbl")
         self.seniorlbl = QtWidgets.QLabel(parent=self.hononarypg)
-        self.seniorlbl.setGeometry(QtCore.QRect(90, 160, 81, 51))
+        self.seniorlbl.setGeometry(QtCore.QRect(10, 170, 121, 81))
+        self.seniorlbl.setStyleSheet("border-color: rgb(255, 255, 255);\n"
+"font: 8pt \"MS Sans Serif\";\n"
+"background-color: rgb(0, 0, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"border-top-left-radius:10px;\n"
+"border-bottom-left-radius:10px;\n"
+"border-top-right-radius:10px;\n"
+"border-bottom-right-radius:10px;\n"
+"")
         self.seniorlbl.setText("")
+        self.seniorlbl.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeading|QtCore.Qt.AlignmentFlag.AlignLeft|QtCore.Qt.AlignmentFlag.AlignTop)
         self.seniorlbl.setObjectName("seniorlbl")
         self.stackedWidget.addWidget(self.hononarypg)
-        self.gridLayout_3.addWidget(self.stackedWidget, 1, 2, 1, 1)
+        self.gridLayout_2.addWidget(self.stackedWidget, 1, 2, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(11)
+        self.stackedWidget.setCurrentIndex(2)
         self.pushButton_9.toggled['bool'].connect(self.iconwgt.setHidden) # type: ignore
         self.pushButton_9.toggled['bool'].connect(self.iconnamewgt.setVisible) # type: ignore
         self.gamesbtn.toggled['bool'].connect(self.gamesbtn1.setChecked) # type: ignore
@@ -654,27 +1342,27 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_3.setText(_translate("MainWindow", "WinRate\n"
-"Calculator\n"
-""))
-        self.overbtn1.setText(_translate("MainWindow", "Overall"))
-        self.herobtn1.setText(_translate("MainWindow", "Hero"))
-        self.gamesbtn1.setText(_translate("MainWindow", "Games Needed"))
-        self.rrbtn1.setText(_translate("MainWindow", "Rank Rewards"))
-        self.signout.setText(_translate("MainWindow", "Sign Out"))
         self.overallbtn.setText(_translate("MainWindow", "Overall"))
         self.herobtn.setText(_translate("MainWindow", "Hero"))
         self.gamesbtn.setText(_translate("MainWindow", "Games"))
         self.rrbtn.setText(_translate("MainWindow", "Rank"))
+        self.signout.setText(_translate("MainWindow", "Sign Out"))
+        self.overbtn1.setText(_translate("MainWindow", "Overall"))
+        self.herobtn1.setText(_translate("MainWindow", "Hero"))
+        self.gamesbtn1.setText(_translate("MainWindow", "Games Needed"))
+        self.rrbtn1.setText(_translate("MainWindow", "Rank Rewards"))
+        self.label_3.setText(_translate("MainWindow", "WinRate\n"
+"Calculator\n"
+""))
         self.calcbtn1.setText(_translate("MainWindow", "Calculate"))
-        self.label_4.setText(_translate("MainWindow", "Number Of Games:     "))
+        self.label_4.setText(_translate("MainWindow", "Number Of Games:"))
         self.label_5.setText(_translate("MainWindow", "Number Of Wins:"))
         self.label_6.setText(_translate("MainWindow", "Winrate:"))
         self.nog1.setToolTip(_translate("MainWindow", "input1"))
         self.now1.setToolTip(_translate("MainWindow", "input2"))
         self.wrlabel1.setText(_translate("MainWindow", "0"))
         self.calcbtn2.setText(_translate("MainWindow", "Calculate"))
-        self.label_8.setText(_translate("MainWindow", "Number Of Games:      "))
+        self.label_8.setText(_translate("MainWindow", "Number Of Games:"))
         self.label_7.setText(_translate("MainWindow", "Number Of Wins:"))
         self.label_9.setText(_translate("MainWindow", "Winrate:"))
         self.nog2.setToolTip(_translate("MainWindow", "input3"))
@@ -684,39 +1372,25 @@ class Ui_MainWindow(object):
         self.label.setText(_translate("MainWindow", "Current Matches:"))
         self.label_11.setText(_translate("MainWindow", "Current Winrate:"))
         self.label_10.setText(_translate("MainWindow", "Desired Winrate:"))
-        self.label_12.setText(_translate("MainWindow", "Games Won Required:     "))
+        self.label_12.setText(_translate("MainWindow", "Games Won Required:"))
         self.cmtext.setToolTip(_translate("MainWindow", "input5"))
         self.cwrtext.setToolTip(_translate("MainWindow", "input6"))
         self.dwrtext.setToolTip(_translate("MainWindow", "input6"))
         self.gwreqlabel.setText(_translate("MainWindow", "0"))
         self.label_23.setText(_translate("MainWindow", "Rank Rewards"))
-        self.warriorbtn.setText(_translate("MainWindow", "Warrior"))
-        self.elitebtn.setText(_translate("MainWindow", "Elite"))
-        self.masterbtn.setText(_translate("MainWindow", "Master"))
-        self.epicbtn.setText(_translate("MainWindow", "Epic"))
-        self.mythicbtn.setText(_translate("MainWindow", "Mythic"))
-        self.legendbtn.setText(_translate("MainWindow", "Legend"))
-        self.grandmasterbtn.setText(_translate("MainWindow", "Grandmaster"))
-        self.honorbtn.setText(_translate("MainWindow", "Hononary Titles"))
-        self.warriorinfo.setText(_translate("MainWindow", "warrior"))
+        self.honorbtn.setText(_translate("MainWindow", "Hononary"))
         self.rtrnbtn1.setText(_translate("MainWindow", "Return"))
         self.label_24.setText(_translate("MainWindow", "Warrior Rewards"))
-        self.eliteinfo.setText(_translate("MainWindow", "elite"))
         self.rtrnbtn2.setText(_translate("MainWindow", "Return"))
         self.label_25.setText(_translate("MainWindow", "Elite Rewards"))
-        self.masterinfo.setText(_translate("MainWindow", "master"))
         self.rtrnbtn3.setText(_translate("MainWindow", "Return"))
         self.label_26.setText(_translate("MainWindow", "Master Rewards"))
-        self.grandmasterinfo.setText(_translate("MainWindow", "grandmaster"))
         self.rtrnbtn4.setText(_translate("MainWindow", "Return"))
         self.label_27.setText(_translate("MainWindow", "Grandmaster Rewards"))
-        self.epicinfo.setText(_translate("MainWindow", "epic"))
         self.rtrnbtn5.setText(_translate("MainWindow", "Return"))
         self.label_28.setText(_translate("MainWindow", "Epic Rewards"))
-        self.legendinfo.setText(_translate("MainWindow", "legend"))
         self.rtrnbtn6.setText(_translate("MainWindow", "Return"))
         self.label_29.setText(_translate("MainWindow", "Legend Rewards"))
-        self.myhticinfo.setText(_translate("MainWindow", "mythic"))
         self.rtrnbtn7.setText(_translate("MainWindow", "Return"))
         self.label_30.setText(_translate("MainWindow", "Myhtic Rewards"))
 

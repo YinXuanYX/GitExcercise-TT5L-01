@@ -6,208 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>670</width>
-    <height>377</height>
+    <width>698</width>
+    <height>427</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(245, 248, 254);</string>
+   <string notr="true">background-color: rgb(100,181,246);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout_3">
-    <property name="leftMargin">
-     <number>0</number>
-    </property>
-    <property name="topMargin">
-     <number>0</number>
-    </property>
-    <property name="rightMargin">
-     <number>0</number>
-    </property>
-    <property name="bottomMargin">
-     <number>0</number>
-    </property>
-    <item row="0" column="1" rowspan="2">
-     <widget class="QWidget" name="iconnamewgt" native="true">
-      <property name="styleSheet">
-       <string notr="true">QWidget{
-background-color: rgb(148, 148, 148);
-}
-QPushButton{
-height:30px;
-border-top-left-radius:10px;
-border-bottom-left-radius:10px;
-border-top-right-radius:10px;
-border-bottom-right-radius:10px;
-}
-</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout_4">
-       <item row="0" column="0">
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item>
-          <widget class="QLabel" name="label_2">
-           <property name="minimumSize">
-            <size>
-             <width>40</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>40</width>
-             <height>40</height>
-            </size>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap resource="../Mobile-legends-ultimate-guide-1/icon.qrc">:/Mobile-legends-ultimate-guide/calcbtn.png</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_3">
-           <property name="font">
-            <font>
-             <family>Nirmala UI Semilight</family>
-             <pointsize>10</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>WinRate
-Calculator
-</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="1" column="0">
-        <layout class="QVBoxLayout" name="verticalLayout_2">
-         <item>
-          <widget class="QPushButton" name="overbtn1">
-           <property name="styleSheet">
-            <string notr="true">QWidget{
-background-color: rgb(255, 255, 255);
-}
-</string>
-           </property>
-           <property name="text">
-            <string>Overall</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="autoDefault">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="herobtn1">
-           <property name="styleSheet">
-            <string notr="true">QWidget{
-background-color: rgb(255, 255, 255);
-}
-</string>
-           </property>
-           <property name="text">
-            <string>Hero</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="gamesbtn1">
-           <property name="styleSheet">
-            <string notr="true">QWidget{
-background-color: rgb(255, 255, 255);
-}
-</string>
-           </property>
-           <property name="text">
-            <string>Games Needed</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="rrbtn1">
-           <property name="styleSheet">
-            <string notr="true">QWidget{
-background-color: rgb(255, 255, 255);
-}
-</string>
-           </property>
-           <property name="text">
-            <string>Rank Rewards</string>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="verticalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>88</width>
-             <height>142</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </item>
-       <item row="2" column="0">
-        <widget class="QPushButton" name="signout">
-         <property name="styleSheet">
-          <string notr="true">color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>Sign Out</string>
-         </property>
-         <property name="icon">
-          <iconset resource="../Mobile-legends-ultimate-guide-1/icon.qrc">
-           <normaloff>:/Mobile-legends-ultimate-guide/signout.png</normaloff>:/Mobile-legends-ultimate-guide/signout.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>30</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
+   <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0" rowspan="2">
      <widget class="QWidget" name="iconwgt" native="true">
       <property name="styleSheet">
-       <string notr="true">QWidget{
-background-color: rgb(148, 148, 148);
-}
+       <string notr="true">
 QPushButton{
 height:30px;
 border-top-left-radius:10px;
@@ -215,29 +29,19 @@ border-bottom-left-radius:10px;
 border-top-right-radius:10px;
 border-bottom-right-radius:10px;
 }
+
+border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+
 </string>
       </property>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="2" column="0">
-        <widget class="QPushButton" name="signout_2">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="../Mobile-legends-ultimate-guide-1/icon.qrc">
-           <normaloff>:/Mobile-legends-ultimate-guide/signout.png</normaloff>:/Mobile-legends-ultimate-guide/signout.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>30</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
        <item row="0" column="0">
         <widget class="QLabel" name="calcicon">
          <property name="minimumSize">
@@ -252,11 +56,18 @@ border-bottom-right-radius:10px;
            <height>40</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    border-radius: 200px
+
+}
+</string>
+         </property>
          <property name="text">
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="../Mobile-legends-ultimate-guide-1/icon.qrc">:/Mobile-legends-ultimate-guide/calcbtn.png</pixmap>
+          <pixmap resource="icon.qrc">:/mlbb.jpg</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
@@ -268,9 +79,13 @@ border-bottom-right-radius:10px;
          <item>
           <widget class="QPushButton" name="overallbtn">
            <property name="styleSheet">
-            <string notr="true">QWidget{
+            <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Serif&quot;;
 background-color: rgb(255, 255, 255);
-}
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
 </string>
            </property>
            <property name="text">
@@ -284,9 +99,13 @@ background-color: rgb(255, 255, 255);
          <item>
           <widget class="QPushButton" name="herobtn">
            <property name="styleSheet">
-            <string notr="true">QWidget{
+            <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Serif&quot;;
 background-color: rgb(255, 255, 255);
-}
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
 </string>
            </property>
            <property name="text">
@@ -300,9 +119,13 @@ background-color: rgb(255, 255, 255);
          <item>
           <widget class="QPushButton" name="gamesbtn">
            <property name="styleSheet">
-            <string notr="true">QWidget{
+            <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Serif&quot;;
 background-color: rgb(255, 255, 255);
-}
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
 </string>
            </property>
            <property name="text">
@@ -316,9 +139,13 @@ background-color: rgb(255, 255, 255);
          <item>
           <widget class="QPushButton" name="rrbtn">
            <property name="styleSheet">
-            <string notr="true">QWidget{
+            <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Serif&quot;;
 background-color: rgb(255, 255, 255);
-}
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
 </string>
            </property>
            <property name="text">
@@ -344,19 +171,312 @@ background-color: rgb(255, 255, 255);
          </item>
         </layout>
        </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="signout_2">
+         <property name="styleSheet">
+          <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icon.qrc">
+           <normaloff>:/signout.png</normaloff>:/signout.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="2">
+     <widget class="QWidget" name="iconnamewgt" native="true">
+      <property name="styleSheet">
+       <string notr="true">
+QPushButton{
+height:30px;
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+}
+
+border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="2" column="0">
+        <widget class="QPushButton" name="signout">
+         <property name="styleSheet">
+          <string notr="true">border-color: rgb(255, 255, 255);
+font: 9pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+         </property>
+         <property name="text">
+          <string>Sign Out</string>
+         </property>
+         <property name="icon">
+          <iconset resource="icon.qrc">
+           <normaloff>:/signout.png</normaloff>:/signout.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QPushButton" name="overbtn1">
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+           </property>
+           <property name="text">
+            <string>Overall</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoDefault">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="herobtn1">
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(255, 255, 255);
+font: 10pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+           </property>
+           <property name="text">
+            <string>Hero</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="gamesbtn1">
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+           </property>
+           <property name="text">
+            <string>Games Needed</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="rrbtn1">
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+           </property>
+           <property name="text">
+            <string>Rank Rewards</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>88</width>
+             <height>142</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="minimumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="icon.qrc">:/mlbb.jpg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <family>MS Serif</family>
+             <pointsize>4</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 4pt &quot;MS Serif&quot;;
+
+</string>
+           </property>
+           <property name="text">
+            <string>WinRate
+Calculator
+</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
       </layout>
      </widget>
     </item>
     <item row="0" column="2">
      <widget class="QWidget" name="widget" native="true">
       <property name="styleSheet">
-       <string notr="true">QWidget{
-background-color: rgb(148, 148, 148);
-}
+       <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
 </string>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
+      <layout class="QGridLayout" name="gridLayout_12">
+       <item row="0" column="1">
+        <widget class="QPushButton" name="signout_3">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+border: none
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icon.qrc">
+           <normaloff>:/signout.png</normaloff>:/signout.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
           <widget class="QPushButton" name="pushButton_9">
@@ -373,17 +493,14 @@ background-color: rgb(148, 148, 148);
             </size>
            </property>
            <property name="styleSheet">
-            <string notr="true">QWidget{
-background-color: rgb(255, 255, 255);
-}
-</string>
+            <string notr="true">border: none</string>
            </property>
            <property name="text">
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../Mobile-legends-ultimate-guide-1/icon.qrc">
-             <normaloff>:/Mobile-legends-ultimate-guide/menubtn.png</normaloff>:/Mobile-legends-ultimate-guide/menubtn.png</iconset>
+            <iconset resource="icon.qrc">
+             <normaloff>:/menubtn.png</normaloff>:/menubtn.png</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -417,70 +534,43 @@ background-color: rgb(255, 255, 255);
          </item>
         </layout>
        </item>
-       <item>
-        <widget class="QPushButton" name="signout_3">
-         <property name="minimumSize">
-          <size>
-           <width>40</width>
-           <height>40</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>40</width>
-           <height>40</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QWidget{
-	border:none;
-background-color: rgb(148, 148, 148);
-}
-</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset resource="../Mobile-legends-ultimate-guide-1/icon.qrc">
-           <normaloff>:/Mobile-legends-ultimate-guide/signout.png</normaloff>:/Mobile-legends-ultimate-guide/signout.png</iconset>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>30</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-         <property name="autoDefault">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
       </layout>
      </widget>
     </item>
     <item row="1" column="2">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>11</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="overallpg">
        <widget class="QPushButton" name="calcbtn1">
         <property name="geometry">
          <rect>
-          <x>130</x>
-          <y>170</y>
+          <x>190</x>
+          <y>240</y>
           <width>111</width>
           <height>31</height>
          </rect>
         </property>
         <property name="font">
          <font>
-          <pointsize>18</pointsize>
+          <family>MS Sans Serif</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
         </property>
         <property name="text">
          <string>Calculate</string>
@@ -492,10 +582,10 @@ background-color: rgb(148, 148, 148);
        <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
-          <x>40</x>
+          <x>80</x>
           <y>50</y>
-          <width>281</width>
-          <height>101</height>
+          <width>351</width>
+          <height>168</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_6">
@@ -505,14 +595,29 @@ background-color: rgb(148, 148, 148);
             <widget class="QLabel" name="label_4">
              <property name="font">
               <font>
-               <family>Yu Gothic Light</family>
-               <pointsize>16</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>MS Sans Serif</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+             </property>
              <property name="text">
-              <string>Number Of Games:     </string>
+              <string>Number Of Games:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -520,17 +625,29 @@ background-color: rgb(148, 148, 148);
             <widget class="QLabel" name="label_5">
              <property name="font">
               <font>
-               <family>Yu Gothic Light</family>
-               <pointsize>16</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>MS Sans Serif</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="styleSheet">
-              <string notr="true"/>
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
              </property>
              <property name="text">
               <string>Number Of Wins:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -538,14 +655,29 @@ background-color: rgb(148, 148, 148);
             <widget class="QLabel" name="label_6">
              <property name="font">
               <font>
-               <family>Yu Gothic Light</family>
-               <pointsize>16</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>MS Sans Serif</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
              </property>
              <property name="text">
               <string>Winrate:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -557,6 +689,16 @@ background-color: rgb(148, 148, 148);
             <widget class="QTextEdit" name="nog1">
              <property name="toolTip">
               <string>input1</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
              </property>
              <property name="overwriteMode">
               <bool>false</bool>
@@ -571,6 +713,16 @@ background-color: rgb(148, 148, 148);
              <property name="toolTip">
               <string>input2</string>
              </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+             </property>
              <property name="overwriteMode">
               <bool>false</bool>
              </property>
@@ -581,13 +733,36 @@ background-color: rgb(148, 148, 148);
            </item>
            <item>
             <widget class="QLabel" name="wrlabel1">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
              <property name="font">
               <font>
-               <pointsize>20</pointsize>
+               <family>MS Sans Serif</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
              </property>
              <property name="text">
               <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -600,16 +775,31 @@ background-color: rgb(148, 148, 148);
        <widget class="QPushButton" name="calcbtn2">
         <property name="geometry">
          <rect>
-          <x>150</x>
-          <y>170</y>
+          <x>190</x>
+          <y>230</y>
           <width>111</width>
           <height>31</height>
          </rect>
         </property>
         <property name="font">
          <font>
-          <pointsize>18</pointsize>
+          <family>MS Sans Serif</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
         </property>
         <property name="text">
          <string>Calculate</string>
@@ -623,8 +813,8 @@ background-color: rgb(148, 148, 148);
          <rect>
           <x>80</x>
           <y>40</y>
-          <width>271</width>
-          <height>111</height>
+          <width>331</width>
+          <height>166</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -634,14 +824,29 @@ background-color: rgb(148, 148, 148);
             <widget class="QLabel" name="label_8">
              <property name="font">
               <font>
-               <family>Yu Gothic Light</family>
-               <pointsize>16</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>MS Sans Serif</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+             </property>
              <property name="text">
-              <string>Number Of Games:      </string>
+              <string>Number Of Games:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -649,14 +854,29 @@ background-color: rgb(148, 148, 148);
             <widget class="QLabel" name="label_7">
              <property name="font">
               <font>
-               <family>Yu Gothic Light</family>
-               <pointsize>16</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>MS Sans Serif</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
              </property>
              <property name="text">
               <string>Number Of Wins:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -664,14 +884,29 @@ background-color: rgb(148, 148, 148);
             <widget class="QLabel" name="label_9">
              <property name="font">
               <font>
-               <family>Yu Gothic Light</family>
-               <pointsize>16</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>MS Sans Serif</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
              </property>
              <property name="text">
               <string>Winrate:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -684,6 +919,16 @@ background-color: rgb(148, 148, 148);
              <property name="toolTip">
               <string>input3</string>
              </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+             </property>
              <property name="overwriteMode">
               <bool>false</bool>
              </property>
@@ -694,8 +939,24 @@ background-color: rgb(148, 148, 148);
            </item>
            <item>
             <widget class="QTextEdit" name="now2">
+             <property name="minimumSize">
+              <size>
+               <width>10</width>
+               <height>50</height>
+              </size>
+             </property>
              <property name="toolTip">
               <string>input4</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
              </property>
              <property name="overwriteMode">
               <bool>false</bool>
@@ -707,13 +968,45 @@ background-color: rgb(148, 148, 148);
            </item>
            <item>
             <widget class="QLabel" name="wrlabel2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
              <property name="font">
               <font>
-               <pointsize>20</pointsize>
+               <family>MS Sans Serif</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+             </property>
+             <property name="lineWidth">
+              <number>0</number>
              </property>
              <property name="text">
               <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -726,16 +1019,31 @@ background-color: rgb(148, 148, 148);
        <widget class="QPushButton" name="calcbtn3">
         <property name="geometry">
          <rect>
-          <x>160</x>
-          <y>190</y>
+          <x>190</x>
+          <y>240</y>
           <width>111</width>
           <height>31</height>
          </rect>
         </property>
         <property name="font">
          <font>
-          <pointsize>18</pointsize>
+          <family>MS Sans Serif</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
         </property>
         <property name="text">
          <string>Calculate</string>
@@ -747,10 +1055,10 @@ background-color: rgb(148, 148, 148);
        <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
-          <x>70</x>
-          <y>50</y>
-          <width>311</width>
-          <height>131</height>
+          <x>60</x>
+          <y>10</y>
+          <width>371</width>
+          <height>222</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -763,14 +1071,30 @@ background-color: rgb(148, 148, 148);
             <widget class="QLabel" name="label">
              <property name="font">
               <font>
-               <family>Yu Gothic Light</family>
-               <pointsize>16</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>MS Sans Serif</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
              </property>
              <property name="text">
               <string>Current Matches:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -778,14 +1102,29 @@ background-color: rgb(148, 148, 148);
             <widget class="QLabel" name="label_11">
              <property name="font">
               <font>
-               <family>Yu Gothic Light</family>
-               <pointsize>16</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>MS Sans Serif</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
              </property>
              <property name="text">
               <string>Current Winrate:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -793,14 +1132,29 @@ background-color: rgb(148, 148, 148);
             <widget class="QLabel" name="label_10">
              <property name="font">
               <font>
-               <family>Yu Gothic Light</family>
-               <pointsize>16</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>MS Sans Serif</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
              </property>
              <property name="text">
               <string>Desired Winrate:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -808,14 +1162,29 @@ background-color: rgb(148, 148, 148);
             <widget class="QLabel" name="label_12">
              <property name="font">
               <font>
-               <family>Yu Gothic Light</family>
-               <pointsize>16</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>MS Sans Serif</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+             </property>
              <property name="text">
-              <string>Games Won Required:     </string>
+              <string>Games Won Required:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -827,6 +1196,16 @@ background-color: rgb(148, 148, 148);
             <widget class="QTextEdit" name="cmtext">
              <property name="toolTip">
               <string>input5</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
              </property>
              <property name="overwriteMode">
               <bool>false</bool>
@@ -841,6 +1220,16 @@ background-color: rgb(148, 148, 148);
              <property name="toolTip">
               <string>input6</string>
              </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+             </property>
              <property name="overwriteMode">
               <bool>false</bool>
              </property>
@@ -854,6 +1243,16 @@ background-color: rgb(148, 148, 148);
              <property name="toolTip">
               <string>input6</string>
              </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+             </property>
              <property name="overwriteMode">
               <bool>false</bool>
              </property>
@@ -864,13 +1263,36 @@ background-color: rgb(148, 148, 148);
            </item>
            <item>
             <widget class="QLabel" name="gwreqlabel">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>50</height>
+              </size>
+             </property>
              <property name="font">
               <font>
-               <pointsize>20</pointsize>
+               <family>MS Sans Serif</family>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
              </property>
              <property name="text">
               <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
              </property>
             </widget>
            </item>
@@ -880,583 +1302,923 @@ background-color: rgb(148, 148, 148);
        </widget>
       </widget>
       <widget class="QWidget" name="rankpg">
-       <widget class="QLabel" name="label_23">
-        <property name="geometry">
-         <rect>
-          <x>6</x>
-          <y>6</y>
-          <width>491</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>30</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>MS Sans Serif</family>
-          <pointsize>8</pointsize>
-          <weight>50</weight>
-          <italic>false</italic>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font: 8pt &quot;MS Sans Serif&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Rank Rewards</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="warriorbtn">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>90</y>
-          <width>81</width>
-          <height>81</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Warrior</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../Mobile-legends-ultimate-guide-1/icon.qrc">
-          <normaloff>:/Warrior.webp</normaloff>:/Warrior.webp</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>40</width>
-          <height>40</height>
-         </size>
-        </property>
-        <property name="checkable">
-         <bool>true</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="elitebtn">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>90</y>
-          <width>81</width>
-          <height>81</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Elite</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../Mobile-legends-ultimate-guide-1/icon.qrc">
-          <normaloff>:/Elite.webp</normaloff>:/Elite.webp</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>40</width>
-          <height>40</height>
-         </size>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="masterbtn">
-        <property name="geometry">
-         <rect>
-          <x>260</x>
-          <y>90</y>
-          <width>81</width>
-          <height>81</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Master</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../Mobile-legends-ultimate-guide-1/icon.qrc">
-          <normaloff>:/Master.webp</normaloff>:/Master.webp</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>40</width>
-          <height>40</height>
-         </size>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="epicbtn">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>190</y>
-          <width>81</width>
-          <height>81</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Epic</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../Mobile-legends-ultimate-guide-1/icon.qrc">
-          <normaloff>:/Epic.webp</normaloff>:/Epic.webp</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>40</width>
-          <height>40</height>
-         </size>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="mythicbtn">
-        <property name="geometry">
-         <rect>
-          <x>260</x>
-          <y>190</y>
-          <width>81</width>
-          <height>81</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Mythic</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../Mobile-legends-ultimate-guide-1/icon.qrc">
-          <normaloff>:/Mythic.webp</normaloff>:/Mythic.webp</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>40</width>
-          <height>40</height>
-         </size>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="legendbtn">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>190</y>
-          <width>81</width>
-          <height>81</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Legend</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../Mobile-legends-ultimate-guide-1/icon.qrc">
-          <normaloff>:/Legend.webp</normaloff>:/Legend.webp</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>40</width>
-          <height>40</height>
-         </size>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="grandmasterbtn">
-        <property name="geometry">
-         <rect>
-          <x>370</x>
-          <y>90</y>
-          <width>81</width>
-          <height>81</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Grandmaster</string>
-        </property>
-        <property name="icon">
-         <iconset resource="../Mobile-legends-ultimate-guide-1/icon.qrc">
-          <normaloff>:/Grandmaster.webp</normaloff>:/Grandmaster.webp</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>40</width>
-          <height>40</height>
-         </size>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="honorbtn">
-        <property name="geometry">
-         <rect>
-          <x>370</x>
-          <y>190</y>
-          <width>81</width>
-          <height>81</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Hononary Titles</string>
-        </property>
-        <property name="checkable">
-         <bool>true</bool>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout_13">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_23">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>MS Serif</family>
+            <pointsize>27</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Rank Rewards</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_11">
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QPushButton" name="epicbtn">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icon.qrc">
+                <normaloff>:/Epic.png</normaloff>:/Epic.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>80</width>
+                <height>80</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="legendbtn">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icon.qrc">
+                <normaloff>:/Legend.png</normaloff>:/Legend.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>80</width>
+                <height>80</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="mythicbtn">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icon.qrc">
+                <normaloff>:/Mythic.png</normaloff>:/Mythic.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>80</width>
+                <height>80</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="honorbtn">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+              </property>
+              <property name="text">
+               <string>Hononary</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QPushButton" name="warriorbtn">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icon.qrc">
+                <normaloff>:/Warrior.png</normaloff>:/Warrior.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>80</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="elitebtn">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icon.qrc">
+                <normaloff>:/Elite.png</normaloff>:/Elite.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>80</width>
+                <height>80</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="masterbtn">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icon.qrc">
+                <normaloff>:/Master.png</normaloff>:/Master.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>80</width>
+                <height>80</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="grandmasterbtn">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icon.qrc">
+                <normaloff>:/Grandmaster.png</normaloff>:/Grandmaster.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>80</width>
+                <height>80</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="warriorpg">
-       <widget class="QLabel" name="warriorinfo">
-        <property name="geometry">
-         <rect>
-          <x>14</x>
-          <y>69</y>
-          <width>481</width>
-          <height>241</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>warrior</string>
-        </property>
-        <property name="textFormat">
-         <enum>Qt::PlainText</enum>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="rtrnbtn1">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>56</width>
-          <height>17</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Return</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_24">
-        <property name="geometry">
-         <rect>
-          <x>120</x>
-          <y>10</y>
-          <width>251</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font: 75 24pt &quot;MS Sans Serif&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Warrior Rewards</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="rtrnbtn1">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Return</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_24">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Warrior Rewards</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="warriorinfo">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::PlainText</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="elitepg">
-       <widget class="QLabel" name="eliteinfo">
-        <property name="geometry">
-         <rect>
-          <x>14</x>
-          <y>69</y>
-          <width>481</width>
-          <height>241</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>elite</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="rtrnbtn2">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>56</width>
-          <height>17</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Return</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_25">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>10</y>
-          <width>251</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font: 75 24pt &quot;MS Sans Serif&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Elite Rewards</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="rtrnbtn2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Return</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_25">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Elite Rewards</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="eliteinfo">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="masterpg">
-       <widget class="QLabel" name="masterinfo">
-        <property name="geometry">
-         <rect>
-          <x>14</x>
-          <y>69</y>
-          <width>481</width>
-          <height>241</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>master</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="rtrnbtn3">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>56</width>
-          <height>17</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Return</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_26">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>10</y>
-          <width>251</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font: 75 24pt &quot;MS Sans Serif&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Master Rewards</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="rtrnbtn3">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Return</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_26">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Master Rewards</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="masterinfo">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="grandmasterpg">
-       <widget class="QLabel" name="grandmasterinfo">
-        <property name="geometry">
-         <rect>
-          <x>14</x>
-          <y>65</y>
-          <width>481</width>
-          <height>251</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>grandmaster</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="rtrnbtn4">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>56</width>
-          <height>17</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Return</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_27">
-        <property name="geometry">
-         <rect>
-          <x>130</x>
-          <y>10</y>
-          <width>271</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font: 75 24pt &quot;MS Sans Serif&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Grandmaster Rewards</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="rtrnbtn4">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Return</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_27">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Grandmaster Rewards</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="grandmasterinfo">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="epicpg">
-       <widget class="QLabel" name="epicinfo">
-        <property name="geometry">
-         <rect>
-          <x>14</x>
-          <y>69</y>
-          <width>481</width>
-          <height>241</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>epic</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="rtrnbtn5">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>56</width>
-          <height>17</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Return</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_28">
-        <property name="geometry">
-         <rect>
-          <x>140</x>
-          <y>10</y>
-          <width>251</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font: 75 24pt &quot;MS Sans Serif&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Epic Rewards</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="rtrnbtn5">
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Return</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_28">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Epic Rewards</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="epicinfo">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="legendpg">
-       <widget class="QLabel" name="legendinfo">
-        <property name="geometry">
-         <rect>
-          <x>14</x>
-          <y>69</y>
-          <width>481</width>
-          <height>241</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>legend</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="rtrnbtn6">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>56</width>
-          <height>17</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Return</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_29">
-        <property name="geometry">
-         <rect>
-          <x>130</x>
-          <y>10</y>
-          <width>251</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font: 75 24pt &quot;MS Sans Serif&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Legend Rewards</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="rtrnbtn6">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Return</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_29">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Legend Rewards</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="legendinfo">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="mythicpg">
-       <widget class="QLabel" name="myhticinfo">
-        <property name="geometry">
-         <rect>
-          <x>14</x>
-          <y>65</y>
-          <width>481</width>
-          <height>241</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>mythic</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="rtrnbtn7">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>56</width>
-          <height>17</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Return</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_30">
-        <property name="geometry">
-         <rect>
-          <x>130</x>
-          <y>10</y>
-          <width>251</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font: 75 24pt &quot;MS Sans Serif&quot;;</string>
-        </property>
-        <property name="text">
-         <string>Myhtic Rewards</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="rtrnbtn7">
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Return</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_30">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string>Myhtic Rewards</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="myhticinfo">
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+font: 27pt &quot;MS Serif&quot;;
+background-color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="hononarypg">
        <widget class="QLabel" name="label_31">
         <property name="geometry">
          <rect>
-          <x>80</x>
-          <y>50</y>
-          <width>361</width>
-          <height>191</height>
+          <x>10</x>
+          <y>30</y>
+          <width>471</width>
+          <height>261</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(100,181,246);</string>
         </property>
         <property name="text">
          <string/>
@@ -1465,7 +2227,7 @@ background-color: rgb(148, 148, 148);
          <enum>Qt::AutoText</enum>
         </property>
         <property name="pixmap">
-         <pixmap resource="../Mobile-legends-ultimate-guide-1/icon.qrc">:/honorary titles.webp</pixmap>
+         <pixmap resource="icon.qrc">:/honorary titles.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1477,53 +2239,109 @@ background-color: rgb(148, 148, 148);
        <widget class="QLabel" name="beginnerlbl">
         <property name="geometry">
          <rect>
-          <x>90</x>
-          <y>90</y>
-          <width>81</width>
-          <height>51</height>
+          <x>10</x>
+          <y>80</y>
+          <width>121</width>
+          <height>81</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
         </property>
        </widget>
        <widget class="QLabel" name="juniorlbl">
         <property name="geometry">
          <rect>
-          <x>350</x>
-          <y>90</y>
-          <width>81</width>
-          <height>51</height>
+          <x>360</x>
+          <y>80</y>
+          <width>121</width>
+          <height>81</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
         </property>
        </widget>
        <widget class="QLabel" name="suprelbl">
         <property name="geometry">
          <rect>
-          <x>350</x>
-          <y>160</y>
-          <width>81</width>
-          <height>51</height>
+          <x>360</x>
+          <y>170</y>
+          <width>121</width>
+          <height>81</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
         </property>
        </widget>
        <widget class="QLabel" name="seniorlbl">
         <property name="geometry">
          <rect>
-          <x>90</x>
-          <y>160</y>
-          <width>81</width>
-          <height>51</height>
+          <x>10</x>
+          <y>170</y>
+          <width>121</width>
+          <height>81</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255, 255, 255);
+font: 8pt &quot;MS Sans Serif&quot;;
+background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+</string>
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
         </property>
        </widget>
       </widget>
@@ -1533,8 +2351,7 @@ background-color: rgb(148, 148, 148);
   </widget>
  </widget>
  <resources>
-  <include location="../Mobile-legends-ultimate-guide-1/icon.qrc"/>
-  <include location="../../Users/HP/.designer/Mobile-legends-ultimate-guide-1/icon.qrc"/>
+  <include location="icon.qrc"/>
  </resources>
  <connections>
   <connection>

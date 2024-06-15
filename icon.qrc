@@ -1,7 +1,15 @@
 <RCC>
   <qresource>
-    <file>calcbtn.jpg</file>
-    <file>menubtn.jpg</file>
-    <file>signout.jpg</file>
+    <file>Master.png</file>
+    <file>Elite.png</file>
+    <file>Warrior.png</file>
+    <file>mlbb.jpg</file>
+    <file>honorary titles.png</file>
+    <file>Epic.png</file>
+    <file>Grandmaster.png</file>
+    <file>Legend.png</file>
+    <file>Mythic.png</file>
+    <file>menubtn.png</file>
+    <file>signout.png</file>
   </qresource>
 </RCC>
